@@ -138,3 +138,54 @@ CREATE TABLE tipoFuncionario(
  CONSTRAINT FK_DEPENDENTE FOREIGN KEY (idFu) REFERENCES funcionario(idFu)
    ON DELETE CASCADE,
 );
+
+/**
+ *Tabela gerencia
+ * @idDe,
+ * @idFu,
+ * @dataInicioGe,
+ * @dataFimGe
+ * @PK_GERENCIA   restricao de chave primaria
+ * @FK_GERENCIA1   restricao de chave estrangeira com a tabela departamento, ao ser removido o departamento a tupla e tambem removida
+ * @FK_GERENCIA2   restricao de chave estrangeira com a tabela funcionario, ao ser removido o funcionario a tupla e tambem removida
+ */
+ 
+ CREATE TABLE gerencia(
+   idDe NUMBER(3) NOT NULL,
+   idFu NUMBER(8) NOT NULL,
+   dataInicioGe DATE NOT NULL,
+   dataFimGe DATE,
+   
+   CONSTRAINT PK_GERENCIA PRIMARY KEY (idDe, idFu, dataInicioGe),
+   CONSTRAINT FK_GERENCIA1 FOREIGN KEY (idDe) REFERENCES departamento(idDe)
+    ON DELETE CASCADE,
+   CONSTRAINT FK_GERENCIA2 FOREIGN KEY (idFu) REFERENCES funcionario(idFu)
+    ON DELETE CASCADE,
+    
+);
+
+/**
+ *Tabela trabalho
+ * @idDe,         chave primaria
+ * @idFu,         chave primaria
+ * @dataInicioTr, chave primaria
+ * @dataFimTr
+ * @PK_TRABALHO   restricao de chave primaria
+ * @FK_TRABALHO1   restricao de chave estrangeira com a tabela departamento, ao ser removido o departamento a tupla e tambem removida
+ * @FK_TRABALHO2   restricao de chave estrangeira com a tabela funcionario, ao ser removido o funcionario a tupla e tambem removida
+ */
+ 
+  CREATE TABLE trabalho(
+   idDe NUMBER(3) NOT NULL,
+   idFu NUMBER(8) NOT NULL,
+   dataInicioTr DATE NOT NULL,
+   dataFimTr DATE,
+   
+   CONSTRAINT PK_TRABALHO PRIMARY KEY (idDe, idFu, dataInicioTr),
+   CONSTRAINT FK_TRABALHO1 FOREIGN KEY (idDe) REFERENCES departamento(idDe)
+    ON DELETE CASCADE,
+   CONSTRAINT FK_TRABALHO2 FOREIGN KEY (idFu) REFERENCES funcionario(idFu)
+    ON DELETE CASCADE,
+    
+);
+   
