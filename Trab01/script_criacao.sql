@@ -188,4 +188,32 @@ CREATE TABLE tipoFuncionario(
     ON DELETE CASCADE,
     
 );
+
+/**
+ *Tabela filme
+ * @idPr,         chave primaria
+ * @tituloPr
+ * @descricaoPr
+ * @idDe
+ * @producaoNacionalEn
+ * @anoLancamentoFi
+ * @duracaoFi     número em minutos
+ * @generoFi
+ * @PK_FILME      restricao de chave primaria
+ * @FK_FILME1     restricao de chave estrangeira com a tabela departamento, ao ser removido o departamento a tupla não deve ser removida
+ */
+ 
+ CREATE TABLE filme(
+  idPr NUMBER(5) NOT NULL,
+  tituloPr VARCHAR2(100),
+  descricaoPr VARCHAR2(3000),
+  idDe NUMBER(3),
+  producaoNacionalEn CHAR(3),
+  anoLancamentoFi NUMBER(4),
+  duracaoFi NUMBER(3),
+  generoFi VARCHAR2(100),
+  
+  CONSTRAINT PK_FILME PRIMARY KEY (idPr),
+  CONSTRAINT FK_FILME1 FOREIGN KEY (idDe) REFERENCES departamento(idDe)
+);
    
