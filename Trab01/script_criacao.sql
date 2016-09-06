@@ -189,3 +189,148 @@ CREATE TABLE tipoFuncionario(
     
 );
    
+/**
+ *Tabela filme
+ * @idPr,         chave primaria
+ * @tituloPr
+ * @descricaoPr
+ * @idDe
+ * @producaoNacionalEn
+ * @anoLancamentoFi
+ * @duracaoFi     número em minutos
+ * @generoFi
+ * @PK_FILME      restricao de chave primaria
+ * @FK_FILME1     restricao de chave estrangeira com a tabela departamento, ao ser removido o departamento a tupla não deve ser removida
+ */
+ 
+ CREATE TABLE filme(
+  idPr NUMBER(5) NOT NULL,
+  tituloPr VARCHAR2(100),
+  descricaoPr VARCHAR2(3000),
+  idDe NUMBER(3),
+  producaoNacionalEn CHAR(3),
+  anoLancamentoFi DATE,
+  duracaoFi NUMBER(3),
+  generoFi VARCHAR2(100),
+  
+  CONSTRAINT PK_FILME PRIMARY KEY (idPr),
+  CONSTRAINT FK_FILME1 FOREIGN KEY (idDe) REFERENCES departamento(idDe)
+);
+
+/**
+ *Tabela exibicaoFilme
+ * @idPr,           chave primaria
+ * @dataExFi        chave primária
+ * @horaInicioExFi  chave primária
+ * @horaFimExFi
+ * @ibopeExFi
+ * @PK_EXIBICAOFILME      restricao de chave primaria
+ * @FK_EXIBICAOFILME1     restricao de chave estrangeira com a tabela filme, ao ser removido o filme a tupla deve ser removida
+ */
+ 
+ CREATE TABLE exibicaoFilme(
+  idPr NUMBER(5) NOT NULL,
+  dataExFi DATE,
+  horaInicioExFi CHAR(8),
+  horaFimExFi CHAR(8),
+  ibopeExFi NUMBER(2),
+  
+  CONSTRAINT PK_EXIBICAOFILME PRIMARY KEY (idPr, dataExFi, horaInicioExFi),
+  CONSTRAINT FK_EXIBICAOFILME1 FOREIGN KEY (idPr) REFERENCES filme(idPr) ON DELETE CASCADE
+);
+
+/**
+ *Tabela serie
+ * @idPr,         chave primaria
+ * @tituloPr
+ * @descricaoPr
+ * @idDe
+ * @producaoNacionalEn
+ * @generoSe
+ * @nroTemporadasSe
+ * @PK_SERIE      restricao de chave primaria
+ * @FK_SERIE1     restricao de chave estrangeira com a tabela departamento, ao ser removido o departamento a tupla não deve ser removida
+ */
+ 
+ CREATE TABLE serie(
+  idPr NUMBER(5) NOT NULL,
+  tituloPr VARCHAR2(100),
+  descricaoPr VARCHAR2(3000),
+  idDe NUMBER(3),
+  producaoNacionalEn CHAR(3),
+  generoSe VARCHAR2(100),
+  nroTemporadasSe NUMBER(2),
+  
+  CONSTRAINT PK_SERIE PRIMARY KEY (idPr),
+  CONSTRAINT FK_SERIE1 FOREIGN KEY (idDe) REFERENCES departamento(idDe)
+);
+
+/**
+ *Tabela temporada
+ * @idPr,         chave primaria
+ * @nroTe         chave primária
+ * @descriçãoTe
+ * @nroEpisodiosTe
+ * @PK_TEMPORADA  restricao de chave primaria
+ * @FK_TEMPORADA1     restricao de chave estrangeira com a tabela serie, ao ser removido o departamento a tupla deve ser removida
+ */
+ 
+ CREATE TABLE temporada(
+  idPr NUMBER(5) NOT NULL,
+  nroTe NUMBER(2) NOT NULL,
+  descricaoTe VARCHAR2(1000),
+  nroEpisodiosTe NUMBER(2),
+  
+  CONSTRAINT PK_TEMPORADA PRIMARY KEY (idPr, nroTe),
+  CONSTRAINT FK_TEMPORADA1 FOREIGN KEY (idPr) REFERENCES serie(idPr)
+);
+
+/**
+ *Tabela episodioSerie
+ * @idPr,         chave primaria
+ * @nroTe         chave primária
+ * @nroEpSe       chave primária
+ * @tituloEpSe
+ * @resumoEpSe
+ * @duracaoEpSe   número em minutos
+ * @PK_EPISODIOSERIE     restricao de chave primaria
+ * @FK_EPISODIOSERIE1     restricao de chave estrangeira com a tabela temporada, ao ser removido o departamento a tupla deve ser removida
+ */
+ 
+ CREATE TABLE episodioSerie(
+  idPr NUMBER(5) NOT NULL,
+  nroTe NUMBER(2) NOT NULL,
+  nroEpSe NUMBER(2) NOT NULL,
+  tituloEpSe VARCHAR2(50),
+  resumoEpSe VARCHAR2(300),
+  duracaoEpSe NUMBER(3), 
+  
+  CONSTRAINT PK_EPISODIOSERIE PRIMARY KEY (idPr, nroTe, nroEpSe),
+  CONSTRAINT FK_EPISODIOSERIE1 FOREIGN KEY (idPr, nroTe) REFERENCES temporada(idPr, nroTe) ON DELETE CASCADE
+);
+
+/**
+ *Tabela exibiçãoSerie
+ * @idPr,           chave primaria
+ * @nroTe           chave primária
+ * @nroEpSe         chave primária
+ * @dataExSe        chave primária
+ * @horaInicioExSe  chave primária
+ * @horaFimExSe
+ * @ibopeExSe
+ * @PK_EXIBICAOSERIE      restricao de chave primaria
+ * @FK_EXIBICAOSERIE1     restricao de chave estrangeira com a tabela EPISODIOSERIE, ao ser removido o departamento a tupla deve ser removida
+ */
+ 
+ CREATE TABLE exibicaoSerie(
+  idPr NUMBER(5) NOT NULL,
+  nroTe NUMBER(2) NOT NULL,
+  nroEpSe NUMBER(2) NOT NULL,
+  dataExSe DATE NOT NULL,
+  horaInicioExSe CHAR(8) NOT NULL,
+  horaFimExSe CHAR(8),
+  ibopeExSe NUMBER(2),
+  
+  CONSTRAINT PK_EXIBICAOSERIE PRIMARY KEY (idPr, nroTe, nroEpSe, dataExSe, horaInicioExSe),
+  CONSTRAINT FK_EXIBICAOSERIE1 FOREIGN KEY (idPr, nroTe, nroEpSe) REFERENCES episodioSerie(idPr, nroTe, nroEpSe)
+);
