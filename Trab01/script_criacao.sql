@@ -275,7 +275,7 @@ CREATE TABLE tipoFuncionario(
   * @descriçãoTe
   * @nroEpisodiosTe
   * @PK_TEMPORADA  restricao de chave primaria
-  * @FK_TEMPORADA1     restricao de chave estrangeira com a tabela serie, ao ser removido o departamento a tupla deve ser removida
+  * @FK_TEMPORADA1 restricao de chave estrangeira com a tabela serie, ao ser removido o departamento a tupla deve ser removida
   */
   
   CREATE TABLE temporada(
@@ -338,7 +338,18 @@ CREATE TABLE tipoFuncionario(
    CONSTRAINT FK_EXIBICAOSERIE1 FOREIGN KEY (idPr, nroTe, nroEpSe) REFERENCES episodioSerie(idPr, nroTe, nroEpSe)
  );
  
- 
+/*
+ * Tabela de jornal
+ * @idPr,         CHAVE PRIMARIA
+ * @tituloPr, 
+ * @descricaoPr, 
+ * @idDe, 
+ * @duracaoJo, 
+ * @abrangenciaJo
+ * @PK_JORNAL     RESTRICAO DE CHAVE PRIMARIA
+ * @FK_JORNAL     restricao de chave estrangeira com a departamento, ao ser removido o departamento a tupla deve ser removida
+ *
+ **/
  CREATE TABLE jornal(
   idPr NUMBER(5) NOT NULL,
   tituloPr VARCHAR2(50),
@@ -352,6 +363,19 @@ CREATE TABLE tipoFuncionario(
    ON DELETE CASCADE,
   
 );
+
+/*
+ * Tabela de exibicao do jornal
+ * @idPr,
+ * @idFu,
+ * @dataExJo,
+ * @horaInicioExJo,
+ * @horaFimExJo,
+ * @ibopeExJo
+ * @PK_EXIBICAOJORNAL             restricao de chave primaria
+ * @FK_EXIBICAOJORNAL
+ * @FK_EXIBICAOJORNAL2
+ **/
 
 CREATE TABLE exibicaoJornal(
  idPr NUMBER(5) NOT NULL, 
@@ -368,8 +392,16 @@ CREATE TABLE exibicaoJornal(
   ON DELETE CASCADE,
   
 );
- 
- 
+
+/**
+ * Tabela de comercial
+ * @idPr,
+ * @tituloPr,
+ * @descricaoPr,
+ * @idDe,
+ * @PK_COMERCIAL                restricao de chave primaria
+ * @FK_COMERCIAL
+ **/
 CREATE TABLE comercial(
  idPr NUMBER(5) NOT NULL, 
  tituloPr VARCHAR2(20), 
@@ -381,6 +413,13 @@ CREATE TABLE comercial(
     ON DELETE CASCADE,
 );
 
+/**
+ *Tabela de cliente
+ * @cnpjCl,
+ * @nomeCompletoCl,
+ * @nomeFantasiaCl
+ * @PK_CLIENTE
+ **/
 CREATE TABLE cliente(
  cnpjCl VARCHAR2(18) NOT NULL, 
  nomeCompletoCl VARCHAR2(50) NOT NULL --CHAVE SECUNDARIA, 
@@ -389,6 +428,18 @@ CREATE TABLE cliente(
  CONSTRAINT PK_CLIENTE PRIMARY KEY (cnpjCl),
 );
 
+/**
+ *Tabela de exibicao de comercial
+ * @idPr,
+ * @ dataExCo,
+ * @horaInicioExCo,
+ * @horaFimExCo,
+ * @precoExCo,
+ * @cnpjCl
+ * @PK_EXIBICAOCOMERCIAL            restricao de chave primaria
+ * @FK_EXIBICAOCOMERCIAL1
+ * @FK_EXIBICAOCOMERCIAL2
+ **/
 CREATE TABLE exibicaoComercial(
   idPr NUMBER(5) NOT NULL, 
   dataExCo DATE NOT NULL, 
@@ -404,6 +455,15 @@ CREATE TABLE exibicaoComercial(
     ON DELETE CASCADE,
 );
 
+/**
+ * @idPr
+ * @tituloPr
+ * @descricaoPr
+ * @idDe
+ * @producaoNacionalEn NUM TENDI
+ * @PK_NOVELA                     restricao de chave primaria
+ **/
+
 CREATE TABLE novela (
   idPr NUMBER(5) NOT NULL, 
   tituloPr VARCHAR2(50) NOT NULL, --CHAVE SECUNDARIA 
@@ -415,7 +475,15 @@ CREATE TABLE novela (
   
 );
 
-
+/**
+ *Tabela de epsiodios da novela
+ * @idPr
+ * @nroEpNo
+ * @resumoEpNo
+ * @duracaoEpNo
+ * @ PK_EPISODIONOVELA            restricao de chave primaria
+ * @ FK_EPISODIONOVELA
+ **/
 CREATE TABLE episodioNovela(
   idPr NUMBER(5), 
   nroEpNo NUMBER(3), 
@@ -428,6 +496,17 @@ CREATE TABLE episodioNovela(
     
 );
 
+/**
+ * Tabela de exibicao de novela
+ * @idPr
+ * @nroEpNo
+ * @dataExNo
+ * @horaInicioExNo
+ * @horaFimExNo
+ * @ibopeExNo
+ * @PK_EXIBICAONOVELA             restricao de chave primaria
+ * @FK_EXIBICAONOVELA
+**/
 CREATE TABLE exibicaoNovela(
   idPr NUMBER(5) NOT NULL, 
   nroEpNo NUMBER(3) NOT NULL, 
@@ -441,6 +520,14 @@ CREATE TABLE exibicaoNovela(
     ON DELETE CASCADE,
 );
 
+/**
+ * Tabela de valor do comercial
+ * @anoVaCo
+ * @diaSemanaVaCo
+ * @horaInicioVaCo
+ * @precoPorSegundoVaCo
+ * @PK_VALORCOMERCIAL             restricao de chave primaria
+**/
 CREATE TABLE valorComercial(
   anoVaCo NUMBER(4) NOT NULL,
   diaSemanaVaCo VARCHAR2(10) NOT NULL, --CHECK COM TODOS OS DIAS DA SEMANA
@@ -448,7 +535,6 @@ CREATE TABLE valorComercial(
   precoPorSegundoVaCo NUMBER(5,2),
   
   CONSTRAINT PK_VALORCOMERCIAL PRIMARY KEY (anoVaCo, diaSemanaVaCo, horaInicioVaCo),
-  
 );
   
 
