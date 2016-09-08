@@ -82,6 +82,7 @@ CREATE TABLE emissora (
  * @salarioBaseTipoFu
  * @descricaoTipoFu
  * @PK_TIPOFUNCIONARIO restricao de chave primaria
+ * @CH_TIPOFUNCIONARIO1 checa se o salário base não é negativo
  */
 
 
@@ -90,7 +91,8 @@ CREATE TABLE tipoFuncionario(
 	salarioBaseTipoFu NUMBER(5, 2),
   descricaoTipoFu VARCHAR(100),
 
-  CONSTRAINT PK_TIPOFUNCIONARIO PRIMARY KEY (idTipoFu)
+  CONSTRAINT PK_TIPOFUNCIONARIO PRIMARY KEY (idTipoFu),
+  CONSTRAINT CH_TIPOFUNCIONARIO1 CHECK (salarioBaseTipoFu >= 0)
   
 );
 
@@ -105,6 +107,9 @@ CREATE TABLE tipoFuncionario(
 
  * @PK_FUNCIONARIO restricao de chave primaria
  * @FK_FUNCIONARIO restricao de chave estrangeira com a tabela tipoFuncionario, ao ser removido o tipoFuncionario a tupla e tambem removida
+ * @CH_FUNCIONARIO checa se o nome completo do funcionario possui pelo menos dois nomes ou nome e sobrenome
+ * @CH_FUNCIONARIO1 checa se o ano de nascimento do funcionário cadastrado é pelo menos 1890
+ * @CH_FUNCIONARIO2 checa se o salário do funcionário não é negativo
  */
  
  CREATE TABLE funcionario(
@@ -118,6 +123,9 @@ CREATE TABLE tipoFuncionario(
   CONSTRAINT PK_FUNCIONARIO PRIMARY KEY (idFu),
   CONSTRAINT FK_FUNCIONARIO FOREIGN KEY (idTipoFu) REFERENCES tipoFuncionario(idTipoFu)
 		ON DELETE CASCADE,
+  CONSTRAINT CH_FUNCIONARIO CHECK (nomeCompletoFu LIKE '%s %s'),
+  CONSTRAINT CH_FUNCIONARIO1 CHECK (EXTRACT(YEAR FROM dataNascimentoFu) > 1890),
+  CONSTRAINT CH_FUNCIONARIO2 CHECK (salarioFu >= 0)
 );
 
 /**
@@ -128,6 +136,9 @@ CREATE TABLE tipoFuncionario(
  * @sexoDe
  * @PK_DEPENDENTE   restricao de chave primaria
  * @FK_DEPENDENTE   restricao de chave estrangeira com a tabela funcionario, ao ser removido o funcionario a tupla e tambem removida
+ * @CH_DEPENDENTE   checa se o nome completo do dependente possui pelo menos dois nomes ou nome e sobrenome
+ * @CH_DEPENDENTE1  checa se o ano de nascimento do funcionário cadastrado é pelo menos 1890
+ * @CH_DEPENDENTE2  checa se o sexo está indicado como F ou M
  */
  
  CREATE TABLE dependente(
@@ -139,6 +150,9 @@ CREATE TABLE tipoFuncionario(
  CONSTRAINT PK_DEPENDENTE PRIMARY KEY (idFu, nomeCompletoDe),
  CONSTRAINT FK_DEPENDENTE FOREIGN KEY (idFu) REFERENCES funcionario(idFu)
    ON DELETE CASCADE,
+ CONSTRAINT CH_DEPENDENTE CHECK (nomeCompletoDe LIKE '%s %s'),
+ CONSTRAINT CH_DEPENDENTE1 CHECK (EXTRACT(YEAR FROM dataNascimentoDe) > 1890),
+ CONSTRAINT CH_DEPENDENTE2 CHECK (UPPER(sexoDe) IN ('F', 'M'))
 );
 
 /**
@@ -150,6 +164,8 @@ CREATE TABLE tipoFuncionario(
  * @PK_GERENCIA   restricao de chave primaria
  * @FK_GERENCIA1   restricao de chave estrangeira com a tabela departamento, ao ser removido o departamento a tupla e tambem removida
  * @FK_GERENCIA2   restricao de chave estrangeira com a tabela funcionario, ao ser removido o funcionario a tupla e tambem removida
+ * @CH_GERENCIA    checa se o ano da data de início é pelo menos 1950
+ * @CH_GERENCIA1    checa se a data de fim é maior que a de início
  */
  
  CREATE TABLE gerencia(
@@ -163,6 +179,8 @@ CREATE TABLE tipoFuncionario(
     ON DELETE CASCADE,
    CONSTRAINT FK_GERENCIA2 FOREIGN KEY (idFu) REFERENCES funcionario(idFu)
     ON DELETE CASCADE,
+   CONSTRAINT CH_GERENCIA CHECK (EXTRACT (YEAR FROM dataInicioGe) >= 1950),
+   CONSTRAINT CH_GERENCIA1 CHECK (dataFimGe > dataInicioGe)
     
 );
 
@@ -175,6 +193,8 @@ CREATE TABLE tipoFuncionario(
  * @PK_TRABALHO   restricao de chave primaria
  * @FK_TRABALHO1   restricao de chave estrangeira com a tabela departamento, ao ser removido o departamento a tupla e tambem removida
  * @FK_TRABALHO2   restricao de chave estrangeira com a tabela funcionario, ao ser removido o funcionario a tupla e tambem removida
+ * @CH_TRABALHO    checa se o ano da data de início é pelo menos 1950
+ * @CH_TRABALHO1   checa se a data de fim é maior que a de início
  */
  
   CREATE TABLE trabalho(
@@ -188,6 +208,8 @@ CREATE TABLE tipoFuncionario(
     ON DELETE CASCADE,
    CONSTRAINT FK_TRABALHO2 FOREIGN KEY (idFu) REFERENCES funcionario(idFu)
     ON DELETE CASCADE,
+   CONSTRAINT CH_TRABALHO CHECK (EXTRACT (YEAR FROM dataInicioTr) >= 1950),
+   CONSTRAINT CH_TRABALHO1 CHECK (dataFimTr > dataInicioTr)
     
 );
 
