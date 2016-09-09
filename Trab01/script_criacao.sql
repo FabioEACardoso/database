@@ -66,7 +66,7 @@
   CREATE TABLE departamento(
  	idDe NUMBER(3) NOT NULL,
  	nomeDe VARCHAR2(18) NOT NULL,
-   telefoneDe NUMBER(9),
+   telefoneDe VARCHAR2(13),
    nroFuncionariosDe NUMBER(4),
    cnpjEm VARCHAR2(18)
  

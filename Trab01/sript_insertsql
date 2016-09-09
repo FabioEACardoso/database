@@ -1,0 +1,45 @@
+--MAX 1
+INSERT INTO emissora VALUES('27.865.757/0063-05', 'Globo Comunicacao e Participacoes S/A', 'Rede Globo', 'R Jardim Botanico, 518, Lote 01 Pal 44943, Jardim Botanico, Rio De Janeiro, RJ, CEP 22461-000, Brasil', TO_DATE('26.04.1965','DD.MM.YYYY')),
+
+--elenco, financeiro, jornalismo
+INSERT INTO departamento VALUES('123', 'Financeiro', '(21)3371-2230', '28', '27.865.757/0063-05')
+INSERT INTO departamento VALUES('456', 'Elenco', '(21)3371-2250', '50', '27.865.757/0063-05')
+INSERT INTO departamento VALUES('789', 'Jornalismo', '(21)3371-2270', '135', '27.865.757/0063-05')
+
+--Deve existir obrigatoriamente o tipo “Gerente”, 
+--pois o funcionário deste tipo é quem irá gerenciar 
+--determinado departamento. Notem também que tem outro tipo de 
+--funcionário “obrigatório” de acordo com o modelo: o funcionário que exibe o jornal.
+
+INSERT INTO tipoFuncionario VALUES(
+INSERT INTO tipoFuncionario VALUES(
+INSERT INTO tipoFuncionario VALUES(
+INSERT INTO tipoFuncionario VALUES(
+INSERT INTO tipoFuncionario VALUES(
+INSERT INTO tipoFuncionario VALUES(
+INSERT INTO tipoFuncionario VALUES(
+INSERT INTO tipoFuncionario VALUES(
+
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES(
+
+INSERT INTO gerencia VALUES(
+INSERT INTO gerencia VALUES(
+INSERT INTO gerencia VALUES(
+INSERT INTO gerencia VALUES(
+INSERT INTO gerencia VALUES(
+
