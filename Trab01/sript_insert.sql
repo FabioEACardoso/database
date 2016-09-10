@@ -2,7 +2,7 @@
 INSERT INTO emissora VALUES('27.865.757/0063-05', 'Globo Comunicacao e Participacoes S/A', 'Rede Globo', 'R Jardim Botanico, 518, Lote 01 Pal 44943, Jardim Botanico, Rio De Janeiro, RJ, CEP 22461-000, Brasil', TO_DATE('26.04.1965','DD.MM.YYYY')),
 
 --elenco, financeiro, jornalismo
-INSERT INTO departamento VALUES('123', 'Financeiro', '(21)3371-2230', '28', '27.865.757/0063-05')
+INSERT INTO departamento VALUES('123', 'Administrativo', '(21)3371-2230', '28', '27.865.757/0063-05')
 INSERT INTO departamento VALUES('456', 'Elenco', '(21)3371-2250', '50', '27.865.757/0063-05')
 INSERT INTO departamento VALUES('789', 'Jornalismo', '(21)3371-2270', '135', '27.865.757/0063-05')
 INSERT INTO departamento VALUES('445', 'Entretenimento', '(21)3371-2300', '99', '27.865.757/0063-05')
@@ -67,25 +67,33 @@ INSERT INTO funcionario VALUES('32142521', 'Jon Snow', TO_DATE('15.08.1983', 'DD
 INSERT INTO funcionario VALUES('32512541', 'Jim Gordon', TO_DATE('01.02.1978', 'DD.MM.YYYY'), '717.276.367-1', '5566')
 --cameraman
 INSERT INTO funcionario VALUES('92180238', 'Cristian Grey', TO_DATE('13.04.1980', 'DD.MM.YYYY'), '830.134.321-9', '9876')
-INSERT INTO funcionario VALUES('12398503', 'Bran Stark', TO_DATE('09.08.1990', 'DD.MM.YYYY'), '218.132.213-0', '9876')
+INSERT INTO funcionario VALUES('12398503', 'Ned Stark', TO_DATE('09.08.1964', 'DD.MM.YYYY'), '218.132.213-0', '9876')
 
+--3 funcionarios com 1 dependente
+-- 3 funcionarios com 1 ou mais dependentes
+ /**
+  *Tabela dependente
+  * @idFu,             chave primaria e chave estrangeira
+  * @nomeCompletoDe,   chave primaria
+  * @dataNascimentoDe,
+  * @sexoDe*/
 
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
-INSERT INTO dependente VALUES(
+INSERT INTO dependente VALUES('34635464', 'Maria Matta da Silva', TO_DATE('13.04.2005', 'DD.MM.YYYY'), 'F') 
+INSERT INTO dependente VALUES('34635464', 'Laura Matta da Silva', TO_DATE('28.11.2006', 'DD.MM.YYYY'), 'F') 
+INSERT INTO dependente VALUES('19441905', 'Lisa Simpson', TO_DATE('01.01.1997', 'DD.MM.YYYY'), 'F') 
+INSERT INTO dependente VALUES('19441905', 'Bart Simpson', TO_DATE('01.04.1996', 'DD.MM.YYYY'), 'M')
+INSERT INTO dependente VALUES('19441905', 'Maggie Simpson', TO_DATE('24.08.2003', 'DD.MM.YYYY'), 'F') 
+INSERT INTO dependente VALUES('15643734', 'Vinícius Bonner', TO_DATE('21.10.1997', 'DD.MM.YYYY'), 'M')
+INSERT INTO dependente VALUES('15643734', 'Laura Bonner', TO_DATE('21.10.1997', 'DD.MM.YYYY'), 'F')
+INSERT INTO dependente VALUES('15643734', 'Beatriz Bonner', TO_DATE('21.10.1997', 'DD.MM.YYYY'), 'F')
+INSERT INTO dependente VALUES('12398503', 'Sansa Stark', TO_DATE('18.03.1992', 'DD.MM.YYYY'), 'F')
+INSERT INTO dependente VALUES('12398503', 'Rob Stark', TO_DATE('13.09.1990', 'DD.MM.YYYY'), 'M')
+INSERT INTO dependente VALUES('90185014', 'Francisco Meirelles', TO_DATE('18.09.1988', 'DD.MM.YYYY'), 'M')
+INSERT INTO dependente VALUES('90185014', 'Carolina Meirelles', TO_DATE('06.10.1984', 'DD.MM.YYYY'), 'F')
+INSERT INTO dependente VALUES('42354355', 'Chissomo Gagliasso', TO_DATE('06.05.2015', 'DD.MM.YYYY'), 'F')
+INSERT INTO dependente VALUES('14321555', 'Tarcisio Filho', TO_DATE('22.08.1964', 'DD.MM.YYYY'), 'M')
+INSERT INTO dependente VALUES('24535344', 'Cleo Pires', TO_DATE('02.10.1982', 'DD.MM.YYYY'), 'F')
+INSERT INTO dependente VALUES('42623002', 'Mariana Simões', TO_DATE('02.12.1981', 'DD.MM.YYYY'), 'F')
 
 INSERT INTO gerencia VALUES(
 INSERT INTO gerencia VALUES(
