@@ -95,9 +95,50 @@ INSERT INTO dependente VALUES('14321555', 'Tarcisio Filho', TO_DATE('22.08.1964'
 INSERT INTO dependente VALUES('24535344', 'Cleo Pires', TO_DATE('02.10.1982', 'DD.MM.YYYY'), 'F')
 INSERT INTO dependente VALUES('42623002', 'Mariana Simões', TO_DATE('02.12.1981', 'DD.MM.YYYY'), 'F')
 
-INSERT INTO gerencia VALUES(
-INSERT INTO gerencia VALUES(
-INSERT INTO gerencia VALUES(
-INSERT INTO gerencia VALUES(
-INSERT INTO gerencia VALUES(
+--● Um departamento somente pode ser gerenciado por um único funcionário por vez. 
+--Por outro lado, um departamento pode ser gerenciado por mais do que um funcionário desde que a data de início da gerencia 
+--do novo funcionário seja um dia depois da data de fim da gerência do funcionário anterior.
+-- Pelo menos 1 departamento deve possuir somente 1 gerente
+-- Pelo menos 1 departamento deve possuir pelo menos 2 gerentes
+ /**
+  *Tabela gerencia
+  * @idDe,
+  * @idFu,
+  * @dataInicioGe,
+  * @dataFimGe **/
 
+INSERT INTO gerencia VALUES('123', '62565654', TO_DATE('02.02.2010', 'DD.MM.YYYY'), TO_DATE('02.11.2016', 'DD.MM.YYYY') )
+INSERT INTO gerencia VALUES('123', '19441905', TO_DATE('05.01.2005', 'DD.MM.YYYY'), TO_DATE('29.10.2010', 'DD.MM.YYYY') )
+INSERT INTO gerencia VALUES('456', '13456563', TO_DATE('15.11.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
+INSERT INTO gerencia VALUES('789', '67645765', TO_DATE('24.11.2014', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
+INSERT INTO gerencia VALUES('445', '14324324', TO_DATE('02.10.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
+
+-- Cada departamento deve possuir pelo menos 3 funcionários--
+-- Deve existir pelo menos 5 funcionários que trabalharam/trabalham em um mesmo departamento, só que em datas de início distintas
+-- Notem que um gerente também é funcionário de um departamento. Ou seja, para que
+-- o funcionário seja gerente, deve ser garantido que ele esteja associado ao
+-- departamento que ele gerencia.
+ /*Tabela trabalho
+  * @idDe,         chave primaria
+  * @idFu,         chave primaria
+  * @dataInicioTr, chave primaria
+  * @dataFimTr**/
+  
+INSERT INTO trabalha VALUES('123', '62565654', TO_DATE('02.02.2010', 'DD.MM.YYYY'), TO_DATE('02.11.2016', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('123', '62565654', TO_DATE('02.02.2010', 'DD.MM.YYYY'), TO_DATE('02.11.2016', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('123', '62565654', TO_DATE('02.02.2010', 'DD.MM.YYYY'), TO_DATE('02.11.2016', 'DD.MM.YYYY') )
+
+INSERT INTO trabalha VALUES('456', '13456563', TO_DATE('15.11.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('456', '13456563', TO_DATE('15.11.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('456', '13456563', TO_DATE('15.11.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('456', '13456563', TO_DATE('15.11.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('456', '13456563', TO_DATE('15.11.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('456', '13456563', TO_DATE('15.11.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
+
+INSERT INTO trabalha VALUES('789', '67645765', TO_DATE('24.11.2014', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('789', '67645765', TO_DATE('24.11.2014', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('789', '67645765', TO_DATE('24.11.2014', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
+
+INSERT INTO trabalha VALUES('445', '14324324', TO_DATE('02.10.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('445', '14324324', TO_DATE('02.10.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
+INSERT INTO trabalha VALUES('445', '14324324', TO_DATE('02.10.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
