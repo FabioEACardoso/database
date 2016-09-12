@@ -479,3 +479,438 @@ INSERT INTO novela VALUES ('38888', 'Liberdade, Liberdade', 'Novela das 11 exibi
   * @diaSemanaVaCo
   * @horaInicioVaCo
   * @precoPorSegundoVaCo **/
+  
+  
+ /*Inserção de séries*/
+INSERT INTO serie VALUES('50001', 'Game of Thrones', 'A série de televisão segue as múltiplas histórias dos livros de A Song of Ice and Fire. Se passando nos Sete Reinos de Westeros, onde "verões duram décadas e os invernos uma vida inteira", Game of Thrones mostra as violentas lutas dinásticas entre as famílias nobres para ter o controle do Trono de Ferro de Westeros. Enquanto isso, nas regiões desconhecidas ao norte da Muralha e nos continentes ao leste, ameaças adicionais começam a surgir.', '445', 'NÂO', 'Aventura, Drama, Épico, Fantasia', '6');
+INSERT INTO serie VALUES('50002', 'True Detective', 'True Detective é uma série de televisão americana criada por Nic Pizzolatto para o canal HBO, tendo sua primeira temporada dirigida por Cary Joji Fukunaga. A primeira temporada estrelou atores como Matthew McConaughey, Woody Harrelson, Michelle Monaghan, Michael Potts e Tory Kittles, e utiliza múltiplas linhas do tempo para traçar através de 17 anos a busca de dois detetives por um assassino em série em Louisiana. Sua primeira temporada estreou em 12 de janeiro de 2014, possuindo oito episódios, terminando no dia 09 de março de 2014.', '445', 'NÂO', 'Southern Gotic, Drama, Crime, Neo-noir, Mistério, Policial', '2');
+INSERT INTO serie VALUES('50003', 'Black Mirror', 'Black Mirror é uma série de televisão britânica criada por Charlie Brooker, produzida pela Zeppotron para a Endemol. Em relação ao conteúdo e a estrutura da série, Brooker destacou que "cada episódio tem um elenco diferente, um set diferente e até uma realidade diferente, mas todos eles são sobre a forma como vivemos agora - e a forma como nós poderemos viver em 10 minutos se formos desastrados."', '445', 'NÂO', 'Ficção científica, Sátira', '2');
+INSERT INTO serie VALUES('50004', 'South Park', 'South Park é uma sitcom americana criada por Trey Parker e Matt Stone para o canal Comedy Central. Destinado ao público adulto, o programa tornou-se alvo de debates por suas críticas através de humor negro, cruel, surreal e satírico que abrange uma série de assuntos. A narrativa padrão gira em torno de quatro crianças—Stan Marsh, Kyle Broflovski, Eric Cartman, e Kenny McCormick—e suas aventuras bizarras na cidade-título do programa.', '445', 'NÂO', 'Comédia, Humor negro, Animação', '18');
+INSERT INTO serie VALUES('50005', 'O Grande Gonzalez', 'O Grande Gonzalez é uma série de comédia brasileira transmitida pela FOX Brasil de 2 de novembro de 2015 a 13 de novembro de 2015. Todos os 10 episódios que compõem a série ficaram disponíveis online no YouTube pelo canal Porta dos Fundos em 5 de fevereiro de 2016 com legendas em inglês e espanhol.', '445', 'SIM', 'Comédia', '1');
+INSERT INTO serie VALUES('50006', 'Justiça', 'Justiça é uma minissérie brasileira produzida pela Rede Globo e exibida desde o dia 22 de agosto de 2016 no horário das 22 horas. Escrita por Manuela Dias, com colaboração de Mariana Mesquita, Lucas Paraizo e Roberto Vitorino, conta com direção de Isabella Teixeira, Luísa Lima, Marcus Figueiredo e Walter Carvalho, e com direção geral e artística de José Luiz Villamarim. Sem um protagonista definido, cada dia da semana retrata diferentes tramas que se cruzam, contando com Adriana Esteves, Débora Bloch, Drica Moraes, Antonio Calloni, Julia Dalavia, Cássio Gabus Mendes, Enrique Díaz, Marjorie Estiano, Luisa Arraes, Vladimir Brichta, Marina Ruy Barbosa, Leandra Leal, Jéssica Ellen, Jesuíta Barbosa e Cauã Reymond nos papeis principais de cada episódio.', '445', 'SIM', 'Drama', '1');
+INSERT INTO serie VALUES('50007', 'Breaking Bad', 'Breaking Bad é uma premiada série de televisão americana criada e produzida por Vince Gilligan que retrata a vida do químico Walter White, um homem brilhante frustrado em dar aulas para adolescentes do ensino médio enquanto lida com um filho sofrendo de paralisia cerebral, uma esposa grávida e dívidas intermináveis. Quando o já tenso White é diagnosticado com um câncer no pulmão, o mesmo sofre um colapso e abraça uma vida de crimes, começando a produzir e vender metanfetaminas com o seu ex-aluno Jesse Pinkman para assegurar o futuro financeiro de sua família após sua morte.', '445', 'NÂO', 'Ação, Suspense, Drama, Crime, Faroeste contemporâneo, Humor Negro', '5');
+
+
+/*Temporadas de Game of Thrones*/
+INSERT INTO temporada VALUES('50001', '1', '', '10');
+INSERT INTO temporada VALUES('50001', '2', '', '10');
+INSERT INTO temporada VALUES('50001', '3', '', '10');
+INSERT INTO temporada VALUES('50001', '4', '', '10');
+INSERT INTO temporada VALUES('50001', '5', '', '10');
+INSERT INTO temporada VALUES('50001', '6', '', '10');
+
+/*Temporadas de True Detective*/
+INSERT INTO temporada VALUES('50002', '1', 'A primeira temporada conta a história de como a vida de dois detetives, Rust Cohle (Matthew McConaughey) e Martin Hart (Woody Harrelson), colidem e se entrelaçam durante uma caçada de 17 anos por um serial killer em Louisiana. A investigação de um assassinato bizarro, em 1995, leva á reabertura do caso em 2012.', '8');
+INSERT INTO temporada VALUES('50002', '2', 'A 2ª temporada conta a história de três policiais e um criminoso, eles precisam lidar com uma rede de conspiração em torno de um assassinato. Ray Velcoro (Colin Farrell), um detetive comprometido cuja lealdade está dividida entre seus chefes em um departamento de polícia corrupto e a máfia da qual ele recebe dinheiro. Frank Semyon (Vince Vaughn), um criminoso que corre o risco de perder todo império quando sua intenção de começar um novo e legítimo negócio é abalada pelo assassinato de seu sócio.', '8');
+
+/*Temporadas de Black Mirror*/
+INSERT INTO temporada VALUES('50003', '1', '', '3');
+INSERT INTO temporada VALUES('50003', '2', '', '3');
+
+/*Temporadas de O Grande Gonzales*/
+INSERT INTO temporada VALUES('50005', '1', 'Durante uma festa infantil, o mágico Gonzalez morre após um truque mal sucedido. Afogamento, envenenamento, acidente, assassinato: todas as linhas de investigação serão seguidas pela polícia e todos são suspeitos. ', '10');
+
+/*Temporadas de Justiça*/
+INSERT INTO temporada VALUES('50006', '1', '', '20');
+
+/*Temporadas de Breaking Bad*/
+INSERT INTO temporada VALUES('50007', '1', '', '7');
+INSERT INTO temporada VALUES('50007', '2', '', '13');
+INSERT INTO temporada VALUES('50007', '3', '', '13');
+INSERT INTO temporada VALUES('50007', '4', '', '13');
+INSERT INTO temporada VALUES('50007', '5', '', '16');
+
+/*Temporadas de South Park*/
+INSERT INTO temporada VALUES('50004', '1', '', '13');
+INSERT INTO temporada VALUES('50004', '2', '', '18');
+INSERT INTO temporada VALUES('50004', '3', '', '17');
+INSERT INTO temporada VALUES('50004', '4', '', '17');
+INSERT INTO temporada VALUES('50004', '5', '', '14');
+INSERT INTO temporada VALUES('50004', '6', '', '17');
+INSERT INTO temporada VALUES('50004', '7', '', '15');
+INSERT INTO temporada VALUES('50004', '8', '', '14');
+INSERT INTO temporada VALUES('50004', '9', '', '14');
+INSERT INTO temporada VALUES('50004', '10', '', '14');
+INSERT INTO temporada VALUES('50004', '11', '', '14');
+INSERT INTO temporada VALUES('50004', '12', '', '14');
+INSERT INTO temporada VALUES('50004', '13', '', '14');
+INSERT INTO temporada VALUES('50004', '14', '', '14');
+INSERT INTO temporada VALUES('50004', '15', '', '14');
+INSERT INTO temporada VALUES('50004', '16', '', '14');
+INSERT INTO temporada VALUES('50004', '17', '', '10');
+INSERT INTO temporada VALUES('50004', '18', '', '10');
+
+
+/*Episódios de Game of Thrones*/
+/*T01*/
+INSERT INTO episodioSerie VALUES('50001', '1', '1', 'Winter Is Coming', 'Os Stark de Winterfell recebem a visita da família real. O Rei Robert Baratheon faz a Eddard Stark uma oferta que ele não pode recusar. Do outro lado do oceano, o exilado Príncipe Viserys Targaryen cria uma aliança para reconquistar o Trono de Ferro; ele dará sua irmã, Daenerys, em casamento para o selvagem Khal Drogo em troca de seu exército. De volta a Winterfell, Catelyn Stark recebe uma pista que pode implicar no envolvimento de membros da família real em um assassinato, enquanto o jovem Bran Stark faz uma perigosa descoberta. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '2', 'The Kingsroad', 'O destino de Bran permanece incerto. Concordando em se tornar a Mão do Rei, Ned deixa Winterfell com Arya e Sansa, enquanto Catelyn fica para trás para cuidar de Bran. Jon Snow se dirige para o norte para se juntar aos irmãos da Patrulha da Noite. Tyrion decide ir para a Muralha com Jon. Viserys aguarda na esperança de recuperar o Trono de Ferro, enquanto Daenerys foca sua atenção em aprender como agradar seu novo marido, Drogo. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '3', 'Lord Snow', 'Ned se junta ao Pequeno Conselho em Porto Real. Jon Snow encontra dificuldades ao se adaptar a sua nova vida na Muralha. Suspeitando que os Lannister têm algo a ver com a queda de Bran, Catelyn decide ir para o sul para se juntar a Ned. Cersei e Jaime ponderam sobre as implicações da recuperação de Bran. Arya começa a estudar o manejo de espadas. Daenerys e Viserys discutem no caminho a Vaes Dothraki. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '4', 'Cripples, Bastards, and Broken Things', 'Um torneio é realizado para honrar a nova Mão do Rei. Ned examina um livro procurando pistas sobre a morte de seu predecessor. Jon toma atitudes para proteger Samwell Tarly de abusos no Castelo Negro. Viserys e Daenerys brigam mais uma vez em Vaes Dothraki. Sansa começa a se imaginar como uma Rainha, enquanto Arya vê um futuro bem diferente. Catelyn e Tyrion se encontram em uma estalagem na Estrada do Rei. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '5', 'The Wolf and the Lion', 'Robert e Ned discutem sobre como lidar com a aliança dos Targaryen com os Dothraki, com Robert ordenando um ataque preventivo contra Daenerys, criando um racha na relação dele com Ned. Tyrion, mantido como refém, ajuda Catelyn. Ela, porém, é recebida com frieza no Ninho da Águia pela viúva de Jon Arryn, sua irmã Lysa. Arya ouve uma conspiração contra seu pai. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '6', 'A Golden Crown', 'Novamente como Mão do Rei, Ned é deixado administrando o reino enquanto Robert vai caçar, instaurando um decreto que terá grandes consequências nos Sete Reinos. No Ninho da Águia, Tyrion confessa seus "crimes" e exige que Lysa lhe conceda um Julgamento por Combate. Viserys recebe seu pagamento final vindo de Daenerys e Drogo. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '7', 'You Win or You Die', 'Descobrindo a verdade, Ned confronta Cersei sobre a morte de Jon Arryn. Com o destino do desaparecido Benjen Stark em sua mente, Jon Snow faz seus votos para a Patrulha da Noite, porém não conseguindo o posto que desejava. Sor Jorah Mormont salva Daenerys de uma armadilha, isso enfurece Drogo que promete levar os Dothraki para onde eles nunca haviam ido. Um machucado Eddard se esforça para garantir uma transição ordenada em Porto Real. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '8', 'The Pointy End', 'Com um novo rei nos Sete Reinos, os Lannister pressionam os Stark. No norte, com seu pai preso em Porto Real, Robb reúne todos os vassalos e marcha para o sul na direção da guerra. Sansa implora pela vida de Ned a Joffrey. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '9', 'Baelor', 'Eddard Stark, aprisionado e acusado de traição, toma uma fatídica decisão. Sua esposa Catelyn negocia com o traiçoeiro Lorde Walder Frey, e seu filho Robb luta sua primeira batalha contra os Lannister. Enquanto isso, Jon descobre um segredo sobre Meistre Aemon, e Daenerys se posiciona contra Qotho. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '10', 'Fire and Blood', 'Com as trágicas notícias da morte de Ned se espalhando pelos Sete Reinos, Bran e Rickon Stark compartilham uma visão. Enquanto isso, Catelyn pressiona Jaime Lannister sobre a queda de seu filho; Tyrion vai para o Sul depois de uma decisão surpreendente de seu pai; Arya tenta escapar de Porto Real; Jon enfrenta uma difícil escolha na Patrulha da Noite e Daenerys sofre um terrível revés porém encontra novas esperanças. ', '60');
+
+/*T02*/
+INSERT INTO episodioSerie VALUES('50001', '2', '1', 'The North Remembers', 'Enquanto Robb Stark e seu exército continuam a guerra contra os Lannister, Tyrion chega em Porto Real para aconselhar e acalmar os nervos de Joffrey. Na ilha de Pedra do Dragão, Stannis Baratheon planeja uma invasão para conquistar o trono de seu falecido irmão, se aliando com Melisandre, uma estranha sacerdotisa de um estranho deus. Do outro lado do mar, Daenerys, seus três dragões e seu khalasar viajam pelo Deserto Vermelho à procura de aliados, ou água. No Norte, Bran preside uma tediosa Winterfell, enquanto que além da Muralha, Jon Snow e a Patrulha da Noite devem se proteger dos perigosos selvagens. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '2', 'The Night Lands', 'Na iminência de um banho de sangue na capital, Tyrion culpa Cersei por alienar os suditos do rei. Na estrada para o Norte, Arya conta um segredo a Gendry, um recruta da Patrulha da Noite. Com seus suprimentos se esgotando, os batedores de Dany voltam com novas notícias. Depois de nove anos sob tutela dos Stark, Theon Greyjoy se reencontra com seu pai, Balon, que deseja reinstaurar o Reino das Ilhas de Ferro. Davos Seaworth recruta Salladhor Saan, um pirata, para que ele se una a Stannis e Melisandre e faça parte de uma invasão naval à Porto Real. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '3', 'What Is Dead May Never Die', 'Na Fortaleza Vermelha, Tyrion arma três alianças com promessas de casamento. Catelyn chega ao acampamento de Renly para forjar sua própria aliança, porém o Rei, sua esposa Margaery Tyrell e Sor Loras Tyrell têm outros planos. Em Winterfell, Meistre Luwin tenta decifrar os sonhos de Bran. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '4', 'Garden of Bones', 'Joffrey pune Sansa pelas vitórias de Robb, enquanto Tyrion e Bronn tentam atenuar a crueldade do rei. Catelyn implora para que Stannis e Renly deixem de lado suas ambições e se unam contra os Lannister. Dany e seu exausto khalasar chegam em Qarth, um próspera cidade com fortes muralhas e governantes que a recebem do lado de fora. Tyrion faz com que um homem da Rainha se torne seus "olhos e ouvidos". Arya e Gendry são levados a Harrenhal, onde suas vidas ficam à mercer dA Montanha, Gregor Clegane. Davos deve voltar a suas origens para levar Melisandre a uma cova secreta. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '5', 'The Ghost of Harrenhal', 'O fim da rivalidade entre os Baratheon faz Catelyn fugir e Mindinho agir. Em Porto Real, a fonte de Tyrion lhe fala sobre a falha na estratégia de defesa de Joffrey e sobre uma misteriosa arma. Theon viaja para a Costa Pedregosa para se provar como um verdadeiro Homem de Ferro. Em Harrenhal, Arya recebe uma promessa de Jaqen Hghar, um dos três prisioneiros que ela salvou dos Mantos Dourados. A Patrulha da Noite chega no Punho dos Primeiros Homens, uma antiga fortaleza onde eles esperam conter o avanço do exército selvagem. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '6', 'The Old Gods and the New', 'Theon completa seu golpe de mestre. Em Porto Real, os Lannister enviam Myrcella para longe do perigo no último segundo. Arya fica cara a cara com uma visita surpresa; Daenerys jura conseguir o que é seu por direito; Robb e Catelyn recebem notícias importantes, e Qhorin dá a Jon uma chance para se provar. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '7', 'A Man Without Honor', 'Jaime se encontra com um parente distante; Daenerys recebe um convite para entrar na Casa dos Imortais; Theon lidera uma equipe de busca; Jon se perde no meio de uma região selvagem, e Cersei aconselha Sansa. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '8', 'The Prince of Winterfel', 'Em Winterfell, Theon recebe uma visita e mantém controle do forte. Arya pede o pagamento de sua dívida final com Jaqen Hghar de um modo que o desagrada. Robb é traído. Tyrion e Varys encontram algo em comum entre eles. Daenerys ignora os conselhos de Sor Jorah. Stannis e Davos se aproximam de seu destino, com o Cavaleiro das Cebolas recebendo uma recompensa.', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '9', 'Blackwater', 'Tyrion e os Lannister lutam por suas vidas quando a frota de Stannis ataca Porto Real. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '10', 'Valar Morghulis', 'Tyrion acorda em uma situação diferente. O Rei Joffrey entrega prêmios aos seus vassalos. Enquanto Theon prepara seus homens para lutar, Meistre Luwin lhe oferece um último conselho. Brienne silencia Jaime, Arya recebe um presente de Jaqen, Daenerys vai à um lugar desconhecido e Jon prova-se para Qhorin. ', '60');
+
+/*T03*/
+INSERT INTO episodioSerie VALUES('50001', '3', '1', 'Valar Dohaeris', 'Jon é levado até Mance Rayder, o Rei-para-lá-da-Muralha, enquanto os sobreviventes da Patrulha da Noite fogem para o sul. Em Porto Real, Tyrion pede sua recompensa. Mindinho oferece a Sansa um jeito de fugir. Cersei organiza um jantar para a família real, e Daenerys navega para a Baía dos Escravos. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '2', 'Dark Wings, Dark Words', 'Arya encontra a Irmandade sem Estandartes, enquanto seu irmão Bran cruza caminho com uma misteriosa dupla de seguidores. Jaime e Brienne continuam sua viagem à Porto Real, enquanto que a própria capital recebe a famosa Olenna Tyrell, a Rainha dos Espinhos, que convida Sansa para um almoço. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '3', 'Walk of Punishment', 'Tyrion recebe novas responsabilidades. Jon é levado de volta ao Punho dos Primeiros Homens. Daenerys conhece o exército escravo. Jaime faz um acordo com seus captores. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '4', 'And Now His Watch Is Ended', 'A Patrulha da Noite faz um balanço da situação. Varys encontra uma superior. Arya é levada perante o líder da Irmandade sem Estandartes. Daenerys troca uma corrente por um chicote.', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '5', 'Kissed by Fire', 'Cão de Caça é julgado pelos deuses, e Jaime é julgado pelos homens. Jon prova-se para os selvagens. Robb é traído. Tyrion descobre o custo dos casamentos. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '6', 'The Climb', 'Tywin planeja uniões estratégicas para os Lannister. Melisandre visita as Terras Fluviais. Robb considera um acordo para reparar sua aliança com a Casa Frey. Roose Bolton decide o que fazer com Jaime. Jon, Ygritte e os selvagens enfrentam uma longa e perigosa escalada. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '7', 'The Bear and the Maiden Fair', 'Daenerys troca presentes com um mestre de escravos do lado de fora de Yunkai. Enquanto Sansa pensa sobre seu futuro, Shae irrita-se com a nova situação de Tyrion. Tywin aconselha o rei, e Melisandre revela um segredo a Gendry. Brienne enfrenta um grande adversário em Harrenhal. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '8', 'Second Sons', 'Um casamento é realizado em Porto Real, e Tyrion e Sansa passam a noite juntos. Daenerys encontra o Bastardo de Titã. Davos exige provas de Melisandre. Sam e Gilly encontram-se com um caminhante branco. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '9', 'The Rains of Castamere', 'Robb se apresenta para Walder Frey e Edmure conhece sua noiva. Jon passa por sua provação mais difícil. Bran descobre um novo dom. Daario e Sor Jorah discutem a melhor maneira de tomar Yunkai. A Casa Frey se junta a Casa Tully. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '10', 'Mhysa', 'Joffrey desafia Tywin. Bran conta uma história de fantamas. Em Pedra do Dragão, a justiça vem de um lugar estranho. Daenerys tenta descobrir se é uma conquistadora ou uma libertadora enquanto é aclamada como "Mysha" (mãe) pelo exército de escravos libertos. ', '60');
+
+/*T04*/
+INSERT INTO episodioSerie VALUES('50001', '4', '1', 'Two Swords', 'Tyrion recebe um convidado em Porto Real. Em Castelo Negro, Jon Snow percebe que não é mais bem-vindo. Daenerys parte para Meereen, a principal cidade escravagista de Essos. Arya encontra alguém do seu passado. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '2', 'The Lion and the Rose', 'Tyrion ajuda Jaime. Joffrey e Margaery se casam. Em Pedra do Dragão, Stannis perde a paciência com Sor Davos. Ramsay Snow encontra um objetivo para seu novo "animal de estimação". Ao norte da Muralha, Bran vê para onde precisa ir. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '3', 'Breaker of Chains', 'Tyrion considera suas opções e Tywin estende um ramo de oliveira. Sam percebe que Castelo Negro não é seguro, e Jon propõe um plano ousado. Cão de Caça ensina a Arya como as coisas realmente são. Daenerys escolhe seu campeão. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '4', 'Oathkeeper', 'Daenerys equilibra justiça e piedade. Jaime encarrega Brienne com sua honra. Jon consegue voluntários enquanto Bran, Jojen, Meera e Hodor encontram um abrigo. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '5', 'First of His Name', 'Cersei e Tywin planejam o próximo movimento da coroa. Daenerys discute seus planos para o futuro. Jon parte em uma missão para a Fortaleza de Craster. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '6', 'The Laws of Gods and Men', 'Stannis e Davos partem de Pedra do Dragão com uma nova estratégia. Daenerys se encontra com suplicantes. Tyrion confronta seu pai na Sala do Trono. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '7', 'Mockingbird', 'Tyrion recebe a ajuda de um aliado inesperado. Daario Naharis pede para que Daenerys deixe ele fazer o que faz de melhor. Os avisos de Jon sobre a vulnerabilidade da Muralha não são ouvidos. Brienne e Podrick seguem uma nova pista na estrada. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '8', 'The Mountain and the Viper', 'Visitantes inesperados chegam em Vila Toupeira; as motivações de Mindinho são questionadas; Ramsay Snow tenta provar-se para seu pai e o destino de Tyrion é decidido.', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '9', 'The Watchers on the Wall', 'Jon Snow e a Patrulha da Noite enfrentam um enorme desafio. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '10', 'The Children', 'As circunstâncias mudam depois de uma chegada inesperada vinda do norte da Muralha; Daenerys precisa enfrentar duras realidades; Bran descobre mais sobre seu destino e Tyrion enfrenta a verdade sobre sua situação. ', '60');
+
+/*T05*/
+INSERT INTO episodioSerie VALUES('50001', '5', '1', 'The Wars to Come', 'Cersei e Jaime se ajustam a um mundo sem o pai, Tywin. Enquanto isso, Tyrion e Varys chegam a Pentos. Em Meereen, Daenerys descobre que seu governo na cidade requer duros sacrifícios. Jon Snow é pego em um dilema entre a Guarda da Noite e as demandas de Stannis Baratheon, que se auto-intitula o legitimo rei de Westeros. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '2', 'The House of Black and White', 'Arya chega a Braavos e inicia sua busca ao Homem Sem-Face que conheceu em Westeros. Jamie Lannister sai em uma missão secreta. Ellaria Sand busca vingança pela morte de Oberyn, junto às Serpentes de Areia. Stannis faz uma oferta generosa a Jon Snow, ao mesmo tempo em que a Guarda da Noite precisa escolher um novo Lorde Comandante. Daerenys enfrenta uma nova decisão difícil, que precisa ser tomada. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '3', 'High Sparrow', 'Arya enfrenta problemas para se adaptar à nova vida onde precisa enterrar seu passado. Littlefinger revela seus planos de casamento para Sansa. Jon Snow começa suas primeiras ordens como Lorde Comandante da Guarda da Noite com firmeza. Tyrion e Varys chegam a Volantis. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '4', 'Sons of the Harpy', 'Em Porto Real, a Fé Militante está ficando cada vez mais agressiva e Cersei parece saber como tirar proveito disso. Jaime e Bronn partem para o sul, para resgatar Myrcella em Dorne. Ellaria e as Serpentes de Areia juram vingança mesmo que isso signifique guerra. Em Mereen, os Filhos da Harpia atacam e surpreendem alguns Imaculados. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '5', 'Kill the Boy', 'Em Meereen, Daerenys resolve agir com autoridade e toma uma decisão difícil para tentar unificar seu reinado. Na muralha, Jon Snow resolve recrutar um aliado inesperado e controverso. Brienne chega a Winterfell e inicia sua guarda silenciosa. Ramsay reforça seu controle sobre Theon para Sansa. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '6', 'Unbowed, Unbent, Unbroken', 'Arya segue seu treinamento em Bravos. Jorah e Tyrion se deparam com mestres de escravos. Em Dorne, Trystane Martell e Myrcella Lannister fazem planos para o futuro enquanto Jaime e Bronn chegam ao seu destino, onde as As Serpentes de Areia atacam. Em Winterfell, Ramsay estupra Sansa em sua noite de núpcias enquanto Fedor assiste, num dos mais controversos momentos da trama. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '7', 'The Gift', 'Jon Snow inicia sua tragetória rumo às terras selvagens e sua ausência será perigosa para Sam. Sansa tenta se comunicar com Theon, mas descobre que ele ainda é leal a Ramsay. Brienne mantém sua guarda e espera por um sinal para agir. Stannis permanece obstinado rumo a Winterfell, mas a situação de seu exército fica cada vez pior diante do inverno que se aproxima. Jaime tenta se reconectar com Myrcella, que parece ter se afeiçoado muito com Dorne no período que se passou. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '8', 'Hardhome', 'Jon Snow viaja pelo norte extremo em busca do povo livre, chegando a Durolar, mas convencê-los a ir com ele não é nada fácil. Sansa confronta um antigo aliado e descobre algo importante sobre sua família. Cersei não admite sua nova situação e luta pela liberdade. Arya faz progresso durante seu treinamento em Bravos. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '9', 'The Dance of Dragons', 'Jon Snow retorna à Muralha sob olhares de desaprovação. Quando Mace Tyrell visita o Banco de Ferro em Bravos, levando alguns guardas consigo, Arya acaba reencontrando alguém de sua lista. Stannis enfrenta muitas dificuldades esperando a nevasca diminuir, e acaba tomando a mais difícil das decisões. Daenerys assiste a um tradicional torneio na Arena de Dasnak, mas nem esta tentativa de aceitar as antigas tradições da cidade de Mereen a livra dos perigos contra seu reinado. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '10', 'Mother s Mercy', 'Sam, Gilly e o bebé partem para Vilavelha para que Sam se torne um maester. A nevasca diminui e Stannis continua sua marcha. Após escapar dos perigos recentes, Daenerys é cercada de estranhos. Cersei é confrontada pelo Alto Pardal com a possibilidade de perdão. Myrcella diz a Jaime que sabe que é a sua filha, e morre de envenenamento (pelo beijo de Ellaria) pouco depois. Arya mata Meryn Trant, usando uma das máscaras do Deus de Muitas Caras. Jon Snow é ferozmente desafiado pelos guardas da Patrulha da Noite que não concordam com suas decisões recentes. ', '60');
+
+/*T06*/
+INSERT INTO episodioSerie VALUES('50001', '6', '1', 'The Red Woman', 'Jon Snow está morto. Sansa e Theon escapam ilesos de Winterfel e são encontrados por Brienne. Daenerys encontra-se com Khal Moro. As Serpentes da Areia conspiram contra Doran Martell e sua linhagem. Davos Seaworth se rebela contra a Guarda da Noite. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '2', 'Home', 'Bran treina com o Corvo de Três Olhos. Em Porto Real, Jaime aconselha Tommen. Tyrion exige boas notícias, mas terá que fazê-las por si mesmo. Em Castelo Negro, a Patrulha da Noite apoia Thorne. Ramsay Bolton propõe um plano, e Balon Greyjoy cogita outras propostas. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '3', 'Oathbreaker', 'Daenerys se depara com o futuro, e Bran, com o passado. Tommen enfrenta o Alto Pardal. Arya treina para se tornar Ninguém. Varys encontra uma resposta. Ramsay recebe um presente. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '4', 'Book of the Stranger', 'Tyrion sela um acordo. Jorah e Daario realizam uma tarefa difícil. Jaime e Cersei tentam melhorar sua situação. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '5', 'The Door', 'Tyrion procura um aliado estranho. Bran descobre algo importante. Brienne sai em uma missão. Arya ganha uma chance de provar a si mesma. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '6', 'Blood of My Blood', 'Um velho inimigo está de volta. Gilly se reúne a família de Sam. Arya enfrenta uma escolha difícil. Jaime enfrenta o Alto Pardal. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '7', 'The Broken Man', 'Um mercenário está de volta. Margaery convence Olenna Tyrell voltar para Highgarden. Sansa e Jon procuram aliados. Jaime confronta Peixe Negro. Theon navega em direção à Baía dos Escravos. Arya cogita voltar para casa. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '8', 'No One', 'Cercei escolhe violência. Brienne e Jaime se reencontram. Os planos de Tyrion começam a dar frutos. Arya enfrenta um novo teste. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '9', 'The Battle of the Bastards', 'Daenerys reestabelece a paz em Meeren. Em Westeros, dois bastardos nortenhos se enfrentam no campo de batalha. Sansa tem uma carta na manga. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '10', 'The Winds of Winter', 'Cersei e Loras enfrentam seus julgamentos. Arya aprimora seus dotes culinários. Mindinho tenta persuadir Sansa. Bran descobre um segredo. Jon e Tyrion recebem novos títulos. Varys oferece fogo e sangue. Daenerys volta para casa. ', '60');
+
+
+/*Episódios South Park, um por temporada*/
+INSERT INTO episodioSerie VALUES('50004', '1', '1', 'Cartman Gets an Anal Probe', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '2', '1', 'Terrance and Phillip in Not Without My Anus', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '3', '1', 'Rainforest Schmainforest', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '4', '1', 'The Tooth Fairy’s Tats', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '5', '1', 'It Hits the Fan', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '6', '1', 'Jared Has Aides', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '7', '1', 'Cancelled', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '8', '1', 'Good Times With Weapons', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '9', '1', 'Mr. Garrison s Fancy New Vagina', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '10', '1', 'The Return of Chef', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '11', '1', 'With Apologies to Jesse Jackson', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '12', '1', 'Tonsil Trouble', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '13', '1', 'The Ring', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '14', '1', 'Sexual Healing', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '15', '1', 'Human Centipad', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '16', '1', 'Reverse Cowgirl', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '17', '1', 'Let Go, Let Gov', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '18', '1', 'Go Fund Yourself', '', '22');
+
+
+/*Episódios de True Detective*/
+/*T01*/
+INSERT INTO episodioSerie VALUES('50002', '1', '1', 'The Long Bright Dark', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '2', 'Seeing Things', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '3', 'The Locked Room', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '4', 'Who Goes There', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '5', 'The Secret Fate of All Life', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '6', 'Haunted Houses', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '7', 'After You ve Gone', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '8', 'Form and Void', '', '60');
+/*T02*/
+INSERT INTO episodioSerie VALUES('50002', '2', '1', 'The Western Book of the Dead', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '2', 'Night Finds You', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '3', 'Maybe Tomorrow', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '4', 'Down Will Come', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '5', 'Other Lives', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '6', 'Church in Ruins', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '7', 'Black Maps and Motel Rooms', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '8', 'Omega Station', '', '60');
+
+
+/*Episódios de Black Mirror*/
+/*T01*/
+INSERT INTO episodioSerie VALUES('50003', '1', '1', 'Hino Nacional', 'O Primeiro-Ministro Michael Callow enfrenta um chocante dilema quando a amada princesa Susannah é raptada.', '44');
+INSERT INTO episodioSerie VALUES('50003', '1', '2', 'Quinze Milhões de méritos', 'Após fracassar em um concurso como cantora, uma mulher tem que escolher entre praticar atos humilhantes ou voltar a viver praticamente como uma escrava.', '61');
+INSERT INTO episodioSerie VALUES('50003', '1', '3', 'Toda a sua história', 'No futuro, todos tem acesso a um implante de memória que grava tudo que os seres humanos fazem, veem e ouvem.', '48');
+/*T02*/
+INSERT INTO episodioSerie VALUES('50003', '2', '1', 'Volto já', 'Martha encontra o seu falecido amante através de um novo serviço que permite que as pessoas mantenham contato com os mortos.', '48');
+INSERT INTO episodioSerie VALUES('50003', '2', '2', 'Urso Branco', 'Victoria acorda e não se lembra de nada da sua vida. Todos que encontra se recusam a falar com ela.', '42');
+INSERT INTO episodioSerie VALUES('50003', '2', '3', 'Momento Waldo', 'Um comediante fracassado que dubla um urso animado se envolve em uma trama política quando seu personagem se candidata a um cargo público.', '43');
+
+
+/*Episodios de O Grande Gonzalez*/
+INSERT INTO episodioSerie VALUES('50005', '1', '1', 'O Palhaço', 'Durante uma festa infantil, o mágico “Grande Gonzalez” morre tragicamente na frente de 30 crianças enquanto tentava realizar um arriscado truque. O que parecia um acidente, logo se revela uma suspeita de assassinato. Agora, a polícia terá que investigar o submundo das festas infantis e, entre cachorros quentes e algodões doces, descobrir o verdadeiro culpado.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '2', 'O Outro Mágico', 'As investigações continuam e, para surpresa da polícia, Gonzalez não era o único mágico naquela festa. Agora novas perguntas surgem para o caso: Quem é o segundo mágico misterioso que abusa do laquê e por que ele foi chamado para a festa?', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '3', 'O Dono da Casa de Festas', 'Gonzalez era um mágico medíocre, mas com um enorme talento para fazer inimigos. Além de traumatizar 30 crianças morrendo na frente delas, o mágico também causou nos bastidores da festinha. Neste episódio, os policiais interrogarão o dono da casa de festas, que parece ter motivos de sobra para ter acabado com a farra do nosso anti-herói.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '4', 'O Cameraman', 'As circunstâncias em torno da morte do Grande Gonzalez seguem nebulosas. De nada serviram as testemunhas já interrogadas. Pelo contrário, elas tumultuaram ainda mais a já caótica investigação. Porém, surge uma linha de investigação que pode ajudar a polícia a solucionar o caso. Agora, quem sabe, os policiais terão uma chance de desvendar essa tragédia, ou de aprenderem um pouco mais sobre a prática do bodyboard na República Tcheca.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '5', 'A Assistente de Palco', 'Na maioria dos casos, assassinatos são frutos de crimes passionais. E é por esse caminho que a polícia decide seguir. Afinal, são poucas situações onde casais conseguem misturar a vida afetiva e profissional sem um querer matar o outro. Mas como toda femme fatale, a namorada de Gonzalez esconde um segredo que pode mudar o rumo do caso.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '6', 'A Madrasta', 'Em toda investigação a polícia sempre encontra um suspeito que apresenta o maior desafio. Nesse caso, a madrasta do aniversariante. Fria, calculista e com um passado obscuro, ela se apresenta como o maior enigma para os policiais. E se tratando dela, apenas uma coisa é certa: seu mistério é proporcional ao seu apetite e voracidade sexual.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '7', 'Gonzalez', 'Aparentemente, o Grande Gonzalez também guardava um segredo revelador. A investigação ganha contornos dramáticos com a chegada de uma figura polêmica e de aparência familiar. Seu depoimento e passado em comum com Gonzalez jogam uma nova e inesperada luz sobre o caso, escancarando as entranhas do mundo secreto da mágica infantil.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '8', 'O Pai', 'Se em toda investigação há uma figura tenebrosa, há também uma bucha. Um homem fraco e submisso à sua mulher. O problema é que além disso, ele criou um mundo imaginário para se refugiar da sua realidade decepcionante. Cabe aos policiais administrar o interrogatório e arrancar dele o que conseguirem, sem derreter seu emocional fragilizado.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '9', 'A Volta do Palhaço', 'Após novas descobertas e algumas reviravoltas, um dos suspeitos é novamente chamado para depor e esclarecer “pequenas” omissões do seu primeiro interrogatório. Porém, o que parecia ser só um mal-entendido logo torna-se mais uma declaração bombástica com potencial de (novamente) mudar os rumos da investigação.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '10', 'A Reconstituição', 'É chegada a hora derradeira! A temida reconstituição dos fatos. A polícia espera que a encenação do caso ajude a finalmente esclarecer o mistério que a cada passo só se torna mais rocambolesco. Mas se há algo que aprendemos nessa investigação, é que nada é tão fácil e simples como parece. Será que a acareação responderá as perguntas em aberto ou a morte do Gonzalez será só mais um caso arquivado e sem solução? Cabe aos policias dar sentido a essa tragédia.', '30');
+
+
+/*Episódios de Justiça*/
+INSERT INTO episodioSerie VALUES('50006', '1', '1', 'Cap01', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '2', 'Cap02', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '3', 'Cap03', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '4', 'Cap04', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '5', 'Cap05', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '6', 'Cap06', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '7', 'Cap07', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '8', 'Cap08', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '9', 'Cap09', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '10', 'Cap10', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '11', 'Cap11', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '12', 'Cap12', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '13', 'Cap13', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '14', 'Cap14', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '15', 'Cap15', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '16', 'Cap16', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '17', 'Cap17', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '18', 'Cap18', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '19', 'Cap19', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '20', 'Cap20', '', '45');
+
+
+/*Episódios de Breaking Bad*/
+/*T01*/
+INSERT INTO episodioSerie VALUES('50007', '1', '1', 'Piloto', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '2', 'Ressurreição', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '3', 'Dúvida', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '4', 'Homem com Câncer', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '5', 'Matéria Cinzenta', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '6', 'O Grande Blefe', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '7', 'Um Trato Sem Dificuldades', '', '47');
+/*T02*/
+INSERT INTO episodioSerie VALUES('50007', '2', '1', 'Seven Thirty-Seven', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '2', 'Grilled', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '3', 'Bit by a Dead Bee', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '4', 'Down', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '5', 'Breakage', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '6', 'Peekaboo', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '7', 'Negro y Azul', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '8', 'Better Call Saul', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '9', '4 Days Out', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '10', 'Over', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '11', 'Mandala', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '12', 'Phoenix', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '13', 'ABQ', '', '47');
+/*T03*/
+INSERT INTO episodioSerie VALUES('50007', '3', '1', 'No Más', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '2', 'Caballo sin Nombre', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '3', 'I.F.T.', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '4', 'Green Light', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '5', 'Más', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '6', 'Sunset', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '7', 'One Minute', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '8', 'I See You', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '9', 'Kafkaesque', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '10', 'Fly', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '11', 'Abiquiu', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '12', 'Half Measures', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '13', 'Full Measure', '', '47');
+/*T04*/
+INSERT INTO episodioSerie VALUES('50007', '4', '1', 'Box Cutter', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '2', 'Thirty-Eight Snub', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '3', 'Open House', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '4', 'Bullet Points"', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '5', 'Shotgun', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '6', 'Cornered', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '7', 'Problem Dog"', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '8', 'Hermanos', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '9', 'Bug', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '10', 'Salud', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '11', 'Crawl Space', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '12', 'End Times', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '13', 'Face Off', '', '47');
+/*T05*/
+INSERT INTO episodioSerie VALUES('50007', '5', '1', 'Live Free or Die', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '2', 'Madrigal', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '3', 'Hazard Pay', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '4', 'Fifty-One', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '5', 'Dead Freight', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '6', 'Buyout', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '7', 'Say My Name', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '8', 'Gliding Over All', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '9', 'Blood Money', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '10', 'Buried', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '11', 'Confessions', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '12', 'Rabid Dog', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '13', 'To hajiilee', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '14', 'Ozymandias', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '15', 'Granite State', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '16', 'Felina', '', '47');
+
+
+
+/*Exibição série*/
+/*Game of Thrones todo dia a partir de primeiro de Janeiro de 2017, cada episódio passando da meia noite até a uma, e depois das duas as três*/
+INSERT INTO exibicaoSerie VALUES('50001', '1', '1', TO_DATE('01.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '1', TO_DATE('01.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '2', TO_DATE('02.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '2', TO_DATE('02.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '3', TO_DATE('03.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '3', TO_DATE('03.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '4', TO_DATE('04.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '4', TO_DATE('04.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '5', TO_DATE('05.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '5', TO_DATE('05.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '6', TO_DATE('06.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '6', TO_DATE('06.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '7', TO_DATE('07.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '7', TO_DATE('07.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '8', TO_DATE('08.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '8', TO_DATE('08.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '9', TO_DATE('09.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '9', TO_DATE('09.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '10', TO_DATE('10.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '10', TO_DATE('10.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '2', '1', TO_DATE('11.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '1', TO_DATE('11.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '2', TO_DATE('12.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '2', TO_DATE('12.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '3', TO_DATE('13.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '3', TO_DATE('13.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '4', TO_DATE('14.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '4', TO_DATE('14.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '5', TO_DATE('15.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '5', TO_DATE('15.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '6', TO_DATE('16.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '6', TO_DATE('16.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '7', TO_DATE('17.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '7', TO_DATE('17.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '8', TO_DATE('18.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '8', TO_DATE('18.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '9', TO_DATE('19.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '9', TO_DATE('19.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '10', TO_DATE('20.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '10', TO_DATE('20.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '3', '1', TO_DATE('21.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '1', TO_DATE('21.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '2', TO_DATE('22.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '2', TO_DATE('22.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '3', TO_DATE('23.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '3', TO_DATE('23.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '4', TO_DATE('24.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '4', TO_DATE('24.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '5', TO_DATE('25.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '5', TO_DATE('25.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '6', TO_DATE('26.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '6', TO_DATE('26.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '7', TO_DATE('27.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '7', TO_DATE('27.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '8', TO_DATE('28.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '8', TO_DATE('28.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '9', TO_DATE('29.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '9', TO_DATE('29.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '10', TO_DATE('30.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '10', TO_DATE('30.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '4', '1', TO_DATE('31.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '1', TO_DATE('31.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '2', TO_DATE('01.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '2', TO_DATE('01.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '3', TO_DATE('02.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '3', TO_DATE('02.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '4', TO_DATE('03.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '4', TO_DATE('03.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '5', TO_DATE('04.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '5', TO_DATE('04.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '6', TO_DATE('05.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '6', TO_DATE('05.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '7', TO_DATE('06.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '7', TO_DATE('06.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '8', TO_DATE('07.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '8', TO_DATE('07.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '9', TO_DATE('08.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '9', TO_DATE('08.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '10', TO_DATE('09.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '10', TO_DATE('09.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '5', '1', TO_DATE('10.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '1', TO_DATE('10.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '2', TO_DATE('11.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '2', TO_DATE('11.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '3', TO_DATE('12.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '3', TO_DATE('12.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '4', TO_DATE('13.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '4', TO_DATE('13.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '5', TO_DATE('14.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '5', TO_DATE('14.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '6', TO_DATE('15.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '6', TO_DATE('15.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '7', TO_DATE('16.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '7', TO_DATE('16.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '8', TO_DATE('17.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '8', TO_DATE('17.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '9', TO_DATE('18.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '9', TO_DATE('18.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '10', TO_DATE('19.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '10', TO_DATE('19.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '6', '1', TO_DATE('20.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '1', TO_DATE('20.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '2', TO_DATE('21.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '2', TO_DATE('21.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '3', TO_DATE('22.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '3', TO_DATE('22.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '4', TO_DATE('23.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '4', TO_DATE('23.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '5', TO_DATE('24.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '5', TO_DATE('24.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '6', TO_DATE('25.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '6', TO_DATE('25.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '7', TO_DATE('26.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '7', TO_DATE('26.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '8', TO_DATE('27.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '8', TO_DATE('27.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '9', TO_DATE('28.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '9', TO_DATE('28.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '10', TO_DATE('01.03.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '10', TO_DATE('01.03.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+/*Exibição de episodios de O Grande Gonzalez em Sábados às 16h30min a partir de 2 de julho de 2016*/
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('02.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '4');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('09.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '4');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('16.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('23.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('30.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('13.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('20.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '1');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('27.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('03.09.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('10.09.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '5');
