@@ -213,24 +213,6 @@
    CONSTRAINT CH_TRABALHO1 CHECK (dataFimTr > dataInicioTr)
      
  );
- 
-     
-  /**
-   *Tabela filme
-   * @idPr,         chave primaria
-   * @tituloPr
-   * @descricaoPr
-   * @idDe
-   * @producaoNacionalEn
-   * @anoLancamentoFi
-   * @duracaoFi     n˙mero em minutos
-   * @generoFi
-   * @PK_FILME      restricao de chave primaria
-   * @FK_FILME1     restricao de chave estrangeira com a tabela departamento, ao ser removido o departamento a tupla n„o deve ser removida
-   * @CH_FILME      checa se o ano de lanÁamento do filme È entre 1895 e o ano atual
-   * @CH_FILME1     checa se a duraÁ„o do filme n„o È negativa
-   * @CH_FILME2     checa se a opÁ„o de se È ou n„o filme nacional est· como 'SIM' ou 'N√O'.
-   */
    
    /**
    *Tabela filme
@@ -557,7 +539,7 @@ drop table exibicaoComercial cascade constraints;
  );
 
  
-/**
+/** Tabela de novela
   * @idPr
   * @tituloPr
   * @descricaoPr
@@ -583,7 +565,7 @@ drop table exibicaoComercial cascade constraints;
  
 
 /**
-  *Tabela de epsiodios da novela
+  *Tabela de episodios da novela
   * @idPr
   * @nroEpNo
   * @resumoEpNo
