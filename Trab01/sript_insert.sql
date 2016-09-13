@@ -1047,6 +1047,7 @@ INSERT INTO episodioNovela VALUES ('3888', '47','Rubião prende Joaquina em casa
 INSERT INTO episodioNovela VALUES ('3888', '48','Joaquina (Andreia Horta) descobre outras maldades de Rubião (Mateus Solano). Anita (Joana Solnado) leva a filha de Tiradentes ao sótão para mostrar o ouro roubado e desaparecido da família da revolucionária. Joaquina fuge da casa de Rubião. É neste capítulo também que Mão de Luva (Marco Ricca) se declara para Dionísia (Maitê Proença). O bandido enche a casa de flores e deixa a tia de Joaquina encantada. André (Caio Blat) e Otto discutem por causa de Tolentino (Ricardo Pereira). Ventura (Vitor Thirré) decide fugir com Bertoleza (Sheron Menezzes) para Portugal, mas esbarram em Anita.', '50')
 INSERT INTO episodioNovela VALUES ('3888', '49','No penúltimo capítulo de Liberdade, Liberdade Rubião manda prender André, e quem cumpre a ordem é Tolentino, com quem o irmão de Joaquina teve um caso de amor. Otto é morto. Na cadeia com Xavier, André descobre que os dois serão levados à forca. Xavier faz de tudo para salvar André. Joaquina, Virgínia e Mão de Luva lideram a invasão a Vila Rica. Joaquina fica na mira de Rubião.', '50')
 INSERT INTO episodioNovela VALUES ('3888', '50','O último capítulo é marcado pela morte de Tolentino. Rubião também não resiste e Anita é revelada como a assassina do vilão. Joaquina é levada à forca. A filha de Tiradentes escapa da morte e vai para Portugal ao lado de Xavier, seu grande amor.', '50')
+INSERT INTO episodioNovela VALUES ('3888', '51','(Reexibicao do ultimo capitulo) O último capítulo é marcado pela morte de Tolentino. Rubião também não resiste e Anita é revelada como a assassina do vilão. Joaquina é levada à forca. A filha de Tiradentes escapa da morte e vai para Portugal ao lado de Xavier, seu grande amor.', '50')
 
 /**
   * Tabela de exibicao de novela
@@ -1070,24 +1071,66 @@ INSERT INTO exibicaoNovela VALUES ('34567', '82', ('11.08.2016', 'DD.MM.YYYY'), 
 INSERT INTO exibicaoNovela VALUES ('34567', '83', ('12.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '11,5')
 INSERT INTO exibicaoNovela VALUES ('34567', '84', ('13.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '12,3')
 
-
 --exibicao de sol nascente
-INSERT INTO exibicaoNovela VALUES ('30008', '01', ('29.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '01', ('29.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,6')
 INSERT INTO exibicaoNovela VALUES ('30008', '02', ('30.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '03', ('31.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '04', ('01.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '05', ('02.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '06', ('03.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '03', ('31.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,9')
+INSERT INTO exibicaoNovela VALUES ('30008', '04', ('01.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,6')
+INSERT INTO exibicaoNovela VALUES ('30008', '05', ('02.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,1')
+INSERT INTO exibicaoNovela VALUES ('30008', '06', ('03.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,0')
 
-INSERT INTO exibicaoNovela VALUES ('30008', '07', ('04.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '08', ('05.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '09', ('06.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '10', ('07.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '11', ('08.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '12', ('09.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '07', ('04.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '15,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '08', ('05.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,9')
+INSERT INTO exibicaoNovela VALUES ('30008', '09', ('06.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,5')
+INSERT INTO exibicaoNovela VALUES ('30008', '10', ('07.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,0')
+INSERT INTO exibicaoNovela VALUES ('30008', '11', ('08.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '15,5')
+INSERT INTO exibicaoNovela VALUES ('30008', '12', ('09.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '15,6')
 
 --exibicao de velho chico
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('29.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,3')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('29.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,9')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('30.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,3')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('31.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,3')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('01.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,0')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('02.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,9')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('03.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,8')
+
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('04.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,5')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('05.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,3')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('06.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,6')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('07.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,9')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('08.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,0')
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('09.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,9')
+
+--exibicao de liberdade, liberdade
+INSERT INTO exibicaoNovela VALUES ('38888', '43', ('03.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,9')
+INSERT INTO exibicaoNovela VALUES ('38888', '44', ('03.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,9')
+INSERT INTO exibicaoNovela VALUES ('38888', '45', ('04.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,1')
+INSERT INTO exibicaoNovela VALUES ('38888', '46', ('05.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,2')
+INSERT INTO exibicaoNovela VALUES ('38888', '47', ('06.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '22,9')
+
+INSERT INTO exibicaoNovela VALUES ('38888', '48', ('09.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,0')
+INSERT INTO exibicaoNovela VALUES ('38888', '49', ('10.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,8')
+INSERT INTO exibicaoNovela VALUES ('38888', '50', ('11.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,3')
+INSERT INTO exibicaoNovela VALUES ('38888', '51', ('12.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '22,9')
+
+--reexibicao de liberdade, liberdade
+INSERT INTO exibicaoNovela VALUES ('38888', '43', ('01.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
+INSERT INTO exibicaoNovela VALUES ('38888', '44', ('02.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
+INSERT INTO exibicaoNovela VALUES ('38888', '45', ('03.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
+INSERT INTO exibicaoNovela VALUES ('38888', '46', ('04.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
+INSERT INTO exibicaoNovela VALUES ('38888', '47', ('05.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
+
+INSERT INTO exibicaoNovela VALUES ('38888', '48', ('08.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
+INSERT INTO exibicaoNovela VALUES ('38888', '49', ('09.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
+INSERT INTO exibicaoNovela VALUES ('38888', '50', ('10.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
+INSERT INTO exibicaoNovela VALUES ('38888', '51', ('11.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
+
+
+
+
+
+
+
 
   
   
