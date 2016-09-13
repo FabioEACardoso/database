@@ -304,15 +304,56 @@ INSERT INTO filme VALUES('127', 'Mr. Nobody', 'Marido de Elise (Sarah Polley) e 
 INSERT INTO filme VALUES('128', 'Polytechnique', '6 de Dezembro de 1989, um homem armado entra na Escola Politécnica de Montréal, uma instituição voltada para a formação de engenheiros. Ele atira nos estudantes, causando um massacre. O ataque é resultado de um plano de sete anos e os alvos foram pré-escolhidos. Os eventos são contados a partir de três pontos de vista: o do atirador (Maxim Gaudette), que conta seus motivos e culpa terceiros pelo que acontece, o de uma aluna chamada Valérie (Karine Vanasse), e o de seu amigo Jean-François (Martin Watier). ', '445', 'NÃO', TO_DATE('2009', 'YYYY'), '77', 'Drama, Histótrico');
 INSERT INTO filme VALUES('129', 'Tempos de Paz', '18 de abril de 1945. Durante anos centenas de pessoas foram torturadas pelo regime de Getúlio Vargas mas, com a pressão externa decorrente do fim da 2ª Guerra Mundial, vários presos políticos ganharam a liberdade. Segismundo (Tony Ramos) é um ex-oficial da polícia política de Vargas que agora teme que suas vítimas resolvam se vingar. Ele trabalha como chefe da seção de imigração na Alfândega do Rio de Janeiro, tendo por função evitar a entrada de nazistas. Em uma averiguação habitual, ele interroga Clausewitz (Dan Stulbach), um ex-ator polonês que, por recitar Carlos Drummond de Andrade, lhe foi enviado por um subalterno. Para convencer que não é nazista, Clausewitz precisa usar todo o seu talento como ator.', '445', 'SIM', TO_DATE('2009', 'YYYY'), '80', 'Drama, Histórico');
 INSERT INTO filme VALUES('130', 'Watchmen', 'Em 1977 foi aprovada pelo congresso norte-americano a Lei Keene, que proibia as atividades de mascarados no combate ao crime. Isto fez com que vários super-heróis deixassem a carreira, como o Coruja (Patrick Wilson) e Espectral (Malin Akerman). Outros, como o Comediante (Jeffrey Dean Morgan) e o Dr. Manhattan (Billy Crudup), passaram a trabalhar para o governo. Dois anos antes da implementação desta lei Adrian Veidt (Matthew Goode) decidiu revelar sua identidade como Ozymandias, dedicando-se a partir de então na construção de um império econômico. Em 1985 o mundo vive o clima da Guerra Fria, no qual um ataque nuclear pode acontecer a qualquer momento, vindo dos Estados Unidos ou da União Soviética. Neste clima de tensão política Edward Blake, o Comediante, é assassinado. Em seu funeral comparecem, em momentos diversos, seus antigos companheiros. Entre eles está Rorschach (Jackie Earle Haley), que acredita que sua morte seja o indício da existência de um assassino de mascarados.', '445', 'NÃO', TO_DATE('2009', 'YYYY'), '215', 'Drama');
+INSERT INTO filme VALUES('131', 'Incêndios', 'Canadá. Jeanne (Mélissa Désormeaux-Poulin) e Simon (Marwan Maxim) são irmãos gêmeos e acabaram de perder a mãe, Nawal Marwan (Lubna Azabal). Eles vão ao escritório do notário Jean Lebel (Rémy Girard) para saber do testamento deixado por ela. No documento, Nawal pede que seja enterrada sem caixão, nua e de costas, sem que haja qualquer lápide em seu túmulo. Ela deixa também dois envelopes, um a ser entregue ao pai dos gêmeos e outro para o irmão deles. Apenas após a entrega de ambos é que Jeanne e Simon receberão um envelope endereçado a eles e será possível colocar uma lápide. Só que Jeanne e Simon nada sabem sobre a existência de um irmão e acreditavam que seu pai estava morto. É o início de uma jornada em busca do passado da mãe, que os leva até a Palestina.', '445', 'NÃO', TO_DATE('2010', 'YYYY'), '130', 'Drama');
+INSERT INTO filme VALUES('132', 'O Mundo dos Pequeninos', 'Nos subúrbios de Tóquio, sob o assoalho de uma casa velha, Arrietty (Saoirse Ronan) vive em seu minúsculo mundo com a família, fazendo de tudo para manter em segredo a existência de todos. Sobrevivendo como pequenos ladrões, eles conhecem as regras para que nunca sejam percebidos pelos verdadeiros - e grandes - donos da casa. Para isso, procuram manter a desconfiança deles em cima dos gatos e ratos e tomam todos os cuidados possíveis para evitar de serem vistos. Contudo, quando um jovem rapaz se hospeda na casa, a pequenina Arietty acredita que poderá manter uma amizade com ele, apesar da diferença dos tamanhos.', '445', 'NÃO', TO_DATE('2010', 'YYYY'), '160', 'Animação, Fantasia');
+INSERT INTO filme VALUES('133', 'Scott Pielgrim Contra o Mundo', 'Scott Pilgrim (Michael Cera) tem 23 anos, integra uma banda de colégio, vive trocando de emprego e tem um namoro firme. Sua vida está maravilhosa, até conhecer Ramona V. Flowers (Mary Elizabeth Winestead). Ele logo se apaixona perdidamente por ela, só que não será fácil conquistar seu amor. Para tanto ele precisa enfrentar os sete ex-namorados dela, que estão dispostos a tudo para impedir sua felicidade com outra pessoa.', '445', 'NÃO', TO_DATE('2010', 'YYYY'), '112', 'Ação, Comédia');
+INSERT INTO filme VALUES('134', 'A Rede Social', 'Em uma noite de outono em 2003, Mark Zuckerberg (Jesse Eisenberg), analista de sistemas graduado em Harvard, se senta em seu computador e começa a trabalhar em uma nova ideia. Apenas seis anos e 500 milhões de amigos mais tarde, Zuckerberg se torna o mais jovem bilionário da história com o sucesso da rede social Facebook. O sucesso, no entanto, o leva a complicações em sua vida social e profissional.', '445', 'NÃO', TO_DATE('2010', 'YYYY'), '121', 'Drama, Biografia, Tecnologia');
+INSERT INTO filme VALUES('135', 'O Substituto', 'Henry Barthes (Adrien Brody) é um professor de ensino médio, que apesar de ter o dom nato para se comunicar com os jovens, só dá aulas como substituto, para não criar vinculos com ninguém. Mas quando ele é chamado para lecionar em uma escola pública, se encontra em meio à professores desmotivados e adolescentes violentos e desencantados com a vida, que só querem encontrar um apoio para substituir seus pais negligentes ou ausentes. Sofrendo uma crise familiar, Henry verá três mulheres entrando em sua vida e vai começar a perceber como ele pode fazer a diferença, mesmo que isso venha com um alto custo. ', '445', 'NÃO', TO_DATE('2011', 'YYYY'), '100', 'Drama');
+INSERT INTO filme VALUES('136', 'Deus Abençoe a América', 'Com nada a perder, Frank pega uma arma e decide acabar com os mais idiotas, cruéis e desagradáveis membros da sociedade com uma cúmplice nada usual: Roxy, de 16 anos. A menina partilha do mesmo senso de raiva e falta de pertencimento ao status quo e decide se juntar a Frank em uma caçada a estrelas de reality shows e a outras figuras do cenário de entretenimento dos Estados Unidos, alvejando também cidadãos comuns que aparecem em seus caminhos.', '445', 'NÃO', TO_DATE('2011', 'YYYY'), '105', 'Drama, Ação, Comédia');
+INSERT INTO filme VALUES('137', 'Intocáveis', 'Philippe (François Cluzet) é um aristocrata rico que, após sofrer um grave acidente, fica tetraplégico. Precisando de um assistente, ele decide contratar Driss (Omar Sy), um jovem problemático que não tem a menor experiência em cuidar de pessoas no seu estado. Aos poucos ele aprende a função, apesar das diversas gafes que comete. Philippe, por sua vez, se afeiçoa cada vez mais a Driss por ele não tratá-lo como um pobre coitado. Aos poucos a amizade entre eles se estabele, com cada um conhecendo melhor o mundo do outro. ', '445', 'NÃO', TO_DATE('2011', 'YYYY'), '113', 'Drama');
+INSERT INTO filme VALUES('138', 'Melancolia', 'Um planeta chamado Melancolia está prestes a colidir com a Terra, o que resultaria em sua destruição por completo. Neste contexto Justine (Kirsten Dunst) está prestes a se casar com Michael (Alexander Skarsgard). Ela recebe a ajuda de sua irmã, Claire (Charlotte Gainsbourg), que juntamente com seu marido John (Kiefer Sutherland) realiza uma festa suntuosa para a comemoração.', '445', 'NÃO', TO_DATE('2011', 'YYYY'), '136', 'Suspense, Drama, Ficção científica');
+INSERT INTO filme VALUES('139', 'Histórias Cruzadas', 'Jackson, pequena cidade no estado do Mississipi, anos 60. Skeeter (Emma Stone) é uma garota da sociedade que retorna determinada a se tornar escritora. Ela começa a entrevistar as mulheres negras da cidade, que deixaram suas vidas para trabalhar na criação dos filhos da elite branca, da qual a própria Skeeter faz parte. Aibileen Clark (Viola Davis), a emprega da melhor amiga de Skeeter, é a primeira a conceder uma entrevista, o que desagrada a sociedade como um todo. Apesar das críticas, Skeeter e Aibileen continuam trabalhando juntas e, aos poucos, conseguem novas adesões.', '445', 'NÃO', TO_DATE('2011', 'YYYY'), '137', 'Drama');
+INSERT INTO filme VALUES('140', '2 Coelhos', 'Após se envolver em um grave acidente automobilístico, no qual uma mulher e seu filho são mortos, Edgar (Fernando Alves Pinto) é indiciado, mas consegue escapar da prisão graças à influência de um deputado estadual. Logo em seguida ele parte para uma temporada em Miami, onde retorna com um elaborado plano em que pretende atingir tanto o deputado que o ajudou, símbolo da corrupção política, quanto Maicon (Marat Descartes), um criminoso que consegue escapar da justiça graças ao suborno de políticos influentes.', '445', 'SIM', TO_DATE('2012', 'YYYY'), '108', 'Ação');
+INSERT INTO filme VALUES('141', 'Amour', 'Georges (Jean-Louis Trintignant) e Anne (Emmanuelle Riva) são um casal de aposentados apaixonados por música. Eles têm uma filha musicista que vive em outro país. Certo dia Anne sofre um derrame e fica com um lado do corpo paralisado. O casal de idosos passa por graves obstáculos que colocarão o seu amor em teste. ', '445', 'NÃO', TO_DATE('2012', 'YYYY'), '126', 'Drama');
+INSERT INTO filme VALUES('142', 'Os Desconectados', 'Este drama mostra várias histórias pessoais, tendo em comum os efeitos perversos do uso excessivo de tecnologia, Internet e telefones celulares. A vida de um casal entra em perigo quando sua vida privada é exposta online, uma viúva e antiga policial descobre que seu filho humilha um garoto da escola pela Internet, um advogado obcecado por seu telefone não consegue se comunicar com a própria família, e uma jornalista vê sua vida se transformar quando ao pesquisar a história de um adolescente que faz atuações eróticas pela webcam. ', '445', 'NÃO', TO_DATE('2012', 'YYYY'), '115', 'Drama, Tecnologia');
+INSERT INTO filme VALUES('143', 'Django Livre', 'Django (Jamie Foxx) é um escravo liberto cujo passado brutal com seus antigos proprietários leva-o ao encontro do caçador de recompensas alemão Dr. King Schultz (Christoph Waltz). Schultz está em busca dos irmãos assassinos Brittle, e somente Django pode levá-lo a eles. O pouco ortodoxo Schultz compra Django com a promessa de libertá-lo quando tiver capturado os irmãos Brittle, vivos ou mortos.', '445', 'NÃO', TO_DATE('2012', 'YYYY'), '165', 'Ação, Drama, Faroeste');
+INSERT INTO filme VALUES('144', 'A Caça', 'Lucas (Mads Mikkelsen) trabalha em uma creche. Simpático e amigo de todos, ele tenta reconstruir a vida após um divórcio complicado, no qual perdeu a guarda do filho. Tudo corre bem até que, um dia, a pequena Klara (Annika Wedderkopp), de apenas cinco anos, diz à diretora da creche que Lucas lhe mostrou suas partes íntimas. Klara na verdade não tem noção do que está dizendo, apenas quer se vingar por se sentir rejeitada em uma paixão infantil que nutre por Lucas. A acusação logo faz com que ele seja afastado do trabalho e, mesmo sem que haja algum tipo de comprovação, seja perseguido pelos habitantes da cidade em que vive. ', '445', 'NÃO', TO_DATE('2012', 'YYYY'), '106', 'Drama');
+INSERT INTO filme VALUES('145', 'Sete Psicopatas', 'Marty (Colin Farrell) é um escritor pouco experiente que não encontra inspiração para seu novo texto, chamado "Sete Psicopatas". Seu melhor amigo é Billy (Sam Rockwell), um ator desempregado e ladrão de cachorros que está disposto a tudo para ajudá-lo. As ideias inusitadas de Billy colocam Marty na mira de um gângster temperamental, Charlie (Woody Harrelson), que não pensaria duas vezes antes de matar qualquer pessoa que pusesse as mãos em seu cachorro.', '445', 'NÃO', TO_DATE('2012', 'YYYY'), '110', 'Drama, Ação, Comédia, Crime');
+INSERT INTO filme VALUES('146', 'Spring Breakers', 'Candy (Vanessa Hudgens), Faith (Selena Gomez), Brit (Ashley Benson) e Cotty (Rachel Korine) são quatro jovens inconsequentes que assaltam um restaurante para poderem juntar dinheiro e tirar férias na praia durante a primavera norte-americana, num período conhecido como "spring break". No local, elas se envolvem em confusões e acabam presas. Na delegacia, conhecem um criminoso barra pesada (James Franco) que se encanta por elas e tenta convencê-las a integrar seu grupo.', '445', 'NÃO', TO_DATE('2012', 'YYYY'), '92', 'Drama');
+INSERT INTO filme VALUES('147', 'Antes da Meia Noite', 'Nove anos após os eventos de Antes do Pôr-do-sol, Jesse (Ethan Hawke) e Celine (Julie Delpy) vivem juntos em Paris, ao lado das filhas gêmeas que tiveram. Ele busca sempre manter contato com Hank (Seamus Davey-Fitzpatrick), o filho adolescente que teve com a ex-esposa e que vive em Chicago com a mãe. Quando o casal resolve ir à Grécia com as filhas, Jesse decide também convidar Hank para a viagem. Neste contexto, Jesse segue tentando se tornar um romancista de sucesso, enquanto que Celine considera seriamente a possibilidade de aceitar um emprego junto ao governo francês. ', '445', 'NÃO', TO_DATE('2013', 'YYYY'), '108', 'Drama, Romance');
+INSERT INTO filme VALUES('148', 'O Homem Duplicado', 'Um pacato professor de história descobre acidentalmente a existência de um sósia seu, um ator, quando assiste a um filme banal. Ele, então, resolve ir atrás de seu duplo, envolvendo sua namorada e a esposa dele, em uma trama de suspense que muda a vida a vida de todos os personagens. ', '445', 'NÃO', TO_DATE('2013', 'YYYY'), '90', 'Drama, Suspense');
+INSERT INTO filme VALUES('149', 'Ela', 'Theodore (Joaquin Phoenix) é um escritor solitário, que acaba de comprar um novo sistema operacional para seu computador. Para a sua surpresa, ele acaba se apaixonando pela voz deste programa informático, dando início a uma relação amorosa entre ambos. Esta história de amor incomum explora a relação entre o homem contemporâneo e a tecnologia.', '445', 'NÃO', TO_DATE('2013', 'YYYY'), '126', 'Drama, Romance, Ficção científica, Tecnologia');
+INSERT INTO filme VALUES('150', 'O Conto da Princesa Kaguya', 'Esta animação é baseada no conto popular japonês "O corte do bambu". Kaguya era um minúsculo bebê quando foi encontrada dentro de um tronco de bambu brilhante. Passado o tempo, ela se transforma em uma bela jovem que passa a ser cobiçada por 5 nobres, dentre eles, o próprio Imperador. Mas nenhum deles é o que ela realmente quer. A moça envia seus pretendentes em tarefas aparentemente impossíveis para tentar evitar o casamento com um estranho que não ama. Mas Kaguya terá que enfrentar seu destino e punição por suas escolhas. ', '445', 'NÃO', TO_DATE('2013', 'YYYY'), '137', 'Animação, Fantasia, Drama');
+INSERT INTO filme VALUES('151', 'Tangerinas', 'Guerra na Abcásia, 1992. A comunidade quer se tornar independente da Geórgia. Quase todos os habitantes já deixaram a aldeia, com excessão de dois homens. Margus permanece pois tem uma plantação de tangerinas. Ivo foi forçado a ficar. Porém, eles têm opiniões divergentes e estão em lados opostos na guerra. Eles terão que lidar com essa guerra pessoal.', '445', 'NÃO', TO_DATE('2013', 'YYYY'), '90', 'Drama, Guerra');
+INSERT INTO filme VALUES('152', 'Omar', 'O filme acompanha a história de Omar (Adam Bakri), dois amigos de infância e Nadia, sua amada, enquanto todos lutam, à sua maneira, por liberdade numa Cisjordânia ocupada. ', '445', 'NÃO', TO_DATE('2013', 'YYYY'), '98', 'Drama, Suspense');
+INSERT INTO filme VALUES('153', 'O Menino e o Mundo', 'Um garoto mora com o pai e a mãe, em uma pequena casa no campo. Diante da falta de trabalho, no entanto, o pai abandona o lar e parte para a cidade grande. Triste e desnorteado, o menino faz as malas, pega o trem e vai descobrir o novo mundo em que seu pai mora. Para a sua surpresa, a criança encontra uma sociedade marcada pela pobreza, exploração de trabalhadores e falta de perspectivas. ', '445', 'SIM', TO_DATE('2013', 'YYYY'), '85', 'Animação, Aventura, Fantasia');
+INSERT INTO filme VALUES('154', 'Segredos de Sangue', 'No dia do aniversário de 18 anos de India Stoker (Mia Wasikowska), seu pai sofre um acidente de carro e morre. A convivência desta garota tímida com a sua mãe (Nicole Kidman) torna-se ainda mais problemática, fato agravado pela visita dos parentes durante o funeral. Entre os familiares presentes, está o tio Charlie (Matthew Goode), um aventureiro que passou a vida inteira entre as cidades da Europa, sem dar sinal de vida. India nunca soube da existência desse homem, mas logo a sua presença traz à tona o sombrio passado da família Stoker. ', '445', 'NÃO', TO_DATE('2013', 'YYYY'), '99', 'Terror, Drama, Mistério, Suspense');
+INSERT INTO filme VALUES('155', 'O Duplo', 'Tímido, solitário, rejeitado pela mãe e desprezado pela amada, Hannah (Mia Wasikowska), Simon (Jesse Eisenberg) tem um choque ao conhecer seu novo colega de trabalho, de nome James. Fisicamente idênticos, os dois são opostos em termos de personalidade.', '445', 'NÃO', TO_DATE('2013', 'YYYY'), '93', 'Drama, Suspense');
+INSERT INTO filme VALUES('156', 'O Lobo de Wall Street', 'Durante seis meses, Jordan Belfort (Leonardo DiCaprio) trabalhou duro em uma corretora de Wall Street, seguindo os ensinamentos de seu mentor Mark Hanna (Matthew McConaughey). Quando finalmente consegue ser contratado como corretor da firma, acontece o Black Monday, que faz com que as bolsas de vários países caiam repentinamente. Sem emprego e bastante ambicioso, ele acaba trabalhando para uma empresa de fundo de quintal que lida com papéis de baixo valor, que não estão na bolsa de valores. É lá que Belfort tem a ideia de montar uma empresa focada neste tipo de negócio, cujas vendas são de valores mais baixos mas, em compensação, o retorno para o corretor é bem mais vantajoso. Ao lado de Donnie (Jonah Hill) e outros amigos dos velhos tempos, ele cria a Stratton Oakmont, uma empresa que faz com que todos enriqueçam rapidamente e, também, levem uma vida dedicada ao prazer.', '445', 'NÃO', TO_DATE('2013', 'YYYY'), '180', 'Biográfico, Crime, Comédia');
+INSERT INTO filme VALUES('157', 'Boyhood', 'O filme conta a história de um casal de pais divorciados (Ethan Hawke e Patricia Arquette) que tenta criar seu filho Mason (Ellar Coltrane). A narrativa percorre a vida do menino durante um período de doze anos, da infância à juventude, e analisa sua relação com os pais conforme ele vai amadurecendo.', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '164', 'Drama');
+INSERT INTO filme VALUES('158', 'Dois Dias, Uma Noite', 'Sandra (Marion Cotillard) perde seu emprego pois outros trabalhadores da fábrica preferiram receber um bônus ao invés de mantê-la na equipe. Ela descobre que alguns de seus colegas foram persuadidos a votar contra ela. Mas Sandra tem uma chance de reconquistá-lo. Ela e o marido (Fabrizio Rongione) têm uma tarefa complicada para o final de semana: eles devem visitar os colegas de trabalho e convencê-los a abrir mão de seus bônus, para que o casal possa manter o seu emprego. ', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '95', 'Drama');
+INSERT INTO filme VALUES('159', 'Um Pombo Pousou num Galho Refletindo sobre a Existência', 'Dois homens, Sam (Nisse Vestblom) e Jonathan (Holger Andersson), são vendedores ambulantes que estão cansados ​​do mundo. Um mergulho sobre o caos atual, um quase apocalipse iminente, mas que também enxerga o mundo cheio de pequenos momentos únicos, de sonhos e fantasias, lembrando da grandeza da vida e da fragilidade do homem.', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '101', 'Drama');
+INSERT INTO filme VALUES('160', 'Interestellar', 'Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar salvar a população do planeta.', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '169', 'Ficção Científica');
+INSERT INTO filme VALUES('161', 'Mommy', 'Canadá, 2015. Diane Després (Anne Dorval) é surpreendida com a notícia de que seu filho, Steve (Antoine-Olivier Pilon), foi expulso do reformatório onde vive por ter incendiado a cafeteria local e, com isso, provocado queimaduras de terceiro grau em um garoto. Os dois voltam a morar juntos, mas Diane enfrenta dificuldades devido à hiperatividade de Steve, que muitas vezes o torna agressivo. Os dois apenas conseguem encontrar um certo equilíbrio quando a vizinha Kyla (Suzanne Clément) entra na vida de ambos', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '139', 'Drama');
+INSERT INTO filme VALUES('162', 'As Memórias de Marnie', 'Anna (Hailee Steinfeld) é uma menina de 12 anos, filha de pais adotivos, sempre muito solitária e não exatamente feliz. Um belo dia, em um castelo numa ilha isolada, ela conhece Marnie (Kiernan Shipka). A menina loira de vestido branco se torna a grande e única amiga de Anna, mas ela descobrirá que Marnie não é exatamente quem parece ser.', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '103', 'Animação, Fantasia, Aventura, Drama');
+INSERT INTO filme VALUES('163', 'O Predestinado', 'Um agente temporal (Ethan Hawke) encara sua última missão após anos de viagens no tempo caçando criminosos e executando a lei. O desafio final será finalmente capturar seu inimigo mais desafiador, o homem que há muito o intriga e ludibria.', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '97', 'Ficção científica');
+INSERT INTO filme VALUES('164', 'Relatos Selvagens', 'Diante de uma realidade crua e imprevisível, os personagens deste filme caminham sobre a linha tênue que separa a civilização da barbárie. Uma traição amorosa, o retorno do passado, uma tragédia ou mesmo a violência de um pequeno detalhe cotidiano são capazes de empurrar estes personagens para um lugar fora de controle. ', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '122', 'Drama, Comédia, Suspense, Ação');
+INSERT INTO filme VALUES('165', 'Para Sempre Alice', 'A Dra. Alice Howland (Julianne Moore) é uma renomada professora de linguistica. Aos poucos, ela começa a esquecer certas palavras e se perder pelas ruas de Manhattan. Ela é diagnosticada com Alzheimer. A doença coloca em prova a a força de sua família. Enquanto a relação de Alice com o marido, John (Alec Baldwinse), fragiliza, ela e a filha caçula, Lydia (Kristen Stewart), se aproximam. ', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '101', 'Drama');
+INSERT INTO filme VALUES('166', 'Whiplash', 'O solitário Andrew (Miles Teller) é um jovem baterista que sonha em ser o melhor de sua geração e marcar seu nome na música americana como fez Buddy Rich, seu maior ídolo na bateria. Após chamar a atenção do reverenciado e impiedoso mestre do jazz Terence Fletcher (JK Simmons), Andrew entra para a orquestra principal do conservatório de Shaffer, a melhor escola de música dos Estados Unidos. Entretanto, a convivência com o abusivo maestro fará Andrew transformar seu sonho em obsessão, fazendo de tudo para chegar a um novo nível como músico, mesmo que isso coloque em risco seus relacionamentos com sua namorada e sua saúde física e mental.', '445', 'NÃO', TO_DATE('2014', 'YYYY'), '106', 'Drama');
+INSERT INTO filme VALUES('167', 'Anomalisa', 'Michael Stone (voz de David Thewis) é um palestrante motivacional que acaba de chegar à cidade de Connecticut. Ele segue do aeroporto direto para o hotel, onde entra em contato com um antigo caso para que possam se reencontrar. A iniciativa não dá certo, mas Michael logo se insinua para duas jovens que foram ao local justamente para ver a palestra que ele dará no dia seguinte. É quando ele conhece Lisa (voz de Jennifer Jason Leigh), por quem se apaixona.', '445', 'NÃO', TO_DATE('2015', 'YYYY'), '90', 'Drama, Romance');
+INSERT INTO filme VALUES('168', 'Entre Abelhas', 'Bruno (Fábio Porchat), um editor de imagens recém-separado da mulher (Giovanna Lancellotti), começa a deixar de ver as pessoas. Ele tropeça no ar, esbarra no que não vê, até perceber que as pessoas ao seu redor estão ficando invisíveis. Com a ajuda da mãe (Irene Ravache) e do melhor amigo (Marcos Veras), ele tentará descobrir o que se passa em sua vida. ', '445', 'SIM', TO_DATE('2015', 'YYYY'), '76', 'Drama');
+INSERT INTO filme VALUES('169', 'Ex Machina', 'Caleb (Domhnall Gleeson), um jovem programador de computadores, ganha um concurso na empresa onde trabalha para passar uma semana na casa de Nathan Bateman (Oscar Isaac), o brilhante e recluso presidente da companhia. Após sua chegada, Caleb percebe que foi o escolhido para participar de um teste com a última criação de Nathan: Ava (Alicia Vikander), uma robô com inteligência artificial. Mas essa criatura se apresenta sofisticada e sedutora de uma forma que inguém poderia prever, complicando a situação ao ponto que Caleb não sabe mais em quem confiar. ', '445', 'NÃO', TO_DATE('2015', 'YYYY'), '108', 'Drama, Ficção científica, Suspense');
+INSERT INTO filme VALUES('170', 'Divertida Mente', 'Riley é uma garota divertida de 11 anos de idade, que deve enfrentar mudanças importantes em sua vida quando seus pais decidem deixar a sua cidade natal, no estado de Minnesota, para viver em San Francisco. Dentro do cérebro de Riley, convivem várias emoções diferentes, como a Alegria, o Medo, a Raiva, o Nojinho e a Tristeza. A líder deles é Alegria, que se esforça bastante para fazer com que a vida de Riley seja sempre feliz. Entretanto, uma confusão na sala de controle faz com que ela e Tristeza sejam expelidas para fora do local. Agora, elas precisam percorrer as várias ilhas existentes nos pensamentos de Riley para que possam retornar à sala de controle - e, enquanto isto não acontece, a vida da garota muda radicalmente. ', '445', 'NÃO', TO_DATE('2015', 'YYYY'), '94', 'Animação, Aventura, Comédia, Drama');
+INSERT INTO filme VALUES('171', 'Cinco Graças', 'No início do verão em um vilarejo turco, Lale e suas 4 irmãs brincam de forma debochada com os meninos, o que acarreta em um escândalo de consequências muito fortes: a casa delas se torna praticamente uma prisão, elas aprendem a limpar ao invés de ir para a escola e seus casamentos começam a ser arranjados. As cinco não deixam de desejar a liberdade, e tentam resistir aos limites que lhes são impostos. ', '445', 'NÃO', TO_DATE('2015', 'YYYY'), '97', 'Drama');
+INSERT INTO filme VALUES('172', 'Que Horas Ela Volta?', 'A pernambucana Val (Regina Casé) se mudou para São Paulo a fim de dar melhores condições de vida para sua filha Jéssica. Com muito receio, ela deixou a menina no interior de Pernambuco para ser babá de Fabinho, morando integralmente na casa de seus patrões. Treze anos depois, quando o menino (Michel Joelsas) vai prestar vestibular, Jéssica (Camila Márdila) lhe telefona, pedindo ajuda para ir à São Paulo, no intuito de prestar a mesma prova. Os chefes de Val recebem a menina de braços abertos, só que quando ela deixa de seguir certo protocolo, circulando livremente, como não deveria, a situação se complica. ', '445', 'SIM', TO_DATE('2015', 'YYYY'), '114', 'Drama, Comédia');
+INSERT INTO filme VALUES('173', 'O Quarto de Jack', 'Joy (Brie Larson) e seu filho Jack (Jacob Tremblay) vivem isolados em um quarto. O único contato que ambos têm com o mundo exterior é a visita periódica do Velho Nick (Sean Bridgers), que os mantém em cativeiro. Joy faz o possível para tornar suportável a vida no local, mas não vê a hora de deixá-lo. Para tanto, elabora um plano em que, com a ajuda do filho, poderá enganar Nick e retornar à realidade. ', '445', 'NÃO', TO_DATE('2015', 'YYYY'), '117', 'Drama');
+INSERT INTO filme VALUES('174', 'Os Oito Odiados', 'Durante uma nevasca, o carrasco John Ruth (Kurt Russell) está transportando uma prisioneira, a famosa Daisy Domergue (Jennifer Jason Leigh), que ele espera trocar por grande quantia de dinheiro. No caminho, os viajantes aceitam transportar o caçador de recompensas Marquis Warren (Samuel L. Jackson), que está de olho em outro tesouro, e o xerife Chris Mannix (Walton Goggins), prestes a ser empossado em sua cidade. Como as condições climáticas pioram, eles buscam abrigo no Armazém da Minnie, onde quatro outros desconhecidos estão abrigados. Aos poucos, os oito viajantes no local começam a descobrir os segredos sangrentos uns dos outros, levando a um inevitável confronto entre eles', '445', 'NÃO', TO_DATE('2015', 'YYYY'), '167', 'Drama, Ação, Faroeste, Suspense');
+INSERT INTO filme VALUES('175', 'A Bruxa', 'Nova Inglaterra, década de 1630. O casal William e Katherine leva uma vida cristã com suas cinco crianças em uma comunidade extremamente religiosa, até serem expulsos do local por sua fé diferente daquela permitida pelas autoridades. A família passa a morar num local isolado, à beira do bosque, sofrendo com a escassez de comida. Um dia, o bebê recém-nascido desaparece. Teria sido devorado por um lobo? Sequestrado por uma bruxa? Enquanto buscam respostas à pergunta, cada membro da família seus piores medos e seu lado mais condenável. ', '445', 'NÃO', TO_DATE('2015', 'YYYY'), '93', 'Terror, Mistério');
+INSERT INTO filme VALUES('176', 'Aquarius', 'Clara (Sonia Braga) tem 65 anos, é jornalista aposentada, viúva e mãe de três adultos. Ela mora em um apartamento localizado na Av. Boa Viagem, no Recife, onde criou seus filhos e viveu boa parte de sua vida. Interessada em construir um novo prédio no espaço, os responsáveis por uma construtora conseguiram adquirir quase todos os apartamentos do prédio, menos o dela. Por mais que tenha deixado bem claro que não pretende vendê-lo, Clara sofre todo tipo de assédio e ameaça para que mude de ideia. ', '445', 'SIM', TO_DATE('2016', 'YYYY'), '145', 'Drama, Suspense');
+INSERT INTO filme VALUES('177', 'Zootopia', 'Clara (Sonia Braga) tem 65 anos, é jornalista aposentada, viúva e mãe de três adultos. Ela mora em um apartamento localizado na Av. Boa Viagem, no Recife, onde criou seus filhos e viveu boa parte de sua vida. Interessada em construir um novo prédio no espaço, os responsáveis por uma construtora conseguiram adquirir quase todos os apartamentos do prédio, menos o dela. Por mais que tenha deixado bem claro que não pretende vendê-lo, Clara sofre todo tipo de assédio e ameaça para que mude de ideia. ', '445', 'NÃO', TO_DATE('2016', 'YYYY'), '108', 'Animação, Fantasia, Aventura, Comédia');
 
-/**
-   *Tabela exibicaoFilme
-   * @idPr,           chave primaria
-   * @dataExFi        chave prim·ria
-   * @horaInicioExFi  chave prim·ria
-   * @horaFimExFi
-   * @ibopeExFi **/
-   
+
+
 INSERT INTO exibicaoFilme('24', TO_DATE('25.04.2016', 'DD.MM.YYYY'), '22h00min', '23h24min', '4');
 INSERT INTO exibicaoFilme('24', TO_DATE('27.07.2016', 'DD.MM.YYYY'), '23h00min', '00h24min', '5');
 INSERT INTO exibicaoFilme('24', TO_DATE('13.10.2016', 'DD.MM.YYYY'), '21h00min', '22h24min');
@@ -352,6 +393,440 @@ INSERT INTO exibicaoFilme('95', TO_DATE('03.06.2016', 'DD.MM.YYYY'), '01h00min',
 INSERT INTO exibicaoFilme('157', TO_DATE('15.08.2016', 'DD.MM.YYYY'), '06h00min', '08h46min', '5');
 INSERT INTO exibicaoFilme('84', TO_DATE('06.04.2016', 'DD.MM.YYYY'), '17h00min', '19h04min', '4');
 
+/*Inserção de séries*/
+INSERT INTO serie VALUES('50001', 'Game of Thrones', 'A série de televisão segue as múltiplas histórias dos livros de A Song of Ice and Fire. Se passando nos Sete Reinos de Westeros, onde "verões duram décadas e os invernos uma vida inteira", Game of Thrones mostra as violentas lutas dinásticas entre as famílias nobres para ter o controle do Trono de Ferro de Westeros. Enquanto isso, nas regiões desconhecidas ao norte da Muralha e nos continentes ao leste, ameaças adicionais começam a surgir.', '445', 'NÂO', 'Aventura, Drama, Épico, Fantasia', '6');
+INSERT INTO serie VALUES('50002', 'True Detective', 'True Detective é uma série de televisão americana criada por Nic Pizzolatto para o canal HBO, tendo sua primeira temporada dirigida por Cary Joji Fukunaga. A primeira temporada estrelou atores como Matthew McConaughey, Woody Harrelson, Michelle Monaghan, Michael Potts e Tory Kittles, e utiliza múltiplas linhas do tempo para traçar através de 17 anos a busca de dois detetives por um assassino em série em Louisiana. Sua primeira temporada estreou em 12 de janeiro de 2014, possuindo oito episódios, terminando no dia 09 de março de 2014.', '445', 'NÂO', 'Southern Gotic, Drama, Crime, Neo-noir, Mistério, Policial', '2');
+INSERT INTO serie VALUES('50003', 'Black Mirror', 'Black Mirror é uma série de televisão britânica criada por Charlie Brooker, produzida pela Zeppotron para a Endemol. Em relação ao conteúdo e a estrutura da série, Brooker destacou que "cada episódio tem um elenco diferente, um set diferente e até uma realidade diferente, mas todos eles são sobre a forma como vivemos agora - e a forma como nós poderemos viver em 10 minutos se formos desastrados."', '445', 'NÂO', 'Ficção científica, Sátira', '2');
+INSERT INTO serie VALUES('50004', 'South Park', 'South Park é uma sitcom americana criada por Trey Parker e Matt Stone para o canal Comedy Central. Destinado ao público adulto, o programa tornou-se alvo de debates por suas críticas através de humor negro, cruel, surreal e satírico que abrange uma série de assuntos. A narrativa padrão gira em torno de quatro crianças—Stan Marsh, Kyle Broflovski, Eric Cartman, e Kenny McCormick—e suas aventuras bizarras na cidade-título do programa.', '445', 'NÂO', 'Comédia, Humor negro, Animação', '18');
+INSERT INTO serie VALUES('50005', 'O Grande Gonzalez', 'O Grande Gonzalez é uma série de comédia brasileira transmitida pela FOX Brasil de 2 de novembro de 2015 a 13 de novembro de 2015. Todos os 10 episódios que compõem a série ficaram disponíveis online no YouTube pelo canal Porta dos Fundos em 5 de fevereiro de 2016 com legendas em inglês e espanhol.', '445', 'SIM', 'Comédia', '1');
+INSERT INTO serie VALUES('50006', 'Justiça', 'Justiça é uma minissérie brasileira produzida pela Rede Globo e exibida desde o dia 22 de agosto de 2016 no horário das 22 horas. Escrita por Manuela Dias, com colaboração de Mariana Mesquita, Lucas Paraizo e Roberto Vitorino, conta com direção de Isabella Teixeira, Luísa Lima, Marcus Figueiredo e Walter Carvalho, e com direção geral e artística de José Luiz Villamarim. Sem um protagonista definido, cada dia da semana retrata diferentes tramas que se cruzam, contando com Adriana Esteves, Débora Bloch, Drica Moraes, Antonio Calloni, Julia Dalavia, Cássio Gabus Mendes, Enrique Díaz, Marjorie Estiano, Luisa Arraes, Vladimir Brichta, Marina Ruy Barbosa, Leandra Leal, Jéssica Ellen, Jesuíta Barbosa e Cauã Reymond nos papeis principais de cada episódio.', '445', 'SIM', 'Drama', '1');
+INSERT INTO serie VALUES('50007', 'Breaking Bad', 'Breaking Bad é uma premiada série de televisão americana criada e produzida por Vince Gilligan que retrata a vida do químico Walter White, um homem brilhante frustrado em dar aulas para adolescentes do ensino médio enquanto lida com um filho sofrendo de paralisia cerebral, uma esposa grávida e dívidas intermináveis. Quando o já tenso White é diagnosticado com um câncer no pulmão, o mesmo sofre um colapso e abraça uma vida de crimes, começando a produzir e vender metanfetaminas com o seu ex-aluno Jesse Pinkman para assegurar o futuro financeiro de sua família após sua morte.', '445', 'NÂO', 'Ação, Suspense, Drama, Crime, Faroeste contemporâneo, Humor Negro', '5');
+
+
+/*Temporadas de Game of Thrones*/
+INSERT INTO temporada VALUES('50001', '1', '', '10');
+INSERT INTO temporada VALUES('50001', '2', '', '10');
+INSERT INTO temporada VALUES('50001', '3', '', '10');
+INSERT INTO temporada VALUES('50001', '4', '', '10');
+INSERT INTO temporada VALUES('50001', '5', '', '10');
+INSERT INTO temporada VALUES('50001', '6', '', '10');
+
+/*Temporadas de True Detective*/
+INSERT INTO temporada VALUES('50002', '1', 'A primeira temporada conta a história de como a vida de dois detetives, Rust Cohle (Matthew McConaughey) e Martin Hart (Woody Harrelson), colidem e se entrelaçam durante uma caçada de 17 anos por um serial killer em Louisiana. A investigação de um assassinato bizarro, em 1995, leva á reabertura do caso em 2012.', '8');
+INSERT INTO temporada VALUES('50002', '2', 'A 2ª temporada conta a história de três policiais e um criminoso, eles precisam lidar com uma rede de conspiração em torno de um assassinato. Ray Velcoro (Colin Farrell), um detetive comprometido cuja lealdade está dividida entre seus chefes em um departamento de polícia corrupto e a máfia da qual ele recebe dinheiro. Frank Semyon (Vince Vaughn), um criminoso que corre o risco de perder todo império quando sua intenção de começar um novo e legítimo negócio é abalada pelo assassinato de seu sócio.', '8');
+
+/*Temporadas de Black Mirror*/
+INSERT INTO temporada VALUES('50003', '1', '', '3');
+INSERT INTO temporada VALUES('50003', '2', '', '3');
+
+/*Temporadas de O Grande Gonzales*/
+INSERT INTO temporada VALUES('50005', '1', 'Durante uma festa infantil, o mágico Gonzalez morre após um truque mal sucedido. Afogamento, envenenamento, acidente, assassinato: todas as linhas de investigação serão seguidas pela polícia e todos são suspeitos. ', '10');
+
+/*Temporadas de Justiça*/
+INSERT INTO temporada VALUES('50006', '1', '', '20');
+
+/*Temporadas de Breaking Bad*/
+INSERT INTO temporada VALUES('50007', '1', '', '7');
+INSERT INTO temporada VALUES('50007', '2', '', '13');
+INSERT INTO temporada VALUES('50007', '3', '', '13');
+INSERT INTO temporada VALUES('50007', '4', '', '13');
+INSERT INTO temporada VALUES('50007', '5', '', '16');
+
+/*Temporadas de South Park*/
+INSERT INTO temporada VALUES('50004', '1', '', '13');
+INSERT INTO temporada VALUES('50004', '2', '', '18');
+INSERT INTO temporada VALUES('50004', '3', '', '17');
+INSERT INTO temporada VALUES('50004', '4', '', '17');
+INSERT INTO temporada VALUES('50004', '5', '', '14');
+INSERT INTO temporada VALUES('50004', '6', '', '17');
+INSERT INTO temporada VALUES('50004', '7', '', '15');
+INSERT INTO temporada VALUES('50004', '8', '', '14');
+INSERT INTO temporada VALUES('50004', '9', '', '14');
+INSERT INTO temporada VALUES('50004', '10', '', '14');
+INSERT INTO temporada VALUES('50004', '11', '', '14');
+INSERT INTO temporada VALUES('50004', '12', '', '14');
+INSERT INTO temporada VALUES('50004', '13', '', '14');
+INSERT INTO temporada VALUES('50004', '14', '', '14');
+INSERT INTO temporada VALUES('50004', '15', '', '14');
+INSERT INTO temporada VALUES('50004', '16', '', '14');
+INSERT INTO temporada VALUES('50004', '17', '', '10');
+INSERT INTO temporada VALUES('50004', '18', '', '10');
+
+
+/*Episódios de Game of Thrones*/
+/*T01*/
+INSERT INTO episodioSerie VALUES('50001', '1', '1', 'Winter Is Coming', 'Os Stark de Winterfell recebem a visita da família real. O Rei Robert Baratheon faz a Eddard Stark uma oferta que ele não pode recusar. Do outro lado do oceano, o exilado Príncipe Viserys Targaryen cria uma aliança para reconquistar o Trono de Ferro; ele dará sua irmã, Daenerys, em casamento para o selvagem Khal Drogo em troca de seu exército. De volta a Winterfell, Catelyn Stark recebe uma pista que pode implicar no envolvimento de membros da família real em um assassinato, enquanto o jovem Bran Stark faz uma perigosa descoberta. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '2', 'The Kingsroad', 'O destino de Bran permanece incerto. Concordando em se tornar a Mão do Rei, Ned deixa Winterfell com Arya e Sansa, enquanto Catelyn fica para trás para cuidar de Bran. Jon Snow se dirige para o norte para se juntar aos irmãos da Patrulha da Noite. Tyrion decide ir para a Muralha com Jon. Viserys aguarda na esperança de recuperar o Trono de Ferro, enquanto Daenerys foca sua atenção em aprender como agradar seu novo marido, Drogo. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '3', 'Lord Snow', 'Ned se junta ao Pequeno Conselho em Porto Real. Jon Snow encontra dificuldades ao se adaptar a sua nova vida na Muralha. Suspeitando que os Lannister têm algo a ver com a queda de Bran, Catelyn decide ir para o sul para se juntar a Ned. Cersei e Jaime ponderam sobre as implicações da recuperação de Bran. Arya começa a estudar o manejo de espadas. Daenerys e Viserys discutem no caminho a Vaes Dothraki. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '4', 'Cripples, Bastards, and Broken Things', 'Um torneio é realizado para honrar a nova Mão do Rei. Ned examina um livro procurando pistas sobre a morte de seu predecessor. Jon toma atitudes para proteger Samwell Tarly de abusos no Castelo Negro. Viserys e Daenerys brigam mais uma vez em Vaes Dothraki. Sansa começa a se imaginar como uma Rainha, enquanto Arya vê um futuro bem diferente. Catelyn e Tyrion se encontram em uma estalagem na Estrada do Rei. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '5', 'The Wolf and the Lion', 'Robert e Ned discutem sobre como lidar com a aliança dos Targaryen com os Dothraki, com Robert ordenando um ataque preventivo contra Daenerys, criando um racha na relação dele com Ned. Tyrion, mantido como refém, ajuda Catelyn. Ela, porém, é recebida com frieza no Ninho da Águia pela viúva de Jon Arryn, sua irmã Lysa. Arya ouve uma conspiração contra seu pai. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '6', 'A Golden Crown', 'Novamente como Mão do Rei, Ned é deixado administrando o reino enquanto Robert vai caçar, instaurando um decreto que terá grandes consequências nos Sete Reinos. No Ninho da Águia, Tyrion confessa seus "crimes" e exige que Lysa lhe conceda um Julgamento por Combate. Viserys recebe seu pagamento final vindo de Daenerys e Drogo. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '7', 'You Win or You Die', 'Descobrindo a verdade, Ned confronta Cersei sobre a morte de Jon Arryn. Com o destino do desaparecido Benjen Stark em sua mente, Jon Snow faz seus votos para a Patrulha da Noite, porém não conseguindo o posto que desejava. Sor Jorah Mormont salva Daenerys de uma armadilha, isso enfurece Drogo que promete levar os Dothraki para onde eles nunca haviam ido. Um machucado Eddard se esforça para garantir uma transição ordenada em Porto Real. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '8', 'The Pointy End', 'Com um novo rei nos Sete Reinos, os Lannister pressionam os Stark. No norte, com seu pai preso em Porto Real, Robb reúne todos os vassalos e marcha para o sul na direção da guerra. Sansa implora pela vida de Ned a Joffrey. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '9', 'Baelor', 'Eddard Stark, aprisionado e acusado de traição, toma uma fatídica decisão. Sua esposa Catelyn negocia com o traiçoeiro Lorde Walder Frey, e seu filho Robb luta sua primeira batalha contra os Lannister. Enquanto isso, Jon descobre um segredo sobre Meistre Aemon, e Daenerys se posiciona contra Qotho. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '1', '10', 'Fire and Blood', 'Com as trágicas notícias da morte de Ned se espalhando pelos Sete Reinos, Bran e Rickon Stark compartilham uma visão. Enquanto isso, Catelyn pressiona Jaime Lannister sobre a queda de seu filho; Tyrion vai para o Sul depois de uma decisão surpreendente de seu pai; Arya tenta escapar de Porto Real; Jon enfrenta uma difícil escolha na Patrulha da Noite e Daenerys sofre um terrível revés porém encontra novas esperanças. ', '60');
+
+/*T02*/
+INSERT INTO episodioSerie VALUES('50001', '2', '1', 'The North Remembers', 'Enquanto Robb Stark e seu exército continuam a guerra contra os Lannister, Tyrion chega em Porto Real para aconselhar e acalmar os nervos de Joffrey. Na ilha de Pedra do Dragão, Stannis Baratheon planeja uma invasão para conquistar o trono de seu falecido irmão, se aliando com Melisandre, uma estranha sacerdotisa de um estranho deus. Do outro lado do mar, Daenerys, seus três dragões e seu khalasar viajam pelo Deserto Vermelho à procura de aliados, ou água. No Norte, Bran preside uma tediosa Winterfell, enquanto que além da Muralha, Jon Snow e a Patrulha da Noite devem se proteger dos perigosos selvagens. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '2', 'The Night Lands', 'Na iminência de um banho de sangue na capital, Tyrion culpa Cersei por alienar os suditos do rei. Na estrada para o Norte, Arya conta um segredo a Gendry, um recruta da Patrulha da Noite. Com seus suprimentos se esgotando, os batedores de Dany voltam com novas notícias. Depois de nove anos sob tutela dos Stark, Theon Greyjoy se reencontra com seu pai, Balon, que deseja reinstaurar o Reino das Ilhas de Ferro. Davos Seaworth recruta Salladhor Saan, um pirata, para que ele se una a Stannis e Melisandre e faça parte de uma invasão naval à Porto Real. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '3', 'What Is Dead May Never Die', 'Na Fortaleza Vermelha, Tyrion arma três alianças com promessas de casamento. Catelyn chega ao acampamento de Renly para forjar sua própria aliança, porém o Rei, sua esposa Margaery Tyrell e Sor Loras Tyrell têm outros planos. Em Winterfell, Meistre Luwin tenta decifrar os sonhos de Bran. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '4', 'Garden of Bones', 'Joffrey pune Sansa pelas vitórias de Robb, enquanto Tyrion e Bronn tentam atenuar a crueldade do rei. Catelyn implora para que Stannis e Renly deixem de lado suas ambições e se unam contra os Lannister. Dany e seu exausto khalasar chegam em Qarth, um próspera cidade com fortes muralhas e governantes que a recebem do lado de fora. Tyrion faz com que um homem da Rainha se torne seus "olhos e ouvidos". Arya e Gendry são levados a Harrenhal, onde suas vidas ficam à mercer dA Montanha, Gregor Clegane. Davos deve voltar a suas origens para levar Melisandre a uma cova secreta. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '5', 'The Ghost of Harrenhal', 'O fim da rivalidade entre os Baratheon faz Catelyn fugir e Mindinho agir. Em Porto Real, a fonte de Tyrion lhe fala sobre a falha na estratégia de defesa de Joffrey e sobre uma misteriosa arma. Theon viaja para a Costa Pedregosa para se provar como um verdadeiro Homem de Ferro. Em Harrenhal, Arya recebe uma promessa de Jaqen Hghar, um dos três prisioneiros que ela salvou dos Mantos Dourados. A Patrulha da Noite chega no Punho dos Primeiros Homens, uma antiga fortaleza onde eles esperam conter o avanço do exército selvagem. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '6', 'The Old Gods and the New', 'Theon completa seu golpe de mestre. Em Porto Real, os Lannister enviam Myrcella para longe do perigo no último segundo. Arya fica cara a cara com uma visita surpresa; Daenerys jura conseguir o que é seu por direito; Robb e Catelyn recebem notícias importantes, e Qhorin dá a Jon uma chance para se provar. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '7', 'A Man Without Honor', 'Jaime se encontra com um parente distante; Daenerys recebe um convite para entrar na Casa dos Imortais; Theon lidera uma equipe de busca; Jon se perde no meio de uma região selvagem, e Cersei aconselha Sansa. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '8', 'The Prince of Winterfel', 'Em Winterfell, Theon recebe uma visita e mantém controle do forte. Arya pede o pagamento de sua dívida final com Jaqen Hghar de um modo que o desagrada. Robb é traído. Tyrion e Varys encontram algo em comum entre eles. Daenerys ignora os conselhos de Sor Jorah. Stannis e Davos se aproximam de seu destino, com o Cavaleiro das Cebolas recebendo uma recompensa.', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '9', 'Blackwater', 'Tyrion e os Lannister lutam por suas vidas quando a frota de Stannis ataca Porto Real. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '2', '10', 'Valar Morghulis', 'Tyrion acorda em uma situação diferente. O Rei Joffrey entrega prêmios aos seus vassalos. Enquanto Theon prepara seus homens para lutar, Meistre Luwin lhe oferece um último conselho. Brienne silencia Jaime, Arya recebe um presente de Jaqen, Daenerys vai à um lugar desconhecido e Jon prova-se para Qhorin. ', '60');
+
+/*T03*/
+INSERT INTO episodioSerie VALUES('50001', '3', '1', 'Valar Dohaeris', 'Jon é levado até Mance Rayder, o Rei-para-lá-da-Muralha, enquanto os sobreviventes da Patrulha da Noite fogem para o sul. Em Porto Real, Tyrion pede sua recompensa. Mindinho oferece a Sansa um jeito de fugir. Cersei organiza um jantar para a família real, e Daenerys navega para a Baía dos Escravos. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '2', 'Dark Wings, Dark Words', 'Arya encontra a Irmandade sem Estandartes, enquanto seu irmão Bran cruza caminho com uma misteriosa dupla de seguidores. Jaime e Brienne continuam sua viagem à Porto Real, enquanto que a própria capital recebe a famosa Olenna Tyrell, a Rainha dos Espinhos, que convida Sansa para um almoço. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '3', 'Walk of Punishment', 'Tyrion recebe novas responsabilidades. Jon é levado de volta ao Punho dos Primeiros Homens. Daenerys conhece o exército escravo. Jaime faz um acordo com seus captores. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '4', 'And Now His Watch Is Ended', 'A Patrulha da Noite faz um balanço da situação. Varys encontra uma superior. Arya é levada perante o líder da Irmandade sem Estandartes. Daenerys troca uma corrente por um chicote.', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '5', 'Kissed by Fire', 'Cão de Caça é julgado pelos deuses, e Jaime é julgado pelos homens. Jon prova-se para os selvagens. Robb é traído. Tyrion descobre o custo dos casamentos. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '6', 'The Climb', 'Tywin planeja uniões estratégicas para os Lannister. Melisandre visita as Terras Fluviais. Robb considera um acordo para reparar sua aliança com a Casa Frey. Roose Bolton decide o que fazer com Jaime. Jon, Ygritte e os selvagens enfrentam uma longa e perigosa escalada. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '7', 'The Bear and the Maiden Fair', 'Daenerys troca presentes com um mestre de escravos do lado de fora de Yunkai. Enquanto Sansa pensa sobre seu futuro, Shae irrita-se com a nova situação de Tyrion. Tywin aconselha o rei, e Melisandre revela um segredo a Gendry. Brienne enfrenta um grande adversário em Harrenhal. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '8', 'Second Sons', 'Um casamento é realizado em Porto Real, e Tyrion e Sansa passam a noite juntos. Daenerys encontra o Bastardo de Titã. Davos exige provas de Melisandre. Sam e Gilly encontram-se com um caminhante branco. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '9', 'The Rains of Castamere', 'Robb se apresenta para Walder Frey e Edmure conhece sua noiva. Jon passa por sua provação mais difícil. Bran descobre um novo dom. Daario e Sor Jorah discutem a melhor maneira de tomar Yunkai. A Casa Frey se junta a Casa Tully. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '3', '10', 'Mhysa', 'Joffrey desafia Tywin. Bran conta uma história de fantamas. Em Pedra do Dragão, a justiça vem de um lugar estranho. Daenerys tenta descobrir se é uma conquistadora ou uma libertadora enquanto é aclamada como "Mysha" (mãe) pelo exército de escravos libertos. ', '60');
+
+/*T04*/
+INSERT INTO episodioSerie VALUES('50001', '4', '1', 'Two Swords', 'Tyrion recebe um convidado em Porto Real. Em Castelo Negro, Jon Snow percebe que não é mais bem-vindo. Daenerys parte para Meereen, a principal cidade escravagista de Essos. Arya encontra alguém do seu passado. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '2', 'The Lion and the Rose', 'Tyrion ajuda Jaime. Joffrey e Margaery se casam. Em Pedra do Dragão, Stannis perde a paciência com Sor Davos. Ramsay Snow encontra um objetivo para seu novo "animal de estimação". Ao norte da Muralha, Bran vê para onde precisa ir. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '3', 'Breaker of Chains', 'Tyrion considera suas opções e Tywin estende um ramo de oliveira. Sam percebe que Castelo Negro não é seguro, e Jon propõe um plano ousado. Cão de Caça ensina a Arya como as coisas realmente são. Daenerys escolhe seu campeão. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '4', 'Oathkeeper', 'Daenerys equilibra justiça e piedade. Jaime encarrega Brienne com sua honra. Jon consegue voluntários enquanto Bran, Jojen, Meera e Hodor encontram um abrigo. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '5', 'First of His Name', 'Cersei e Tywin planejam o próximo movimento da coroa. Daenerys discute seus planos para o futuro. Jon parte em uma missão para a Fortaleza de Craster. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '6', 'The Laws of Gods and Men', 'Stannis e Davos partem de Pedra do Dragão com uma nova estratégia. Daenerys se encontra com suplicantes. Tyrion confronta seu pai na Sala do Trono. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '7', 'Mockingbird', 'Tyrion recebe a ajuda de um aliado inesperado. Daario Naharis pede para que Daenerys deixe ele fazer o que faz de melhor. Os avisos de Jon sobre a vulnerabilidade da Muralha não são ouvidos. Brienne e Podrick seguem uma nova pista na estrada. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '8', 'The Mountain and the Viper', 'Visitantes inesperados chegam em Vila Toupeira; as motivações de Mindinho são questionadas; Ramsay Snow tenta provar-se para seu pai e o destino de Tyrion é decidido.', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '9', 'The Watchers on the Wall', 'Jon Snow e a Patrulha da Noite enfrentam um enorme desafio. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '4', '10', 'The Children', 'As circunstâncias mudam depois de uma chegada inesperada vinda do norte da Muralha; Daenerys precisa enfrentar duras realidades; Bran descobre mais sobre seu destino e Tyrion enfrenta a verdade sobre sua situação. ', '60');
+
+/*T05*/
+INSERT INTO episodioSerie VALUES('50001', '5', '1', 'The Wars to Come', 'Cersei e Jaime se ajustam a um mundo sem o pai, Tywin. Enquanto isso, Tyrion e Varys chegam a Pentos. Em Meereen, Daenerys descobre que seu governo na cidade requer duros sacrifícios. Jon Snow é pego em um dilema entre a Guarda da Noite e as demandas de Stannis Baratheon, que se auto-intitula o legitimo rei de Westeros. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '2', 'The House of Black and White', 'Arya chega a Braavos e inicia sua busca ao Homem Sem-Face que conheceu em Westeros. Jamie Lannister sai em uma missão secreta. Ellaria Sand busca vingança pela morte de Oberyn, junto às Serpentes de Areia. Stannis faz uma oferta generosa a Jon Snow, ao mesmo tempo em que a Guarda da Noite precisa escolher um novo Lorde Comandante. Daerenys enfrenta uma nova decisão difícil, que precisa ser tomada. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '3', 'High Sparrow', 'Arya enfrenta problemas para se adaptar à nova vida onde precisa enterrar seu passado. Littlefinger revela seus planos de casamento para Sansa. Jon Snow começa suas primeiras ordens como Lorde Comandante da Guarda da Noite com firmeza. Tyrion e Varys chegam a Volantis. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '4', 'Sons of the Harpy', 'Em Porto Real, a Fé Militante está ficando cada vez mais agressiva e Cersei parece saber como tirar proveito disso. Jaime e Bronn partem para o sul, para resgatar Myrcella em Dorne. Ellaria e as Serpentes de Areia juram vingança mesmo que isso signifique guerra. Em Mereen, os Filhos da Harpia atacam e surpreendem alguns Imaculados. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '5', 'Kill the Boy', 'Em Meereen, Daerenys resolve agir com autoridade e toma uma decisão difícil para tentar unificar seu reinado. Na muralha, Jon Snow resolve recrutar um aliado inesperado e controverso. Brienne chega a Winterfell e inicia sua guarda silenciosa. Ramsay reforça seu controle sobre Theon para Sansa. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '6', 'Unbowed, Unbent, Unbroken', 'Arya segue seu treinamento em Bravos. Jorah e Tyrion se deparam com mestres de escravos. Em Dorne, Trystane Martell e Myrcella Lannister fazem planos para o futuro enquanto Jaime e Bronn chegam ao seu destino, onde as As Serpentes de Areia atacam. Em Winterfell, Ramsay estupra Sansa em sua noite de núpcias enquanto Fedor assiste, num dos mais controversos momentos da trama. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '7', 'The Gift', 'Jon Snow inicia sua tragetória rumo às terras selvagens e sua ausência será perigosa para Sam. Sansa tenta se comunicar com Theon, mas descobre que ele ainda é leal a Ramsay. Brienne mantém sua guarda e espera por um sinal para agir. Stannis permanece obstinado rumo a Winterfell, mas a situação de seu exército fica cada vez pior diante do inverno que se aproxima. Jaime tenta se reconectar com Myrcella, que parece ter se afeiçoado muito com Dorne no período que se passou. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '8', 'Hardhome', 'Jon Snow viaja pelo norte extremo em busca do povo livre, chegando a Durolar, mas convencê-los a ir com ele não é nada fácil. Sansa confronta um antigo aliado e descobre algo importante sobre sua família. Cersei não admite sua nova situação e luta pela liberdade. Arya faz progresso durante seu treinamento em Bravos. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '9', 'The Dance of Dragons', 'Jon Snow retorna à Muralha sob olhares de desaprovação. Quando Mace Tyrell visita o Banco de Ferro em Bravos, levando alguns guardas consigo, Arya acaba reencontrando alguém de sua lista. Stannis enfrenta muitas dificuldades esperando a nevasca diminuir, e acaba tomando a mais difícil das decisões. Daenerys assiste a um tradicional torneio na Arena de Dasnak, mas nem esta tentativa de aceitar as antigas tradições da cidade de Mereen a livra dos perigos contra seu reinado. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '5', '10', 'Mother s Mercy', 'Sam, Gilly e o bebé partem para Vilavelha para que Sam se torne um maester. A nevasca diminui e Stannis continua sua marcha. Após escapar dos perigos recentes, Daenerys é cercada de estranhos. Cersei é confrontada pelo Alto Pardal com a possibilidade de perdão. Myrcella diz a Jaime que sabe que é a sua filha, e morre de envenenamento (pelo beijo de Ellaria) pouco depois. Arya mata Meryn Trant, usando uma das máscaras do Deus de Muitas Caras. Jon Snow é ferozmente desafiado pelos guardas da Patrulha da Noite que não concordam com suas decisões recentes. ', '60');
+
+/*T06*/
+INSERT INTO episodioSerie VALUES('50001', '6', '1', 'The Red Woman', 'Jon Snow está morto. Sansa e Theon escapam ilesos de Winterfel e são encontrados por Brienne. Daenerys encontra-se com Khal Moro. As Serpentes da Areia conspiram contra Doran Martell e sua linhagem. Davos Seaworth se rebela contra a Guarda da Noite. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '2', 'Home', 'Bran treina com o Corvo de Três Olhos. Em Porto Real, Jaime aconselha Tommen. Tyrion exige boas notícias, mas terá que fazê-las por si mesmo. Em Castelo Negro, a Patrulha da Noite apoia Thorne. Ramsay Bolton propõe um plano, e Balon Greyjoy cogita outras propostas. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '3', 'Oathbreaker', 'Daenerys se depara com o futuro, e Bran, com o passado. Tommen enfrenta o Alto Pardal. Arya treina para se tornar Ninguém. Varys encontra uma resposta. Ramsay recebe um presente. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '4', 'Book of the Stranger', 'Tyrion sela um acordo. Jorah e Daario realizam uma tarefa difícil. Jaime e Cersei tentam melhorar sua situação. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '5', 'The Door', 'Tyrion procura um aliado estranho. Bran descobre algo importante. Brienne sai em uma missão. Arya ganha uma chance de provar a si mesma. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '6', 'Blood of My Blood', 'Um velho inimigo está de volta. Gilly se reúne a família de Sam. Arya enfrenta uma escolha difícil. Jaime enfrenta o Alto Pardal. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '7', 'The Broken Man', 'Um mercenário está de volta. Margaery convence Olenna Tyrell voltar para Highgarden. Sansa e Jon procuram aliados. Jaime confronta Peixe Negro. Theon navega em direção à Baía dos Escravos. Arya cogita voltar para casa. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '8', 'No One', 'Cercei escolhe violência. Brienne e Jaime se reencontram. Os planos de Tyrion começam a dar frutos. Arya enfrenta um novo teste. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '9', 'The Battle of the Bastards', 'Daenerys reestabelece a paz em Meeren. Em Westeros, dois bastardos nortenhos se enfrentam no campo de batalha. Sansa tem uma carta na manga. ', '60');
+INSERT INTO episodioSerie VALUES('50001', '6', '10', 'The Winds of Winter', 'Cersei e Loras enfrentam seus julgamentos. Arya aprimora seus dotes culinários. Mindinho tenta persuadir Sansa. Bran descobre um segredo. Jon e Tyrion recebem novos títulos. Varys oferece fogo e sangue. Daenerys volta para casa. ', '60');
+
+
+/*Episódios South Park, um por temporada*/
+INSERT INTO episodioSerie VALUES('50004', '1', '1', 'Cartman Gets an Anal Probe', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '2', '1', 'Terrance and Phillip in Not Without My Anus', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '3', '1', 'Rainforest Schmainforest', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '4', '1', 'The Tooth Fairy’s Tats', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '5', '1', 'It Hits the Fan', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '6', '1', 'Jared Has Aides', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '7', '1', 'Cancelled', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '8', '1', 'Good Times With Weapons', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '9', '1', 'Mr. Garrison s Fancy New Vagina', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '10', '1', 'The Return of Chef', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '11', '1', 'With Apologies to Jesse Jackson', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '12', '1', 'Tonsil Trouble', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '13', '1', 'The Ring', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '14', '1', 'Sexual Healing', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '15', '1', 'Human Centipad', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '16', '1', 'Reverse Cowgirl', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '17', '1', 'Let Go, Let Gov', '', '22');
+INSERT INTO episodioSerie VALUES('50004', '18', '1', 'Go Fund Yourself', '', '22');
+
+
+/*Episódios de True Detective*/
+/*T01*/
+INSERT INTO episodioSerie VALUES('50002', '1', '1', 'The Long Bright Dark', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '2', 'Seeing Things', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '3', 'The Locked Room', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '4', 'Who Goes There', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '5', 'The Secret Fate of All Life', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '6', 'Haunted Houses', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '7', 'After You ve Gone', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '1', '8', 'Form and Void', '', '60');
+/*T02*/
+INSERT INTO episodioSerie VALUES('50002', '2', '1', 'The Western Book of the Dead', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '2', 'Night Finds You', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '3', 'Maybe Tomorrow', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '4', 'Down Will Come', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '5', 'Other Lives', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '6', 'Church in Ruins', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '7', 'Black Maps and Motel Rooms', '', '60');
+INSERT INTO episodioSerie VALUES('50002', '2', '8', 'Omega Station', '', '60');
+
+
+/*Episódios de Black Mirror*/
+/*T01*/
+INSERT INTO episodioSerie VALUES('50003', '1', '1', 'Hino Nacional', 'O Primeiro-Ministro Michael Callow enfrenta um chocante dilema quando a amada princesa Susannah é raptada.', '44');
+INSERT INTO episodioSerie VALUES('50003', '1', '2', 'Quinze Milhões de méritos', 'Após fracassar em um concurso como cantora, uma mulher tem que escolher entre praticar atos humilhantes ou voltar a viver praticamente como uma escrava.', '61');
+INSERT INTO episodioSerie VALUES('50003', '1', '3', 'Toda a sua história', 'No futuro, todos tem acesso a um implante de memória que grava tudo que os seres humanos fazem, veem e ouvem.', '48');
+/*T02*/
+INSERT INTO episodioSerie VALUES('50003', '2', '1', 'Volto já', 'Martha encontra o seu falecido amante através de um novo serviço que permite que as pessoas mantenham contato com os mortos.', '48');
+INSERT INTO episodioSerie VALUES('50003', '2', '2', 'Urso Branco', 'Victoria acorda e não se lembra de nada da sua vida. Todos que encontra se recusam a falar com ela.', '42');
+INSERT INTO episodioSerie VALUES('50003', '2', '3', 'Momento Waldo', 'Um comediante fracassado que dubla um urso animado se envolve em uma trama política quando seu personagem se candidata a um cargo público.', '43');
+
+
+/*Episodios de O Grande Gonzalez*/
+INSERT INTO episodioSerie VALUES('50005', '1', '1', 'O Palhaço', 'Durante uma festa infantil, o mágico “Grande Gonzalez” morre tragicamente na frente de 30 crianças enquanto tentava realizar um arriscado truque. O que parecia um acidente, logo se revela uma suspeita de assassinato. Agora, a polícia terá que investigar o submundo das festas infantis e, entre cachorros quentes e algodões doces, descobrir o verdadeiro culpado.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '2', 'O Outro Mágico', 'As investigações continuam e, para surpresa da polícia, Gonzalez não era o único mágico naquela festa. Agora novas perguntas surgem para o caso: Quem é o segundo mágico misterioso que abusa do laquê e por que ele foi chamado para a festa?', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '3', 'O Dono da Casa de Festas', 'Gonzalez era um mágico medíocre, mas com um enorme talento para fazer inimigos. Além de traumatizar 30 crianças morrendo na frente delas, o mágico também causou nos bastidores da festinha. Neste episódio, os policiais interrogarão o dono da casa de festas, que parece ter motivos de sobra para ter acabado com a farra do nosso anti-herói.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '4', 'O Cameraman', 'As circunstâncias em torno da morte do Grande Gonzalez seguem nebulosas. De nada serviram as testemunhas já interrogadas. Pelo contrário, elas tumultuaram ainda mais a já caótica investigação. Porém, surge uma linha de investigação que pode ajudar a polícia a solucionar o caso. Agora, quem sabe, os policiais terão uma chance de desvendar essa tragédia, ou de aprenderem um pouco mais sobre a prática do bodyboard na República Tcheca.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '5', 'A Assistente de Palco', 'Na maioria dos casos, assassinatos são frutos de crimes passionais. E é por esse caminho que a polícia decide seguir. Afinal, são poucas situações onde casais conseguem misturar a vida afetiva e profissional sem um querer matar o outro. Mas como toda femme fatale, a namorada de Gonzalez esconde um segredo que pode mudar o rumo do caso.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '6', 'A Madrasta', 'Em toda investigação a polícia sempre encontra um suspeito que apresenta o maior desafio. Nesse caso, a madrasta do aniversariante. Fria, calculista e com um passado obscuro, ela se apresenta como o maior enigma para os policiais. E se tratando dela, apenas uma coisa é certa: seu mistério é proporcional ao seu apetite e voracidade sexual.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '7', 'Gonzalez', 'Aparentemente, o Grande Gonzalez também guardava um segredo revelador. A investigação ganha contornos dramáticos com a chegada de uma figura polêmica e de aparência familiar. Seu depoimento e passado em comum com Gonzalez jogam uma nova e inesperada luz sobre o caso, escancarando as entranhas do mundo secreto da mágica infantil.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '8', 'O Pai', 'Se em toda investigação há uma figura tenebrosa, há também uma bucha. Um homem fraco e submisso à sua mulher. O problema é que além disso, ele criou um mundo imaginário para se refugiar da sua realidade decepcionante. Cabe aos policiais administrar o interrogatório e arrancar dele o que conseguirem, sem derreter seu emocional fragilizado.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '9', 'A Volta do Palhaço', 'Após novas descobertas e algumas reviravoltas, um dos suspeitos é novamente chamado para depor e esclarecer “pequenas” omissões do seu primeiro interrogatório. Porém, o que parecia ser só um mal-entendido logo torna-se mais uma declaração bombástica com potencial de (novamente) mudar os rumos da investigação.', '30');
+INSERT INTO episodioSerie VALUES('50005', '1', '10', 'A Reconstituição', 'É chegada a hora derradeira! A temida reconstituição dos fatos. A polícia espera que a encenação do caso ajude a finalmente esclarecer o mistério que a cada passo só se torna mais rocambolesco. Mas se há algo que aprendemos nessa investigação, é que nada é tão fácil e simples como parece. Será que a acareação responderá as perguntas em aberto ou a morte do Gonzalez será só mais um caso arquivado e sem solução? Cabe aos policias dar sentido a essa tragédia.', '30');
+
+
+/*Episódios de Justiça*/
+INSERT INTO episodioSerie VALUES('50006', '1', '1', 'Cap01', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '2', 'Cap02', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '3', 'Cap03', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '4', 'Cap04', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '5', 'Cap05', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '6', 'Cap06', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '7', 'Cap07', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '8', 'Cap08', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '9', 'Cap09', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '10', 'Cap10', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '11', 'Cap11', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '12', 'Cap12', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '13', 'Cap13', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '14', 'Cap14', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '15', 'Cap15', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '16', 'Cap16', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '17', 'Cap17', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '18', 'Cap18', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '19', 'Cap19', '', '45');
+INSERT INTO episodioSerie VALUES('50006', '1', '20', 'Cap20', '', '45');
+
+
+/*Episódios de Breaking Bad*/
+/*T01*/
+INSERT INTO episodioSerie VALUES('50007', '1', '1', 'Piloto', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '2', 'Ressurreição', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '3', 'Dúvida', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '4', 'Homem com Câncer', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '5', 'Matéria Cinzenta', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '6', 'O Grande Blefe', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '1', '7', 'Um Trato Sem Dificuldades', '', '47');
+/*T02*/
+INSERT INTO episodioSerie VALUES('50007', '2', '1', 'Seven Thirty-Seven', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '2', 'Grilled', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '3', 'Bit by a Dead Bee', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '4', 'Down', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '5', 'Breakage', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '6', 'Peekaboo', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '7', 'Negro y Azul', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '8', 'Better Call Saul', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '9', '4 Days Out', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '10', 'Over', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '11', 'Mandala', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '12', 'Phoenix', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '2', '13', 'ABQ', '', '47');
+/*T03*/
+INSERT INTO episodioSerie VALUES('50007', '3', '1', 'No Más', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '2', 'Caballo sin Nombre', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '3', 'I.F.T.', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '4', 'Green Light', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '5', 'Más', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '6', 'Sunset', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '7', 'One Minute', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '8', 'I See You', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '9', 'Kafkaesque', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '10', 'Fly', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '11', 'Abiquiu', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '12', 'Half Measures', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '3', '13', 'Full Measure', '', '47');
+/*T04*/
+INSERT INTO episodioSerie VALUES('50007', '4', '1', 'Box Cutter', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '2', 'Thirty-Eight Snub', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '3', 'Open House', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '4', 'Bullet Points"', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '5', 'Shotgun', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '6', 'Cornered', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '7', 'Problem Dog"', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '8', 'Hermanos', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '9', 'Bug', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '10', 'Salud', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '11', 'Crawl Space', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '12', 'End Times', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '4', '13', 'Face Off', '', '47');
+/*T05*/
+INSERT INTO episodioSerie VALUES('50007', '5', '1', 'Live Free or Die', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '2', 'Madrigal', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '3', 'Hazard Pay', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '4', 'Fifty-One', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '5', 'Dead Freight', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '6', 'Buyout', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '7', 'Say My Name', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '8', 'Gliding Over All', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '9', 'Blood Money', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '10', 'Buried', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '11', 'Confessions', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '12', 'Rabid Dog', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '13', 'To hajiilee', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '14', 'Ozymandias', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '15', 'Granite State', '', '47');
+INSERT INTO episodioSerie VALUES('50007', '5', '16', 'Felina', '', '47');
+
+
+
+/*Exibição série*/
+/*Game of Thrones todo dia a partir de primeiro de Janeiro de 2017, cada episódio passando da meia noite até a uma, e depois das duas as três*/
+INSERT INTO exibicaoSerie VALUES('50001', '1', '1', TO_DATE('01.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '1', TO_DATE('01.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '2', TO_DATE('02.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '2', TO_DATE('02.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '3', TO_DATE('03.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '3', TO_DATE('03.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '4', TO_DATE('04.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '4', TO_DATE('04.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '5', TO_DATE('05.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '5', TO_DATE('05.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '6', TO_DATE('06.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '6', TO_DATE('06.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '7', TO_DATE('07.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '7', TO_DATE('07.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '8', TO_DATE('08.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '8', TO_DATE('08.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '9', TO_DATE('09.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '9', TO_DATE('09.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '10', TO_DATE('10.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '1', '10', TO_DATE('10.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '2', '1', TO_DATE('11.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '1', TO_DATE('11.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '2', TO_DATE('12.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '2', TO_DATE('12.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '3', TO_DATE('13.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '3', TO_DATE('13.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '4', TO_DATE('14.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '4', TO_DATE('14.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '5', TO_DATE('15.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '5', TO_DATE('15.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '6', TO_DATE('16.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '6', TO_DATE('16.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '7', TO_DATE('17.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '7', TO_DATE('17.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '8', TO_DATE('18.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '8', TO_DATE('18.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '9', TO_DATE('19.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '9', TO_DATE('19.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '10', TO_DATE('20.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '2', '10', TO_DATE('20.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '3', '1', TO_DATE('21.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '1', TO_DATE('21.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '2', TO_DATE('22.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '2', TO_DATE('22.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '3', TO_DATE('23.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '3', TO_DATE('23.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '4', TO_DATE('24.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '4', TO_DATE('24.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '5', TO_DATE('25.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '5', TO_DATE('25.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '6', TO_DATE('26.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '6', TO_DATE('26.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '7', TO_DATE('27.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '7', TO_DATE('27.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '8', TO_DATE('28.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '8', TO_DATE('28.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '9', TO_DATE('29.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '9', TO_DATE('29.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '10', TO_DATE('30.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '3', '10', TO_DATE('30.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '4', '1', TO_DATE('31.01.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '1', TO_DATE('31.01.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '2', TO_DATE('01.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '2', TO_DATE('01.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '3', TO_DATE('02.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '3', TO_DATE('02.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '4', TO_DATE('03.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '4', TO_DATE('03.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '5', TO_DATE('04.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '5', TO_DATE('04.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '6', TO_DATE('05.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '6', TO_DATE('05.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '7', TO_DATE('06.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '7', TO_DATE('06.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '8', TO_DATE('07.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '8', TO_DATE('07.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '9', TO_DATE('08.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '9', TO_DATE('08.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '10', TO_DATE('09.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '4', '10', TO_DATE('09.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '5', '1', TO_DATE('10.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '1', TO_DATE('10.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '2', TO_DATE('11.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '2', TO_DATE('11.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '3', TO_DATE('12.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '3', TO_DATE('12.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '4', TO_DATE('13.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '4', TO_DATE('13.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '5', TO_DATE('14.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '5', TO_DATE('14.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '6', TO_DATE('15.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '6', TO_DATE('15.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '7', TO_DATE('16.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '7', TO_DATE('16.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '8', TO_DATE('17.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '8', TO_DATE('17.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '9', TO_DATE('18.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '9', TO_DATE('18.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '10', TO_DATE('19.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '5', '10', TO_DATE('19.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+INSERT INTO exibicaoSerie VALUES('50001', '6', '1', TO_DATE('20.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '1', TO_DATE('20.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '2', TO_DATE('21.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '2', TO_DATE('21.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '3', TO_DATE('22.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '3', TO_DATE('22.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '4', TO_DATE('23.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '4', TO_DATE('23.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '5', TO_DATE('24.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '5', TO_DATE('24.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '6', TO_DATE('25.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '6', TO_DATE('25.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '7', TO_DATE('26.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '7', TO_DATE('26.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '8', TO_DATE('27.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '8', TO_DATE('27.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '9', TO_DATE('28.02.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '9', TO_DATE('28.02.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '10', TO_DATE('01.03.2017', 'DD.MM.YYYY'), '00h00min', '01h00min');
+INSERT INTO exibicaoSerie VALUES('50001', '6', '10', TO_DATE('01.03.2017', 'DD.MM.YYYY'), '02h00min', '03h00min');
+
+/*Exibição de episodios de O Grande Gonzalez em Sábados às 16h30min a partir de 2 de julho de 2016*/
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('02.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '4');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('09.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '4');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('16.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('23.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('30.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('13.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('20.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '1');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('27.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('03.09.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('10.09.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '5');
+
 
 -- INSERIR JORNAL
 
@@ -364,7 +839,7 @@ INSERT INTO exibicaoFilme('84', TO_DATE('06.04.2016', 'DD.MM.YYYY'), '17h00min',
    
 INSERT INTO jornal VALUES('12345','Bom Dia Brasil', 'Jornal matinal', '789', '080', 'Nacional')
 INSERT INTO jornal VALUES('10005','EPTV', 'Jornal regional', '789', '050', 'Regional')
-INSERT INTO jornal VALUES('13154','Jornal Nacional', 'Principal jornal da emissora', '789', '100', 'Nacional')
+INSERT INTO jornal VALUES('13154','Jornal Nacional', 'Principal jornal da emissora', '789', '080', 'Nacional')
 INSERT INTO jornal VALUES('14552','Jornal Hoje', 'Jornal da tarde', '789', '060', 'Nacional')
 
 -- EXIBE JORNAL
@@ -376,6 +851,63 @@ INSERT INTO jornal VALUES('14552','Jornal Hoje', 'Jornal da tarde', '789', '060'
   horaFimExJo VARCHAR2(8), --check se horario È maior
   ibopeExJo NUMBER(2,2),*/
   
+-- Bom dia brasil exibido de seg a sex as 6h até 7h30
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('02.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '6,7');
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('03.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '6,3');
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('04.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '7,0');
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('05.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '6,2');
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('06.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '6,7');
+
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('09.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '6,6');
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('10.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '5,9');
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('11.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '6,9');
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('12.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '7,2');
+INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('13.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '6,7');
+
+-- EPTV exibido de seg ao sab na hora do almoco
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('11.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,7');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('12.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,3');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('13.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,0');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('14.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,1');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('15.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,4');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('16.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,0');
+
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('18.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '4,9');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('19.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,7');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('20.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,4');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('21.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,6');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('22.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '5,3');
+INSERT INTO exibicaoJornal VALUES('10005', '43262368', TO_DATE('23.07.2016', 'DD.MM.YYYY'), '12h00min', '12h40min', '4,7');
+
+-- Jornal Hoje exibido de seg a sab, entre 13h e 14h20
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('04.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '6,7');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('05.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '6,8');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('06.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '7,0');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('07.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '7,2');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('08.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '7,0');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('09.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '7,1');
+
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('11.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '6,9');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('12.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '7,8');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('13.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '7,7');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('14.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '7,1');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('15.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '7,2');
+INSERT INTO exibicaoJornal VALUES('14552', '32154523', TO_DATE('16.04.2016', 'DD.MM.YYYY'), '13h00min', '14h20min', '7,4');
+
+--Jornal Nacional exibido de seg a sab, entre 20h00 e 21h30
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('04.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '23,7');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('05.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '22,9');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('06.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '24,0');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('07.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '22,7');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('08.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '23,3');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('09.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '23,9');
+
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('11.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '21,7');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('12.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '22,0');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('13.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '23,9');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('14.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '24,7');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('15.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '23,2');
+INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('16.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '23,7');
 
 -- COMERCIAL
 
@@ -422,17 +954,17 @@ INSERT INTO cliente VALUES ('19.002.876/0001-04', 'Banco Mercantil do Brasil Sa'
 INSERT INTO cliente VALUES ('07.400.431/0001-94', 'Itau Unibanco S.A.' , 'Itau')
 INSERT INTO cliente VALUES ('36.973.232/0001-73', 'Comercio Alimenticio Sadia Ltda.' , 'Sadia')
 INSERT INTO cliente VALUES ('57.038.652/0001-32', 'Adidas do Brasil Ltda' , 'Adidas')
-INSERT INTO cliente VALUES ('48.084.184/0001-41', 'Samsung S.A.' , 'Samsung')
-INSERT INTO cliente VALUES ('50.923.414/0001-60', 'Apple Inc.' , 'Apple')
+INSERT INTO cliente VALUES ('48.084.184/0001-41', 'Samsung S.A.', 'Samsung')
+INSERT INTO cliente VALUES ('50.923.414/0001-60', 'Apple Inc.', 'Apple')
 INSERT INTO cliente VALUES ('19.310.585/0001-74', 'Telecom Net S/A Logistica Digital' , 'NET')
-INSERT INTO cliente VALUES ('12.615.501/0001-61', 'Claro S.A.' , 'Claro')
-INSERT INTO cliente VALUES ('28.386.593/0001-95', 'Telefonica Brasil S.A.' , 'Vivo')
-INSERT INTO cliente VALUES ('20.653.075/0001-89', 'Casa Bahia Comercial Ltda. ' , 'Casas Bahia')
-INSERT INTO cliente VALUES ('38.377.766/0001-62', 'WalMart Brasil Ltda' , 'Walmart')
-INSERT INTO cliente VALUES ('65.257.376/0001-21', 'Lojas Americanas S.A.' , 'Lojas Americanas')
-INSERT INTO cliente VALUES ('81.754.726/0001-11', 'Chilli Beans S.A.' , 'Chilli Beans')
-INSERT INTO cliente VALUES ('84.707.920/0001-34', 'Passarela Modas Ltda' , 'Passarela')
-INSERT INTO cliente VALUES ('48.987.632/0001-69', 'Microsoft Informatica Ltda' , 'Microsoft')
+INSERT INTO cliente VALUES ('12.615.501/0001-61', 'Claro S.A.', 'Claro')
+INSERT INTO cliente VALUES ('28.386.593/0001-95', 'Telefonica Brasil S.A.', 'Vivo')
+INSERT INTO cliente VALUES ('20.653.075/0001-89', 'Casa Bahia Comercial Ltda. ', 'Casas Bahia')
+INSERT INTO cliente VALUES ('38.377.766/0001-62', 'WalMart Brasil Ltda', 'Walmart')
+INSERT INTO cliente VALUES ('65.257.376/0001-21', 'Lojas Americanas S.A.', 'Lojas Americanas')
+INSERT INTO cliente VALUES ('81.754.726/0001-11', 'Chilli Beans S.A.', 'Chilli Beans')
+INSERT INTO cliente VALUES ('84.707.920/0001-34', 'Passarela Modas Ltda', 'Passarela')
+INSERT INTO cliente VALUES ('48.987.632/0001-69', 'Microsoft Informatica Ltda', 'Microsoft')
 
 
 
@@ -464,6 +996,58 @@ INSERT INTO novela VALUES ('38888', 'Liberdade, Liberdade', 'Novela das 11 exibi
   * @resumoEpNo
   * @duracaoEpNo **/
   
+--episodios de malhacao
+INSERT INTO episodioNovela VALUES ('34567', '75', 'Tito (Guilherme Leicam) percebe que foi enganado por Samurai (Felipe Titto). Luciana disfarça e expulsa Rodrigo na frente de Samurai. Artur decide acompanhar Roger. Tito questiona o trabalho de Pedro. Samurai intriga Miguel contra Ana. Pedro foge de Tito. Roger pressiona Artur. Jorge e Sueli reclamam da ausência de Luciana (Marina Moschen). Lívia (Giulia Costa) e Rodrigo falam de Miguel para Ana. Artur finge um desmaio. Krica avisa a Glauco e Cleiton que está grávida. Samurai intimida Roger. Roger ouve quando Rodrigo e Luciana marcam um encontro. Miguel discute com Tito. Samurai vê Rodrigo e Luciana se beijando.', '30')
+INSERT INTO episodioNovela VALUES ('34567', '76', 'Miguel ofende Ana. Samurai promete para si mesmo que vai se vingar de Luciana e Rodrigo (Nicolas Prattes). Cleyton fica animado com a notícia de que vai ser pai, e Glauco se irrita. Pedro (Enzo Romani) afirma a Samurai que não sabia que Rodrigo e Luciana haviam reatado o namoro. Krica tem dúvidas sobre a paternidade do bebê. Samurai oferece uma festa de noivado para Nanda e Filipe. Roger exige que Artur pague uma parte da dívida. Ana decide ficar com Tito. Filipe teme que Samurai queira usar a festa para atacar Rodrigo. Julia tenta convencer Artur a voltar para a escola. Ana conta para os filhos que ela e Tito estão juntos. Samurai chega com Luciana e o filho à casa de Rodrigo.', '30')
+INSERT INTO episodioNovela VALUES ('34567', '77', 'Samurai revela que descobriu sobre o namoro de Rodrigo e Luciana e sugere uma trégua. Julia beija Artur (Gabriel Kaufmann). Samurai convida a família de Rodrigo para ir à festa no sítio. Julia faz um acordo com Artur. Cleiton tenta convencer Glauco a desistir de descobrir quem é o pai do filho de Krica. Pedro desconfia das intenções de Samurai. Rubem afirma que Miguel foi o responsável pelo fim do casamento dele com Ana. Ana (Vanessa Gerbelli) convence Tito a pegar as chaves da loja de Samurai com Pedro. Todos chegam ao sítio para a festa de Nanda e Filipe. Tito pega a chave da Radical Total, sem que Pedro perceba. Samurai obriga Rodrigo e Luciana a anunciarem a volta do namoro aos amigos. Flávia (Marcela Fetter) encontra Roger (Brenno Leone) dormindo no Parque dos Skates. Ana e Tito entram na Radical Total. Samurai manda alguns capangas vigiarem a loja. Ana encontra um caderno com anotações de Samurai.', '30')
+INSERT INTO episodioNovela VALUES ('34567', '78', 'Ana fotografa o caderno de Samurai. Glauco deixa a festa, e  Krica e Cleyton vão atrás dele. Os capangas de Samurai entram na Radical Total. Samurai repreende Luan (Vitor Novello) e Tainá (Lara Coutinho) por tentarem abrir uma porta trancada no sítio. Rodrigo e Luciana conversam sobre as intenções de Samurai. Miguel sofre por causa de Ana. Krica e Cleiton contam a verdade para Glauco. Nanda (Amanda de Godoi) e Filipe (Francisco Vitti) ficam noivos. Rodrigo e Luciana voltam sozinhos para casa. Ana se preocupa com os filhos. Pedro ouve Samurai denunciar o carro de Rodrigo para a polícia e tenta alertá-lo. Artur chega cedo à escola e Julia (Lívian Aragão) se surpreende. Um carro de polícia para Rodrigo. Ana vai à delegacia para encontrar o filho. Miguel afirma ao delegado que o conteúdo ilícito encontrado no carro é dele.', '30')
+INSERT INTO episodioNovela VALUES ('34567', '79', 'O delegado percebe a intenção de Miguel e o repreende. Pedro critica Samurai por ter tentado incriminar Rodrigo. Miguel pede a Ana para voltar para casa. Nanda e Filipe têm a primeira noite no novo apartamento. Samurai tenta provocar Rodrigo. Ana dispensa Miguel. Samurai vai à casa de Luciana. Filipe percebe que deixou a carteira no sítio de Samurai. Glauco decide dividir a paternidade do filho de Krica com Cleiton. Tito confronta Samurai. Arthur estuda com Júlia. Pedro defende Tito de Samurai. Krica (Cynthia Senek) vai ao médico com Cleyton (Nego do Borel) e Glauco (Bruno Montaleone) e descobre que está grávida de gêmeos. Samurai entra no quarto secreto.', '30')
+
+INSERT INTO episodioNovela VALUES ('34567', '80', 'Samurai (Felipe Titto) leva Rodriguinho ao cativeiro em que mantém Ciça (Julia Konrad) como refém. Nanda revela a Filipe que Samurai vende produtos ilícitos. Filipe se alarma ao lembrar que esqueceu a carteira no sítio de Samurai. Rodrigo (Nicolas Prattes) questiona Ana (Vanessa Gerbelli) sobre Miguel e Tito. Arthur comemora o sucesso nas provas do colégio com um beijo em Júlia. Nanda pede demissão da loja de Samurai. Tito (Guilherme Leicam) mostra a Pedro o caderno de anotações que furtou de Samurai e incentiva o irmão a ir à delegacia. Filipe volta ao sítio de Samurai e liberta Ciça, mas é perseguido pelo bandido.', '30')
+INSERT INTO episodioNovela VALUES ('34567', '81', 'Samurai provoca um acidente contra Filipe. Ciça consegue fugir e liga para Rodrigo, mas Samurai a apreende novamente. Luciana (Marina Moschen) e Rodrigo vão à delegacia. Pedro revela a Tito que não pode entregar Samurai por causa de Ilza. Glauco se preocupa com o futuro de Krica (Cynthia Senek), Cleyton (Nego do Borel) e os bebês. Beto impede que Roger furte o celular de Jéssica. Flávia cuida de Roger. Luciana e Rodrigo confrontam Pedro sobre o trabalho para Samurai. Nanda (Amanda de Godoi) se desespera ao chegar ao hospital em busca de notícias sobre Filipe (Francisco Vitti). A polícia invade o sítio de Samurai.', '30')
+INSERT INTO episodioNovela VALUES ('34567', '82', 'Samurai consegue despistar a polícia. Todos lamentam a morte de Filipe. Samurai vai ao hospital e Rodrigo e Luciana o enfrentam. Roger (Brenno Leone) se recupera com a ajuda de Flávia (Marcela Fetter). Uodson discute com Alina e Vanda apoia a menina. Luciana e Rodrigo acreditam que Samurai seja responsável pela morte de Filipe. Nanda convence a família de Filipe a aceitar a doação de órgãos. Luciana e Rodrigo perseguem Samurai e resgatam Rodriguinho. Luciana e Rodrigo procuram Vanda.', '30')
+INSERT INTO episodioNovela VALUES ('34567', '83', 'Vanda insiste em levar Rodriguinho até a delegacia. Vanda confronta Samurai e não revela que Rodriguinho está no hostel. BB e Jéssica ajudam Nanda a preparar o velório de Filipe. Samurai agride Pedro (Enzo Romani) e Tito socorre o irmão. Luciana convence Vanda a levar Rodriguinho para casa. Samurai ameaça Jorge e Sueli. Todos os amigos se despedem de Filipe. Samurai vai com a polícia à casa de Vanda e Sueli, mas não encontra Rodriguinho. Rodrigo, Luciana, Alina (Pâmela Tomé) e Uodson (Lucas Lucco) fogem com Rodriguinho.', '30')
+INSERT INTO episodioNovela VALUES ('34567', '84', 'Uodson sugere esconder Rodriguinho na casa de tia Marilu. Ana chega de viagem e se desespera com a situação de Rodrigo. Samurai alcança o carro de Uodson, mas Alina consegue escapar do bandido. Ciça sofre em seu cativeiro. Jorge, Sueli e Vanda decidem ir atrás de Luciana. Ana e Samurai se enfrentam na delegacia. Ana consegue falar com Rodrigo e vai ao encontro do filho. Samurai persegue Ana e avisa ao delegado. Samurai descobre que Pedro o entregou para a polícia. Samurai flagra Luciana tentando escapar com Rodriguinho.', '30')
+
+-- episodios de Sol Nascente
+INSERT INTO episodioNovela VALUES ('30008', '01','Alice comanda o barco de pesca com Tanaka. Gaetano orienta os padeiros na preparação da festa da colônia italiana.  Alice conta a Tanaka que fará sua pós-graduação no Japão. Damasceno mostra uma foto antiga para Geppina, que passa mal e é levada para o hospital. Alice conforta Mario. Tanaka convida Gaetano e a esposa, Geppina, para morar em Arraial do Sol Nascente. Mario não gosta de saber que Alice vai estudar no Japão. Gaetano relembra como fugiu da máfia italiana com Geppina. Lenita não deixa que Ralf veja Felipe sair de seu quarto. Geppina avisa a Gaetano sobre o detetive Damasceno. Gaetano vê um carro preto suspeito na frente da padaria e decide mudar com a família para o litoral.','60')
+INSERT INTO episodioNovela VALUES ('30008', '02','Gaetano avisa a Tanaka que se hospedará em sua casa. Damasceno fica intrigado com a repentina mudança da família De Angeli e o fechamento da padaria. Alice pede para Yumi ajudá-la em sua preparação para a viagem. Cesar pede demissão para fazer uma pós-graduação no Japão. Mario busca Geppina no hospital. Vittorio encontra uma foto de Loretta e tenta disfarçar sua emoção para Milena. Damasceno descobre que o casal que ele procura chegou ao Brasil com documentos falsos. Mario e Alice vão a uma festa. Tanaka sugere que Gaetano abra uma nova padaria em Arraial do Sol Nascente. Felipe se assusta com o comportamento de Ralf. Mario e Alice se beijam. ','60')
+INSERT INTO episodioNovela VALUES ('30008', '03','Alice repreende Mario por tê-la beijado. Lenita desiste de contar sobre Felipe para Ralf. Mario ouve Alice comentar com Yumi que o beijo entre eles não deveria ter acontecido. Tanaka leva Vittorio e Gaetano para verem a casa que venderá para eles. Mario se desculpa com Alice. Alice mostra para Mario fotos do lugar onde irá morar no Japão. Alguns meses se passam e a obra no casarão dos De Angeli é concluída. A padaria é inaugurada em Arraial com um novo nome: Pasta Pane. César é rude com Sirlene. Mario se entristece com a proximidade da viagem de Alice. Cesar se encanta por Alice ao cruzar com ela na rua.','60')
+INSERT INTO episodioNovela VALUES ('30008', '04','César descobre que Alice será sua colega no curso de pós-graduação. Hirô finge estar feliz com a viagem de Alice. César expulsa Sirlene de seu apartamento. Paula se insinua para Mario. Geppina vê Gaetano ser gentil com Lenita e arma uma confusão na padaria. Vittorio encontra fotos de Beatriz e sofre ao lembrar de seus momentos com ela. Geppina e Gaetano discutem e a família tenta acalmar o casal. Alice e Mario passam o dia juntos. Ralf revela a Mario que teve um romance com Alice.','60')
+INSERT INTO episodioNovela VALUES ('30008', '05','Mario discute com Ralf. Milena e Peppino conversam com Loretta. Mario pensa em Alice. Vittorio procura Lenita. Gaetano constrói em Arraial uma réplica da fontana onde conheceu Geppina. Mario discute com Alice. César vai a um bingo clandestino e acaba preso. Yumi tenta consolar Alice. Mario se recusa a falar com Ralf. Yumi e Hirô arrumam Alice para sua festa de despedida. César descobre que foi preso por causa de Sirlene. Geppina tenta convencer Mario de ir à festa de despedida de Alice. Alice sofre com a ausência de Mario','60')
+INSERT INTO episodioNovela VALUES ('30008', '06','Mario decide ir à festa, mas vai embora ao ver Alice conversando com Ralf. Alice escreve uma mensagem para Mario. Tanaka vê Hirô ser desrespeitosa com Mieko e fica indignado. Chica se oferece para conversar com Mario. Yumi critica Mario por não ter comparecido à festa de despedida de Alice. Lenita e Felipe ficam juntos, enquanto Ralf faz uma tatuagem. Alice chega em Tókio. Ralf descobre que Felipe é namorado de Lenita. Mario liga para Alice.','60')
+
+INSERT INTO episodioNovela VALUES ('30008', '07','Mario não consegue falar com Alice, que está no Japão. Ralf aceita o namoro de Felipe e Lenita. Ana hospeda Chica e as caiçaras em sua pousada. Mario é preso e Vittorio se desespera. Chica, Dora, Vanda e Júlia brincam em seus quartos. Felipe faz uma tatuagem em homenagem a Lenita. Alice e Mario pensam um no outro. Vittorio consegue libertar Mario. Gaetano diz que Vittorio precisa se desculpar com Lenita. César insiste para que Alice saia com ele. ','60')
+INSERT INTO episodioNovela VALUES ('30008', '08','César convida Alice para jantar. Tiago afirma a Dora que não quer ter filho. Hirô, Tanaka e Hideo postam fotos dos trabalhos de Yumi nas redes sociais. Vittorio pensa em Loretta. Gaetano sugere que Mario vá para o Japão. Yumi comenta com Hirô sobre os olhares de Ralf para ela. Tanaka repreende Mario por ter sido preso. Vittorio se irrita com a ausência de Mario na padaria. O capitão Patrick avisa a Tanaka sobre a baixa na pesca da sardinha. Alice liga para o pai, que decide não contar sobre os problemas na empresa. César planeja se aproximar de Alice pelo interesse na Arraial Pescados.','60')
+INSERT INTO episodioNovela VALUES ('30008', '09','Mario bebe e se diverte com Paula, Ralf e um grupo de turistas. Peppino reclama para Geppina do mau humor do irmão. Alice descobre sobre a prisão de Mario e tenta conversar com o amigo. Chica aconselha Mario. Júlia se preocupa quando Dora decide mergulhar no mar, mesmo com a proximidade de uma tempestade. Mario pensa em Alice. Yumi se encanta por Tiago e por sua habilidade com as peças de bambu. Alice encontra Cesar. Alguns meses se passam e Mario está triste e depressivo. Felipe pede Lenita em casamento. Cesar se oferece para cozinhar para Alice. Mario entra no mar embriagado.','60')
+INSERT INTO episodioNovela VALUES ('30008', '10','Tiago salva Mario de um afogamento e o leva até Chica. Alice tem um mau pressentimento. Ralf tenta convencer Lenita a se casar com Felipe. Cesar questiona Alice sobre a família Tanaka. Chica conta para Vittorio que Tiago salvou a vida de Mario. Mieko e os filhos se preocupam com Tanaka. Vittorio ouve Milena conversar com Loretta e fica abalado. Bernardo conhece o trabalho de Yumi e a convida para participar de uma exposição. Tanaka vende um dos barcos da empresa. Mario conserta o barco de Chica. Hirô demite Paula da Arraial Pescados. Peppino conta para Gaetano que Tanaka está passando por dificuldades financeiras. Mario fala com Alice.','60')
+INSERT INTO episodioNovela VALUES ('30008', '11','Tanaka e Yumi contam as novidades para Alice. Mario volta para casa e toda a família De Angeli se emociona. Bernardo chega a Arraial. Damasceno pensa em espalhar cartazes com a foto de Geppina pela cidade. Yumi e Bernardo trocam olhares e Mieko percebe. Dois anos se passam. Alice e César voltam do Japão e Mario vê os dois se beijando no aeroporto. César sente ciúmes de Mario e decide ir para Arraial com Alice. Mario afirma a Gaetano que lutará para ficar com Alice.','60')
+INSERT INTO episodioNovela VALUES ('30008', '12','Alice diz a Mario que está apaixonada por César. Mario conta para Ralf que se declarou para Alice. Alice confessa a Yumi que se envolveu com César e teme que sua amizade com Mario acabe. Tiago desiste de ir para o bambuzal, depois de pensar em Yumi. César escuta quando Patrick e Ana falam sobre os problemas financeiros da empresa do pai de Alice. Tanaka convida César para jantar. Felipe volta para São Paulo. Mario arruma um emprego para Paula. César questiona Alice sobre as intenções de Mario. Lenita se aproxima de Vittorio. Chica pressente que Mario salvará Alice.','60')
+
+--episodios de velho chico
+INSERT INTO episodioNovela VALUES ('3500', '55','Ceci reza por Martim. Queiroz afirma a Carlos que Martim foi embora. Cícero comenta com Tereza seu estranhamento com o comportamento de Encarnação. Bento e Beatriz elaboram um plano de governo para sua campanha. Lucas avisa a Santo que precisará dispor de sua fazenda para financiar o projeto de Miguel e Olívia. Raimundo reclama do apoio de Padre Benício à candidatura de Beatriz. Martim tenta se instalar em uma cidade ribeirinha. Santo teme perder sua fazenda.','60')
+INSERT INTO episodioNovela VALUES ('3500', '56','Queiroz e Raimundo contam para Carlos que Beatriz se candidatará à prefeitura com o apoio de Bento. Encarnação exige que Afrânio coloque a parte que lhe cabe na herança da família em seu nome. Afrânio declara guerra contra a família Dos Anjos. Martim fotografa a empresa que aparece no dossiê entregue a Bento. Miguel e Olívia orientam os funcionários da fazenda na plantação. Cícero leva Padre Benício até a fazenda. Encarnação decide se confessar para Padre Benício.','60')
+INSERT INTO episodioNovela VALUES ('3500', '57','Encarnação revela seu maior segredo a Padre Benício. Afrânio tenta descobrir algo sobre a mudança na fazenda de Santo. Martim fotografa Carlos recebendo dinheiro de um empreiteiro. Encarnação termina de tecer sua mortalha. Carlos persegue Martim por uma estrada sinuosa perto do Rio São Francisco. Carlos atira contra Martim e Encarnação tem um mau pressentimento com o neto.','60')
+INSERT INTO episodioNovela VALUES ('3500', '58','Encarnação ouve o apito do barco do Gaiola Encantado e vai até o rio. Encarnação manda Cícero executar Bento e Dalva fica aflita. Miguel procura por Martim pela cidade e Bento e Chico Criatura o ajudam. Queiroz alerta Carlos que Martim está sendo procurado por todos. Padre Benício decide voltar a falar com Encarnação. Bento encontra Cícero em sua casa. ','60')
+INSERT INTO episodioNovela VALUES ('3500', '59','Bento e Cícero se enfrentam. Cícero avisa a Tereza que todos correm perigo até que Martim seja encontrado. Cícero enfrenta Encarnação. Encarnação reconhece o valor de Afrânio. Tereza e Germano analisam as pistas sobre o sumiço de Martim. Bento revela a Beatriz que Martim havia roubado o dossiê contra os de Sá Ribeiro. Santo conversa com Miguel sobre Carlos. Encarnação caminha até a fazenda de Santo. ','60')
+INSERT INTO episodioNovela VALUES ('3500', '60','Dalva anuncia a Iolanda e Doninha que Encarnação desapareceu. Beatriz teme pela segurança de Bento. Encarnação implora o perdão de Piedade. Bento procura pistas sobre Martim e Queiroz é alertado. Luzia telefona para Bento e pede que ele volte pra casa. Iolanda se comove com o estado de Encarnação. Carlos jura vingança contra Miguel. ','60')
+
+INSERT INTO episodioNovela VALUES ('3500', '61','Luzia, Bento e Santo questionam Piedade sobre a conversa com Encarnação. Padre Benício vai ao encontro de Encarnação. Queiroz convence Carlos a poupar a vida de Bento. Luzia revela a Germano que Bento esconde algo da polícia. Germano pede que Bento confie nele. Iolanda anuncia a Afrânio que deixará a mansão.','60')
+INSERT INTO episodioNovela VALUES ('3500', '62','Bento é preso e Beatriz culpa Luzia. Bento se recusa a falar sobre o dossiê com Santo. O advogado de Encarnação pede para conversar com a família dela. Santo confidencia a Beatriz que irá procurar por Martim. Bento afirma a Queiroz que se afastará das investigações. Iolanda deixa a mansão dos de Sá Ribeiro. Piedade confronta Afrânio. ','60')
+INSERT INTO episodioNovela VALUES ('3500', '63','Beatriz e Padre Benício lideram os encontros políticos para atender às demandas da população. Luzia garante a Piedade que Bento está mais seguro na prisão. Santo encontra um envelope deixado na sua porta. Olívia discute com Miguel. Santo leva as fotos tiradas por Martim até Bento. Dalva decide deixar a mansão dos de Sá Ribeiro. Cícero conversa com Afrânio sobre Dalva.','60')
+INSERT INTO episodioNovela VALUES ('3500', '64','Carlos e Cícero se enfrentam. Afrânio sofre com a ausência de Martim. Iolanda visita sua antiga casa de show. Afrânio decide emparedar os quartos de Encarnação, Inácio e Martim. Santo alerta Miguel sobre a armação de Carlos contra ele. Queiroz interrompe o encontro político de Beatriz e Bento com a população. Santo procura Afrânio.','60')
+INSERT INTO episodioNovela VALUES ('3500', '65','Afrânio ameaça Santo, que mostra ao coronel as fotos tiradas por Martim. Doninha e Cícero se preocupam com o estado de Afrânio. Matilde encoraja Iolanda a voltar a cantar. Afrânio ameaça a vida de Carlos. Dalva canta no bar de Chico Criatura, acompanhada por Faísca. Tereza confronta Afrânio, que afirma à filha que encontrará Martim. Carlos alerta Queiroz sobre as intenções do coronel. ','60')
+
+-- episodios de liberdade, liberdade
+INSERT INTO episodioNovela VALUES ('3888', '44','Xavier (Bruno Ferrari) tenta alcançar Joaquina (Andreia Horta) antes da consumação de seu casamento com Rubião (Mateus Solano). Virgínia (Lilia Cabral) desperta e Ascensão (Zezé Polessa) ordena que fique em repouso. Branca (Nathalia Dill) arma contra Xavier. Joaquina e Rubião se casam, e Xavier se desespera. Rubião não gosta do envolvimento entre Ventura (Vitor Thiré) e Bertoleza (Sheron Menezzes). Branca sabota a bebida que planeja dar para Joaquina. Branca se confunde e acaba ingerindo a bebida envenenada. Rubião salva o Príncipe Regente.', '50')
+INSERT INTO episodioNovela VALUES ('3888', '45','Rubião apreende Duque de Ega (Gabriel Braga Nunes) e Alexandra (Juliana Carneiro da Cunha) e é aclamado por Dom João (Beto Vandesteen). Anita (Joana Solnado) sofre de ciúmes com a primeira noite de amor entre Joaquina e Rubião. Virgínia insiste para que Xavier alerte Joaquina sobre Rubião. Joaquina admira o livro de Tiradentes (Thiago Lacerda). Mimi (Yanna Lavigne) volta ao bordel de Virgínia. Rubião exige que Ventura se afaste de Bertoleza. Tolentino (Ricardo Pereira) vê André (Caio Blat) com Otto (Luan Vieira). Bertoleza concede liberdade a Luanda (Heloisa Jorge). Rubião executa Alexandra e o Duque de Ega. Xavier procura Joaquina.', '50')
+INSERT INTO episodioNovela VALUES ('3888', '46','Xavier revela a Joaquina que Rubião conspirou contra a vida de Virgínia. Joaquina pensa em fugir com Xavier, mas Ventura rende o rapaz, que acaba preso pela Intendência. Rubião ordena que Anita vigie Joaquina. Caldeira (Jairo Mattos) avisa a Omar (Bukassa Kebengele) sobre a prisão de Xavier. Brites (Rita Clemente) e Matias (Mario Borges) são presos. Mão de Luva (Marco Ricca), Virgínia e Simão (Nikolas Antunes) tramam a libertação de Xavier. Anita descobre o livro de Tiradentes nos pertences de Joaquina. Rubião flagra a esposa tentando ajudar Xavier a fugir.', '50')
+INSERT INTO episodioNovela VALUES ('3888', '47','Rubião prende Joaquina em casa. Anita entrega o livro de Tiradentes e a arma de Joaquina a Rubião. Rubião planeja executar Xavier. Joaquina revela a Rubião que é filha de Tiradentes. Rubião ameaça a esposa. Rubião promove Tolentino. Rubião queima o livro de Tiradentes. Virgínia e Mão de Luva orientam Carmina (Jacque Moura), Mimi e Vidinha (Yasmin Gomlevsky) no plano para libertar Xavier. Matias não resiste e falece na prisão. Rubião humilha Anita. Anita entrega o lenço de Raposo a Joaquina.', '50')
+
+INSERT INTO episodioNovela VALUES ('3888', '48','Joaquina (Andreia Horta) descobre outras maldades de Rubião (Mateus Solano). Anita (Joana Solnado) leva a filha de Tiradentes ao sótão para mostrar o ouro roubado e desaparecido da família da revolucionária. Joaquina fuge da casa de Rubião. É neste capítulo também que Mão de Luva (Marco Ricca) se declara para Dionísia (Maitê Proença). O bandido enche a casa de flores e deixa a tia de Joaquina encantada. André (Caio Blat) e Otto discutem por causa de Tolentino (Ricardo Pereira). Ventura (Vitor Thirré) decide fugir com Bertoleza (Sheron Menezzes) para Portugal, mas esbarram em Anita.', '50')
+INSERT INTO episodioNovela VALUES ('3888', '49','No penúltimo capítulo de Liberdade, Liberdade Rubião manda prender André, e quem cumpre a ordem é Tolentino, com quem o irmão de Joaquina teve um caso de amor. Otto é morto. Na cadeia com Xavier, André descobre que os dois serão levados à forca. Xavier faz de tudo para salvar André. Joaquina, Virgínia e Mão de Luva lideram a invasão a Vila Rica. Joaquina fica na mira de Rubião.', '50')
+INSERT INTO episodioNovela VALUES ('3888', '50','O último capítulo é marcado pela morte de Tolentino. Rubião também não resiste e Anita é revelada como a assassina do vilão. Joaquina é levada à forca. A filha de Tiradentes escapa da morte e vai para Portugal ao lado de Xavier, seu grande amor.', '50')
+
 /**
   * Tabela de exibicao de novela
   * @idPr
@@ -472,6 +1056,41 @@ INSERT INTO novela VALUES ('38888', 'Liberdade, Liberdade', 'Novela das 11 exibi
   * @horaInicioExNo
   * @horaFimExNo
   * @ibopeExNo **/
+  
+-- exibicao de malhacao  
+INSERT INTO exibicaoNovela VALUES ('34567', '75', ('02.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,3')
+INSERT INTO exibicaoNovela VALUES ('34567', '76', ('03.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,8')
+INSERT INTO exibicaoNovela VALUES ('34567', '77', ('04.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,0')
+INSERT INTO exibicaoNovela VALUES ('34567', '78', ('05.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,1')
+INSERT INTO exibicaoNovela VALUES ('34567', '79', ('06.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '11,3')
+
+INSERT INTO exibicaoNovela VALUES ('34567', '80', ('09.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,2')
+INSERT INTO exibicaoNovela VALUES ('34567', '81', ('10.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,8')
+INSERT INTO exibicaoNovela VALUES ('34567', '82', ('11.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,0')
+INSERT INTO exibicaoNovela VALUES ('34567', '83', ('12.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '11,5')
+INSERT INTO exibicaoNovela VALUES ('34567', '84', ('13.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '12,3')
+
+
+--exibicao de sol nascente
+INSERT INTO exibicaoNovela VALUES ('30008', '01', ('29.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '02', ('30.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '03', ('31.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '04', ('01.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '05', ('02.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '06', ('03.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+
+INSERT INTO exibicaoNovela VALUES ('30008', '07', ('04.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '08', ('05.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '09', ('06.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '10', ('07.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '11', ('08.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+INSERT INTO exibicaoNovela VALUES ('30008', '12', ('09.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
+
+--exibicao de velho chico
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('29.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,3')
+
+  
+  
   
 /**
   * Tabela de valor do comercial
