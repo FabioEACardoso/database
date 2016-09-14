@@ -966,16 +966,40 @@ INSERT INTO cliente VALUES ('81.754.726/0001-11', 'Chilli Beans S.A.', 'Chilli B
 INSERT INTO cliente VALUES ('84.707.920/0001-34', 'Passarela Modas Ltda', 'Passarela')
 INSERT INTO cliente VALUES ('48.987.632/0001-69', 'Microsoft Informatica Ltda', 'Microsoft')
 
-
-
 /**
   *Tabela de exibicao de comercial
   * @idPr,
-  * @ dataExCo,
+  * @dataExCo,
   * @horaInicioExCo,
   * @horaFimExCo,
   * @precoExCo,
   * @cnpjCl**/
+
+INSERT INTO exibicaoComercial VALUES ('23453' 
+INSERT INTO exibicaoComercial VALUES ('29023'
+INSERT INTO exibicaoComercial VALUES ('26536'
+INSERT INTO exibicaoComercial VALUES ('25635'
+INSERT INTO exibicaoComercial VALUES ('24436'
+INSERT INTO exibicaoComercial VALUES ('25673'
+INSERT INTO exibicaoComercial VALUES ('27637'
+INSERT INTO exibicaoComercial VALUES ('26764'
+INSERT INTO exibicaoComercial VALUES ('27637'
+INSERT INTO exibicaoComercial VALUES ('24674'
+INSERT INTO exibicaoComercial VALUES ('24764'
+INSERT INTO exibicaoComercial VALUES ('24784'
+INSERT INTO exibicaoComercial VALUES ('24784'
+INSERT INTO exibicaoComercial VALUES ('29200'
+INSERT INTO exibicaoComercial VALUES ('20094'
+INSERT INTO exibicaoComercial VALUES ('21099'
+INSERT INTO exibicaoComercial VALUES ('23333'
+INSERT INTO exibicaoComercial VALUES ('23444'
+INSERT INTO exibicaoComercial VALUES ('27777'
+INSERT INTO exibicaoComercial VALUES ('29999'
+INSERT INTO exibicaoComercial VALUES (
+INSERT INTO exibicaoComercial VALUES (
+INSERT INTO exibicaoComercial VALUES (
+INSERT INTO exibicaoComercial VALUES (
+INSERT INTO exibicaoComercial VALUES (
   
 /** Tabela de novela
   * @idPr
@@ -1124,15 +1148,6 @@ INSERT INTO exibicaoNovela VALUES ('38888', '48', ('08.01.2018', 'DD.MM.YYYY'), 
 INSERT INTO exibicaoNovela VALUES ('38888', '49', ('09.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
 INSERT INTO exibicaoNovela VALUES ('38888', '50', ('10.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
 INSERT INTO exibicaoNovela VALUES ('38888', '51', ('11.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-
-
-
-
-
-
-
-
-  
   
   
 /**
@@ -1141,3 +1156,128 @@ INSERT INTO exibicaoNovela VALUES ('38888', '51', ('11.01.2018', 'DD.MM.YYYY'), 
   * @diaSemanaVaCo
   * @horaInicioVaCo
   * @precoPorSegundoVaCo **/
+-- precos de 2016
+--valores de domingo  
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '10h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '12h00m', '5000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '15h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '16h00m', '9000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '19h00m', '10000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '22h00m', '12400,00')
+
+--valores de segunda
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '12h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '14h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '16h00m', '4500,00')
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '18h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '20h00m', '8000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '22h00m', '12500,00')
+
+--valores de terca
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '10h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '12h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '14h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '16h00m', '3500,00')
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '18h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '20h00m', '11000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '22h00m', '15000,00')
+
+--valores de quarta
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '12h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '14h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '16h00m', '4500,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '18h00m', '5000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '20h00m', '8000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '22h00m', '18000,00')
+
+--valores de quinta
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '12h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '14h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '16h00m', '4500,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '18h00m', '5000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '20h00m', '8000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '22h00m', '12000,00')
+
+--valores de sexta
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '12h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '14h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '16h00m', '8000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '18h00m', '10000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '20h00m', '12000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '22h00m', '20000,00')
+
+--valores de sabado
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '12h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '14h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '16h00m', '5500,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '18h00m', '9000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '20h00m', '14000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '22h00m', '22000,00')
+
+-- valores de 2015
+--valores de domingo  
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '10h00m', '5000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '12h00m', '6000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '15h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '16h00m', '10000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '19h00m', '12000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '22h00m', '14400,00')
+
+--valores de segunda
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '12h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '14h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '16h00m', '4500,00')
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '18h00m', '5000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '20h00m', '8000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '22h00m', '11000,00')
+
+--valores de terca
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '12h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '14h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '16h00m', '4500,00')
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '18h00m', '5000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '20h00m', '9000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '22h00m', '11000,00')
+
+--valores de quarta
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '12h00m', '2800,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '14h00m', '4800,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '16h00m', '4500,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '18h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '20h00m', '8000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '22h00m', '15000,00')
+
+--valores de quinta
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '10h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '12h00m', '1000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '14h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '16h00m', '3500,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '18h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '20h00m', '8500,00')
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '22h00m', '11000,00')
+
+--valores de sexta
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '12h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '14h00m', '3500,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '16h00m', '6000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '18h00m', '8000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '20h00m', '10000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '22h00m', '18000,00')
+
+--valores de sabado
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '10h00m', '3000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '12h00m', '2000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '14h00m', '4000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '16h00m', '4500,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '18h00m', '8000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '20h00m', '12000,00')
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '22h00m', '20000,00')
