@@ -1,7 +1,7 @@
  /**
   * Laboratorio de Base de Dados
-  * Camila Stenico dos Santos
-  * F·bio Eduardo Ara˙jo Cardoso
+  * Camila Stenico dos Santos       8530952
+  * Fabio Eduardo Araujo Cardoso    8066440
   * Script de criacao e insercao de dados no esquema emissora de televisao
  */
  
@@ -33,7 +33,7 @@
  /**
   * Tabela Emissora
   * @cnpjEm 	          chave primaria
-  * @nomeCompletoEm    chave secundaria
+  * @nomeCompletoEm     chave secundaria
   * @nomeFantasiaEm
   * @enderecoEm
   * @dataFundacaoEm
@@ -78,11 +78,11 @@
  
  /**
   * Tabela tipoFuncionario
-  * @idTipoFu 
+  * @idTipoFu               chave primaria
   * @salarioBaseTipoFu
   * @descricaoTipoFu
   * @PK_TIPOFUNCIONARIO restricao de chave primaria
- * @CH_TIPOFUNCIONARIO1 checa se o sal·rio base n„o È negativo
+  * @CH_TIPOFUNCIONARIO1 checa se o salario base nao È negativo
   */
  
  
@@ -424,7 +424,7 @@
    CONSTRAINT FK_JORNAL FOREIGN KEY (idDe) REFERENCES departamento(idDe)
     ON DELETE CASCADE,
    CONSTRAINT CH_JORNAL CHECK (duracaoJo > 0),
-   CONSTRAINT CH_JORNAL1 CHECK (UPPER(abrangenciaJo) IN ('NACIONAL', 'REGIONAL', 'MUNICIPAL'))
+   CONSTRAINT CH_JORNAL1 CHECK (UPPER(abrangenciaJo) IN ('NACIONAL', 'REGIONAL'))
  );
  
  //*
@@ -622,7 +622,6 @@ drop table exibicaoComercial cascade constraints;
    CONSTRAINT CH_EXIBICAONOVELA3 CHECK (ibopeExNo >=0)
  );
  
- drop table valorComercial cascade constraints;
 /**
   * Tabela de valor do comercial
   * @anoVaCo
@@ -643,7 +642,7 @@ drop table exibicaoComercial cascade constraints;
    
    CONSTRAINT PK_VALORCOMERCIAL PRIMARY KEY (anoVaCo, diaSemanaVaCo, horaInicioVaCo),
    CONSTRAINT CH_VALORCOMERCIAL CHECK (anoVaCo >= 1950),
-   CONSTRAINT CH_VALORCOMERCIAL1 CHECK (UPPER(diaSemanaVaCo) IN ('DOMINGO','SEGUNDA', 'TER«A', 'QUARTA', 'QUINTA', 'SEXTA', 'S¡BADO')),
+   CONSTRAINT CH_VALORCOMERCIAL1 CHECK (UPPER(diaSemanaVaCo) IN ('DOMINGO','SEGUNDA', 'TERCA', 'QUARTA', 'QUINTA', 'SEXTA', 'SABADO')),
    CONSTRAINT CH_VALORCOMERCIAL2 CHECK (horaInicioVaCo LIKE '%sh%smin'),
    CONSTRAINT CH_VALORCOMERCIAL3 CHECK (precoPorSegundoVaCo >= 0)
 );

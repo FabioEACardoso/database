@@ -1,179 +1,137 @@
---MAX 1
-INSERT INTO emissora VALUES('27.865.757/0063-05', 'Globo Comunicacao e Participacoes S/A', 'Rede Globo', 'R Jardim Botanico, 518, Lote 01 Pal 44943, Jardim Botanico, Rio De Janeiro, RJ, CEP 22461-000, Brasil', TO_DATE('26.04.1965','DD.MM.YYYY')),
+/* Insercao na tabela emissora */
+INSERT INTO emissora VALUES('27.865.757/0063-05', 'Globo Comunicacao e Participacoes S/A', 'Rede Globo', 'R Jardim Botanico, 518, Lote 01 Pal 44943, Jardim Botanico, Rio De Janeiro, RJ, CEP 22461-000, Brasil', TO_DATE('26.04.1965','DD.MM.YYYY'));
 
---elenco, financeiro, jornalismo
-INSERT INTO departamento VALUES('123', 'Administrativo', '(21)3371-2230', '28', '27.865.757/0063-05')
-INSERT INTO departamento VALUES('456', 'Elenco', '(21)3371-2250', '50', '27.865.757/0063-05')
-INSERT INTO departamento VALUES('789', 'Jornalismo', '(21)3371-2270', '135', '27.865.757/0063-05')
-INSERT INTO departamento VALUES('445', 'Entretenimento', '(21)3371-2300', '99', '27.865.757/0063-05')
+/* Insercao dos departamentos */
+INSERT INTO departamento VALUES('123', 'Administrativo', '(21)3371-2230', '28', '27.865.757/0063-05');
+INSERT INTO departamento VALUES('456', 'Elenco', '(21)3371-2250', '50', '27.865.757/0063-05');
+INSERT INTO departamento VALUES('789', 'Jornalismo', '(21)3371-2270', '135', '27.865.757/0063-05');
+INSERT INTO departamento VALUES('445', 'Entretenimento', '(21)3371-2300', '99', '27.865.757/0063-05');
 
---Deve existir obrigatoriamente o tipo “Gerente”, 
---pois o funcionário deste tipo é quem irá gerenciar 
---determinado departamento. Notem também que tem outro tipo de 
---funcionário “obrigatório” de acordo com o modelo: o funcionário que exibe o jornal.
+/* Insercao do tipo funcionario */
+INSERT INTO tipoFuncionario VALUES('1234', '1000,00', 'Gerente');
+INSERT INTO tipoFuncionario VALUES('1357', '1000,00', 'Ancora');
+INSERT INTO tipoFuncionario VALUES('1111', '1000,00', 'Jornalista');
+INSERT INTO tipoFuncionario VALUES('9090', '1000,00', 'Ator/Atriz');
+INSERT INTO tipoFuncionario VALUES('5566', '1000,00', 'Seguranca');
+INSERT INTO tipoFuncionario VALUES('9876', '1000,00', 'Cameraman');
+INSERT INTO tipoFuncionario VALUES('4534', '1000,00', 'Diretor');
+INSERT INTO tipoFuncionario VALUES('2567', '1000,00', 'Presidente');
 
-INSERT INTO tipoFuncionario VALUES('1234', '1000,00', 'Gerente')
-INSERT INTO tipoFuncionario VALUES('1357', '1000,00', 'Ancora')
-INSERT INTO tipoFuncionario VALUES('1111', '1000,00', 'Jornalista')
-INSERT INTO tipoFuncionario VALUES('9090', '1000,00', 'Ator/Atriz')
-INSERT INTO tipoFuncionario VALUES('5566', '1000,00', 'Seguranca')
-INSERT INTO tipoFuncionario VALUES('9876', '1000,00', 'Cameraman')
-INSERT INTO tipoFuncionario VALUES('4534', '1000,00', 'Diretor')
-INSERT INTO tipoFuncionario VALUES('2567', '1000,00', 'Presidente')
-
---presidente inserido
--- 4 jornalistas inseridos
--- 5 gerentes inseridos
--- esqueci os salarios
+/* insercao dos funcionarios */
 
 --presidente
-INSERT INTO funcionario VALUES('85309520', 'Francis Underwood', TO_DATE('05.11.1959','DD.MM.YYYY'), '123.456.789-1', '500000,00', '2567')
+INSERT INTO funcionario VALUES('85309520', 'Francis Underwood', TO_DATE('05.11.1959','DD.MM.YYYY'), '123.456.789-1', '500000,00', '2567');
 -- jornalistas
-INSERT INTO funcionario VALUES('89798797', 'Robin Scherbatsky', TO_DATE('23.07.1980','DD.MM.YYYY'), '431.423.623-2', '8000,00', '1111')
-INSERT INTO funcionario VALUES('14525435', 'Clark Kent', TO_DATE('02.05.1983','DD.MM.YYYY'), '532.246.625-4' ,'1111')
-INSERT INTO funcionario VALUES('12312321', 'Marcelo Cosme', TO_DATE('01.12.1980', 'DD.MM.YYYY'),'389.901.109-9','1111')
-INSERT INTO funcionario VALUES('34635464', 'Gloria Maria',  TO_DATE('15.08.1949', 'DD.MM.YYYY'), '983.533.356-2', '1111')
-INSERT INTO funcionario VALUES('13523525', 'Tadeu Schmidt', TO_DATE('18.07.1974', 'DD.MM.YYYY'), '185.150.183-9', '1111')
-INSERT INTO funcionario VALUES('18502850', 'Fernanda Gentil', TO_DATE('23.11.1986', 'DD.MM.YYYY'), '901.134.013-2', '1111')
+INSERT INTO funcionario VALUES('89798797', 'Robin Scherbatsky', TO_DATE('23.07.1980','DD.MM.YYYY'), '431.423.623-2', '8000,00', '1111');
+INSERT INTO funcionario VALUES('14525435', 'Clark Kent', TO_DATE('02.05.1983','DD.MM.YYYY'), '532.246.625-4' ,'1111');
+INSERT INTO funcionario VALUES('12312321', 'Marcelo Cosme', TO_DATE('01.12.1980', 'DD.MM.YYYY'),'389.901.109-9','1111');
+INSERT INTO funcionario VALUES('34635464', 'Gloria Maria',  TO_DATE('15.08.1949', 'DD.MM.YYYY'), '983.533.356-2', '1111');
+INSERT INTO funcionario VALUES('13523525', 'Tadeu Schmidt', TO_DATE('18.07.1974', 'DD.MM.YYYY'), '185.150.183-9', '1111');
+INSERT INTO funcionario VALUES('18502850', 'Fernanda Gentil', TO_DATE('23.11.1986', 'DD.MM.YYYY'), '901.134.013-2', '1111');
 --gerentes
-INSERT INTO funcionario VALUES('62565654', 'Barney Stinson', TO_DATE('18.02.1978', 'DD.MM.YYYY'), '152.245.767-5', '1234')
-INSERT INTO funcionario VALUES('19441905', 'Homer Simpson', TO_DATE('01.03.1949', 'DD.MM.YYYY'), '145.234.245-8', '1234')
-INSERT INTO funcionario VALUES('13456563', 'Bruce Wayne', TO_DATE('15.11.1980', 'DD.MM.YYYY'), '131.314.314-9', '1234')
-INSERT INTO funcionario VALUES('67645765', 'Hermione Granger', TO_DATE('03.09.1982', 'DD.MM.YYYY'), '123.324.423-9', '1234')
-INSERT INTO funcionario VALUES('14324324', 'Dexter Morgan', TO_DATE('15.03.1973', 'DD.MM.YYYY'), '145.245.423-3', '1234')
+INSERT INTO funcionario VALUES('62565654', 'Barney Stinson', TO_DATE('18.02.1978', 'DD.MM.YYYY'), '152.245.767-5', '1234');
+INSERT INTO funcionario VALUES('19441905', 'Homer Simpson', TO_DATE('01.03.1949', 'DD.MM.YYYY'), '145.234.245-8', '1234');
+INSERT INTO funcionario VALUES('13456563', 'Bruce Wayne', TO_DATE('15.11.1980', 'DD.MM.YYYY'), '131.314.314-9', '1234');
+INSERT INTO funcionario VALUES('67645765', 'Hermione Granger', TO_DATE('03.09.1982', 'DD.MM.YYYY'), '123.324.423-9', '1234');
+INSERT INTO funcionario VALUES('14324324', 'Dexter Morgan', TO_DATE('15.03.1973', 'DD.MM.YYYY'), '145.245.423-3', '1234');
 -- ator/atriz
-INSERT INTO funcionario VALUES('13143154', 'Cleo Pires', TO_DATE('02.10.1982', 'DD.MM.YYYY'), '132.234.562-2', '9090')
-INSERT INTO funcionario VALUES('52656562', 'Bruna Marquezine', TO_DATE('04.08.1995', 'DD.MM.YYYY'), '514.145.145-1', '9090')
-INSERT INTO funcionario VALUES('63634643', 'Thiago Fragoso', TO_DATE('01.11.1981', 'DD.MM.YYYY'), '134.542.243-4', '9090')
-INSERT INTO funcionario VALUES('42354355', 'Bruno Gagliasso', TO_DATE('13.04.1982', 'DD.MM.YYYY'), '254.245.625-3', '9090')
-INSERT INTO funcionario VALUES('62565626', 'Giovana Ewbank', TO_DATE('14.09.1986', 'DD.MM.YYYY'), '154.145.431-6', '9090')
-INSERT INTO funcionario VALUES('24535344', 'Gloria Pires', TO_DATE('23.08.1963', 'DD.MM.YYYY'), '134.356.345-0', '9090')
-INSERT INTO funcionario VALUES('14321555', 'Tarcisio Meira', TO_DATE('05.10.1935', 'DD.MM.YYYY'), '245.234.756-7', '9090')
-INSERT INTO funcionario VALUES('42623002', 'Renata Sorrah', TO_DATE('21.02.1947', 'DD.MM.YYYY'), '235.092.308-4', '9090')
-INSERT INTO funcionario VALUES('14589024', 'Alinne Moraes', TO_DATE('22.12.1982', 'DD.MM.YYYY'), '105.138.302-8', '9090')
-INSERT INTO funcionario VALUES('81750145', 'Rodrigo Simas', TO_DATE('06.01.1992', 'DD.MM.YYYY'), '190.320.123-9', '9090')
+INSERT INTO funcionario VALUES('13143154', 'Cleo Pires', TO_DATE('02.10.1982', 'DD.MM.YYYY'), '132.234.562-2', '9090');
+INSERT INTO funcionario VALUES('52656562', 'Bruna Marquezine', TO_DATE('04.08.1995', 'DD.MM.YYYY'), '514.145.145-1', '9090');
+INSERT INTO funcionario VALUES('63634643', 'Thiago Fragoso', TO_DATE('01.11.1981', 'DD.MM.YYYY'), '134.542.243-4', '9090');
+INSERT INTO funcionario VALUES('42354355', 'Bruno Gagliasso', TO_DATE('13.04.1982', 'DD.MM.YYYY'), '254.245.625-3', '9090');
+INSERT INTO funcionario VALUES('62565626', 'Giovana Ewbank', TO_DATE('14.09.1986', 'DD.MM.YYYY'), '154.145.431-6', '9090');
+INSERT INTO funcionario VALUES('24535344', 'Gloria Pires', TO_DATE('23.08.1963', 'DD.MM.YYYY'), '134.356.345-0', '9090');
+INSERT INTO funcionario VALUES('14321555', 'Tarcisio Meira', TO_DATE('05.10.1935', 'DD.MM.YYYY'), '245.234.756-7', '9090');
+INSERT INTO funcionario VALUES('42623002', 'Renata Sorrah', TO_DATE('21.02.1947', 'DD.MM.YYYY'), '235.092.308-4', '9090');
+INSERT INTO funcionario VALUES('14589024', 'Alinne Moraes', TO_DATE('22.12.1982', 'DD.MM.YYYY'), '105.138.302-8', '9090');
+INSERT INTO funcionario VALUES('81750145', 'Rodrigo Simas', TO_DATE('06.01.1992', 'DD.MM.YYYY'), '190.320.123-9', '9090');
 --ancoras
-INSERT INTO funcionario VALUES('15643734', 'Willian Bonner', TO_DATE('16.11.1963', 'DD.MM.YYYY'), '425.266.256-0', '1357')
-INSERT INTO funcionario VALUES('73768487', 'Patricia Poeta', TO_DATE('19.10.1976', 'DD.MM.YYYY'), '245.763.365-0', '1357')
-INSERT INTO funcionario VALUES('32154523', 'Evaristo Costa', TO_DATE('30.09.1976', 'DD.MM.YYYY'), '818.826.835-2', '1357')
-INSERT INTO funcionario VALUES('43262368', 'Sandra Annemberg', TO_DATE('05.06.1968', 'DD.MM.YYYY'), '926.827.177-0', '1357')
+INSERT INTO funcionario VALUES('15643734', 'Willian Bonner', TO_DATE('16.11.1963', 'DD.MM.YYYY'), '425.266.256-0', '1357');
+INSERT INTO funcionario VALUES('73768487', 'Patricia Poeta', TO_DATE('19.10.1976', 'DD.MM.YYYY'), '245.763.365-0', '1357');
+INSERT INTO funcionario VALUES('32154523', 'Evaristo Costa', TO_DATE('30.09.1976', 'DD.MM.YYYY'), '818.826.835-2', '1357');
+INSERT INTO funcionario VALUES('43262368', 'Sandra Annemberg', TO_DATE('05.06.1968', 'DD.MM.YYYY'), '926.827.177-0', '1357');
 --diretores
-INSERT INTO funcionario VALUES('98765432', 'Jorge Fernando', TO_DATE('29.03.1960', 'DD.MM.YYYY'), '187.184.572-8', '4534')
-INSERT INTO funcionario VALUES('14750401', 'Wolf Maia', TO_DATE('10.09.1953', 'DD.MM.YYYY'), '193.128.159-3', '4534')
-INSERT INTO funcionario VALUES('11054758', 'Dennis Carvalho', TO_DATE('27.09.1946', 'DD.MM.YYYY'), '158.105.100-2', '4534')
-INSERT INTO funcionario VALUES('90185014', 'Fernando Meirelles', TO_DATE('09.11.1955', 'DD.MM.YYYY'), '890.139.301-3', '4534')
+INSERT INTO funcionario VALUES('98765432', 'Jorge Fernando', TO_DATE('29.03.1960', 'DD.MM.YYYY'), '187.184.572-8', '4534');
+INSERT INTO funcionario VALUES('14750401', 'Wolf Maia', TO_DATE('10.09.1953', 'DD.MM.YYYY'), '193.128.159-3', '4534');
+INSERT INTO funcionario VALUES('11054758', 'Dennis Carvalho', TO_DATE('27.09.1946', 'DD.MM.YYYY'), '158.105.100-2', '4534');
+INSERT INTO funcionario VALUES('90185014', 'Fernando Meirelles', TO_DATE('09.11.1955', 'DD.MM.YYYY'), '890.139.301-3', '4534');
 --advogados
-INSERT INTO funcionario VALUES('32142521', 'Jon Snow', TO_DATE('15.08.1983', 'DD.MM.YYYY'), '383.302.023-1', '5566')
-INSERT INTO funcionario VALUES('32512541', 'Jim Gordon', TO_DATE('01.02.1978', 'DD.MM.YYYY'), '717.276.367-1', '5566')
+INSERT INTO funcionario VALUES('32142521', 'Jon Snow', TO_DATE('15.08.1983', 'DD.MM.YYYY'), '383.302.023-1', '5566');
+INSERT INTO funcionario VALUES('32512541', 'Jim Gordon', TO_DATE('01.02.1978', 'DD.MM.YYYY'), '717.276.367-1', '5566');
 --cameraman
-INSERT INTO funcionario VALUES('92180238', 'Cristian Grey', TO_DATE('13.04.1980', 'DD.MM.YYYY'), '830.134.321-9', '9876')
-INSERT INTO funcionario VALUES('12398503', 'Ned Stark', TO_DATE('09.08.1964', 'DD.MM.YYYY'), '218.132.213-0', '9876')
+INSERT INTO funcionario VALUES('92180238', 'Cristian Grey', TO_DATE('13.04.1980', 'DD.MM.YYYY'), '830.134.321-9', '9876');
+INSERT INTO funcionario VALUES('12398503', 'Ned Stark', TO_DATE('09.08.1964', 'DD.MM.YYYY'), '218.132.213-0', '9876');
 
---3 funcionarios com 1 dependente
--- 3 funcionarios com 1 ou mais dependentes
- /**
-  *Tabela dependente
-  * @idFu,             chave primaria e chave estrangeira
-  * @nomeCompletoDe,   chave primaria
-  * @dataNascimentoDe,
-  * @sexoDe*/
 
-INSERT INTO dependente VALUES('34635464', 'Maria Matta da Silva', TO_DATE('13.04.2005', 'DD.MM.YYYY'), 'F') 
-INSERT INTO dependente VALUES('34635464', 'Laura Matta da Silva', TO_DATE('28.11.2006', 'DD.MM.YYYY'), 'F') 
-INSERT INTO dependente VALUES('19441905', 'Lisa Simpson', TO_DATE('01.01.1997', 'DD.MM.YYYY'), 'F') 
-INSERT INTO dependente VALUES('19441905', 'Bart Simpson', TO_DATE('01.04.1996', 'DD.MM.YYYY'), 'M')
-INSERT INTO dependente VALUES('19441905', 'Maggie Simpson', TO_DATE('24.08.2003', 'DD.MM.YYYY'), 'F') 
-INSERT INTO dependente VALUES('15643734', 'Vinícius Bonner', TO_DATE('21.10.1997', 'DD.MM.YYYY'), 'M')
-INSERT INTO dependente VALUES('15643734', 'Laura Bonner', TO_DATE('21.10.1997', 'DD.MM.YYYY'), 'F')
-INSERT INTO dependente VALUES('15643734', 'Beatriz Bonner', TO_DATE('21.10.1997', 'DD.MM.YYYY'), 'F')
-INSERT INTO dependente VALUES('12398503', 'Sansa Stark', TO_DATE('18.03.1992', 'DD.MM.YYYY'), 'F')
-INSERT INTO dependente VALUES('12398503', 'Rob Stark', TO_DATE('13.09.1990', 'DD.MM.YYYY'), 'M')
-INSERT INTO dependente VALUES('90185014', 'Francisco Meirelles', TO_DATE('18.09.1988', 'DD.MM.YYYY'), 'M')
-INSERT INTO dependente VALUES('90185014', 'Carolina Meirelles', TO_DATE('06.10.1984', 'DD.MM.YYYY'), 'F')
-INSERT INTO dependente VALUES('42354355', 'Chissomo Gagliasso', TO_DATE('06.05.2015', 'DD.MM.YYYY'), 'F')
-INSERT INTO dependente VALUES('14321555', 'Tarcisio Filho', TO_DATE('22.08.1964', 'DD.MM.YYYY'), 'M')
-INSERT INTO dependente VALUES('24535344', 'Cleo Pires', TO_DATE('02.10.1982', 'DD.MM.YYYY'), 'F')
-INSERT INTO dependente VALUES('42623002', 'Mariana Simões', TO_DATE('02.12.1981', 'DD.MM.YYYY'), 'F')
+/* insercao na tabela de dependente */
+INSERT INTO dependente VALUES('34635464', 'Maria Matta da Silva', TO_DATE('13.04.2005', 'DD.MM.YYYY'), 'F');
+INSERT INTO dependente VALUES('34635464', 'Laura Matta da Silva', TO_DATE('28.11.2006', 'DD.MM.YYYY'), 'F'); 
+INSERT INTO dependente VALUES('19441905', 'Lisa Simpson', TO_DATE('01.01.1997', 'DD.MM.YYYY'), 'F');
+INSERT INTO dependente VALUES('19441905', 'Bart Simpson', TO_DATE('01.04.1996', 'DD.MM.YYYY'), 'M');
+INSERT INTO dependente VALUES('19441905', 'Maggie Simpson', TO_DATE('24.08.2003', 'DD.MM.YYYY'), 'F');
+INSERT INTO dependente VALUES('15643734', 'Vinícius Bonner', TO_DATE('21.10.1997', 'DD.MM.YYYY'), 'M');
+INSERT INTO dependente VALUES('15643734', 'Laura Bonner', TO_DATE('21.10.1997', 'DD.MM.YYYY'), 'F');
+INSERT INTO dependente VALUES('15643734', 'Beatriz Bonner', TO_DATE('21.10.1997', 'DD.MM.YYYY'), 'F');
+INSERT INTO dependente VALUES('12398503', 'Sansa Stark', TO_DATE('18.03.1992', 'DD.MM.YYYY'), 'F');
+INSERT INTO dependente VALUES('12398503', 'Rob Stark', TO_DATE('13.09.1990', 'DD.MM.YYYY'), 'M');
+INSERT INTO dependente VALUES('90185014', 'Francisco Meirelles', TO_DATE('18.09.1988', 'DD.MM.YYYY'), 'M');
+INSERT INTO dependente VALUES('90185014', 'Carolina Meirelles', TO_DATE('06.10.1984', 'DD.MM.YYYY'), 'F');
+INSERT INTO dependente VALUES('42354355', 'Chissomo Gagliasso', TO_DATE('06.05.2015', 'DD.MM.YYYY'), 'F');
+INSERT INTO dependente VALUES('14321555', 'Tarcisio Filho', TO_DATE('22.08.1964', 'DD.MM.YYYY'), 'M');
+INSERT INTO dependente VALUES('24535344', 'Cleo Pires', TO_DATE('02.10.1982', 'DD.MM.YYYY'), 'F');
+INSERT INTO dependente VALUES('42623002', 'Mariana Simões', TO_DATE('02.12.1981', 'DD.MM.YYYY'), 'F');
 
---● Um departamento somente pode ser gerenciado por um único funcionário por vez. 
---Por outro lado, um departamento pode ser gerenciado por mais do que um funcionário desde que a data de início da gerencia 
---do novo funcionário seja um dia depois da data de fim da gerência do funcionário anterior.
--- Pelo menos 1 departamento deve possuir somente 1 gerente
--- Pelo menos 1 departamento deve possuir pelo menos 2 gerentes
- /**
-  *Tabela gerencia
-  * @idDe,
-  * @idFu,
-  * @dataInicioGe,
-  * @dataFimGe **/
 
-INSERT INTO gerencia VALUES('123', '62565654', TO_DATE('02.02.2010', 'DD.MM.YYYY'), TO_DATE('02.11.2016', 'DD.MM.YYYY') )
-INSERT INTO gerencia VALUES('123', '19441905', TO_DATE('05.01.2005', 'DD.MM.YYYY'), TO_DATE('29.10.2010', 'DD.MM.YYYY') )
-INSERT INTO gerencia VALUES('456', '13456563', TO_DATE('15.11.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
-INSERT INTO gerencia VALUES('789', '67645765', TO_DATE('24.11.2014', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO gerencia VALUES('445', '14324324', TO_DATE('02.10.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
+/* Insercao na tabela gerencia */
+INSERT INTO gerencia VALUES('123', '62565654', TO_DATE('02.02.2010', 'DD.MM.YYYY'), TO_DATE('02.11.2016', 'DD.MM.YYYY') );
+INSERT INTO gerencia VALUES('123', '19441905', TO_DATE('05.01.2005', 'DD.MM.YYYY'), TO_DATE('29.10.2010', 'DD.MM.YYYY') );
+INSERT INTO gerencia VALUES('456', '13456563', TO_DATE('15.11.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
+INSERT INTO gerencia VALUES('789', '67645765', TO_DATE('24.11.2014', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO gerencia VALUES('445', '14324324', TO_DATE('02.10.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') );
 
--- Cada departamento deve possuir pelo menos 3 funcionários--
--- Deve existir pelo menos 5 funcionários que trabalharam/trabalham em um mesmo departamento, só que em datas de início distintas
--- Notem que um gerente também é funcionário de um departamento. Ou seja, para que
--- o funcionário seja gerente, deve ser garantido que ele esteja associado ao
--- departamento que ele gerencia.
- /*Tabela trabalho
-  * @idDe,         chave primaria
-  * @idFu,         chave primaria
-  * @dataInicioTr, chave primaria
-  * @dataFimTr**/
-  
-  -- funcionarios que trabalham no departamento administrativo
-INSERT INTO trabalho VALUES('123', '62565654', TO_DATE('05.02.2010', 'DD.MM.YYYY'), TO_DATE('05.02.2018', 'DD.MM.YYYY') ) --gerente
-INSERT INTO trabalho VALUES('123', '32142521', TO_DATE('16.03.2011', 'DD.MM.YYYY'), TO_DATE('16.03.2017', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('123', '85309520', TO_DATE('23.04.2012', 'DD.MM.YYYY'), TO_DATE('23.11.2016', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('123', '32512541', TO_DATE('27.05.2014', 'DD.MM.YYYY'), TO_DATE('27.11.2016', 'DD.MM.YYYY') )
+
+/* Insercao dos funcionarios nos departamentos */
+-- funcionarios que trabalham no departamento administrativo
+INSERT INTO trabalho VALUES('123', '62565654', TO_DATE('05.02.2010', 'DD.MM.YYYY'), TO_DATE('05.02.2018', 'DD.MM.YYYY') ); --gerente
+INSERT INTO trabalho VALUES('123', '32142521', TO_DATE('16.03.2011', 'DD.MM.YYYY'), TO_DATE('16.03.2017', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('123', '85309520', TO_DATE('23.04.2012', 'DD.MM.YYYY'), TO_DATE('23.11.2016', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('123', '32512541', TO_DATE('27.05.2014', 'DD.MM.YYYY'), TO_DATE('27.11.2016', 'DD.MM.YYYY') );
 
 -- funcionarios que trabalham no departamento de elenco
-INSERT INTO trabalho VALUES('456', '13456563', TO_DATE('24.02.2006', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') ) --gerente
-INSERT INTO trabalho VALUES('456', '13143154', TO_DATE('11.04.2007', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('456', '52656562', TO_DATE('01.06.2004', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('456', '63634643', TO_DATE('09.08.2005', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('456', '42354355', TO_DATE('14.10.2006', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('456', '24535344', TO_DATE('17.12.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('456', '14321555', TO_DATE('11.02.2003', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('456', '42623002', TO_DATE('21.03.2014', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('456', '14589024', TO_DATE('12.05.2011', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('456', '81750145', TO_DATE('22.07.2015', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') )
+INSERT INTO trabalho VALUES('456', '13456563', TO_DATE('24.02.2006', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') ); --gerente
+INSERT INTO trabalho VALUES('456', '13143154', TO_DATE('11.04.2007', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('456', '52656562', TO_DATE('01.06.2004', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('456', '63634643', TO_DATE('09.08.2005', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('456', '42354355', TO_DATE('14.10.2006', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('456', '24535344', TO_DATE('17.12.2008', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('456', '14321555', TO_DATE('11.02.2003', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('456', '42623002', TO_DATE('21.03.2014', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('456', '14589024', TO_DATE('12.05.2011', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('456', '81750145', TO_DATE('22.07.2015', 'DD.MM.YYYY'), TO_DATE('15.02.2017', 'DD.MM.YYYY') );
 
 -- funcionarios que trabalham no departamento de  jornalismo
-INSERT INTO trabalho VALUES('789', '89798797', TO_DATE('02.01.2008', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '14525435', TO_DATE('04.03.2009', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '12312321', TO_DATE('08.05.2014', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '34635464', TO_DATE('16.07.2013', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '13523525', TO_DATE('28.02.2012', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '18502850', TO_DATE('01.04.2015', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '15643734', TO_DATE('01.06.2000', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '73768487', TO_DATE('02.12.2003', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '32154523', TO_DATE('03.10.2013', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '43262368', TO_DATE('05.01.2011', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('789', '67645765', TO_DATE('08.09.2010', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') )
+INSERT INTO trabalho VALUES('789', '89798797', TO_DATE('02.01.2008', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '14525435', TO_DATE('04.03.2009', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '12312321', TO_DATE('08.05.2014', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '34635464', TO_DATE('16.07.2013', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '13523525', TO_DATE('28.02.2012', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '18502850', TO_DATE('01.04.2015', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '15643734', TO_DATE('01.06.2000', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '73768487', TO_DATE('02.12.2003', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '32154523', TO_DATE('03.10.2013', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '43262368', TO_DATE('05.01.2011', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('789', '67645765', TO_DATE('08.09.2010', 'DD.MM.YYYY'), TO_DATE('30.11.2021', 'DD.MM.YYYY') );
 
 -- funcionarios que trabalham no departamento de  entretenimento
-INSERT INTO trabalho VALUES('445', '14324324', TO_DATE('28.09.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )-- gerente
-INSERT INTO trabalho VALUES('445', '92180238', TO_DATE('24.08.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('445', '98765432', TO_DATE('23.07.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('445', '14750401', TO_DATE('19.06.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('445', '11054758', TO_DATE('18.05.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
-INSERT INTO trabalho VALUES('445', '90185014', TO_DATE('17.04.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') )
+INSERT INTO trabalho VALUES('445', '14324324', TO_DATE('28.09.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') );-- gerente
+INSERT INTO trabalho VALUES('445', '92180238', TO_DATE('24.08.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('445', '98765432', TO_DATE('23.07.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('445', '14750401', TO_DATE('19.06.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('445', '11054758', TO_DATE('18.05.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') );
+INSERT INTO trabalho VALUES('445', '90185014', TO_DATE('17.04.2015', 'DD.MM.YYYY'), TO_DATE('02.10.2020', 'DD.MM.YYYY') );
 
-/**
-   *Tabela filme
-   * @idPr,         chave primaria
-   * @tituloPr
-   * @descricaoPr
-   * @idDe
-   * @producaoNacionalEn
-   * @anoLancamentoFi
-   * @duracaoFi     n˙mero em minutos
-   * @generoFi **/
 
+/* Insercao de filmes */
 INSERT INTO filme VALUES('1', 'Viagem À Lua', 'O professor Barbenfouillis (Georges Méliès) convence seus colegas a participarem de uma viagem de exploração à Lua. Eles partem em uma nave que aterrissa no olho direito da Lua. Lá eles encontram habitantes hostis que o levam ao seu rei. Os terráqueos conseguem fugir quando descobrem que os inimigos viram fumaça a um simples toque de um guarda-chuva.', '445', 'NÃO', TO_DATE('1902', 'YYYY'), '16', 'Aventura, Fantasia, Ficção científica');
 INSERT INTO filme VALUES('2', 'O Martírio de Joana D arc', 'A jovem camponesa Joana D Arc (Maria Falconetti) é condenada à morte por ter liderado o povo francês contra o exército invasor inglês, dizendo que foi inspirada por Jesus e São Miguel. Ela passa pelas suas últimas horas de vida em que é capturada pelos ingleses, levada à prisão, torturada, vai à julgamento por heresia e por fim é executada. Durante todo esse tempo, ela sofre por causa das acusações e também devido ao abandono da Igreja Católica e dos seus compatriotas franceses.', '445', 'NÃO', TO_DATE('1928', 'YYYY'), '110', 'Drama, Biografia, Histórico');
 INSERT INTO filme VALUES('3', 'Tempos Modernos', 'Um operário de uma linha de montagem, que testou uma "máquina revolucionária" para evitar a hora do almoço, é levado à loucura pela "monotonia frenética" do seu trabalho. Após um longo período em um sanatório ele fica curado de sua crise nervosa, mas desempregado. Ele deixa o hospital para começar sua nova vida, mas encontra uma crise generalizada e equivocadamente é preso como um agitador comunista, que liderava uma marcha de operários em protesto. Simultaneamente uma jovem rouba comida para salvar suas irmãs famintas, que ainda são bem garotas. Elas não tem mãe e o pai delas está desempregado, mas o pior ainda está por vir, pois ele é morto em um conflito. A lei vai cuidar das órfãs, mas enquanto as menores são levadas a jovem consegue escapar. ', '445', 'NÃO', TO_DATE('1936', 'YYYY'), '83', 'Comédia , Drama, Romance');
@@ -353,7 +311,7 @@ INSERT INTO filme VALUES('176', 'Aquarius', 'Clara (Sonia Braga) tem 65 anos, é
 INSERT INTO filme VALUES('177', 'Zootopia', 'Clara (Sonia Braga) tem 65 anos, é jornalista aposentada, viúva e mãe de três adultos. Ela mora em um apartamento localizado na Av. Boa Viagem, no Recife, onde criou seus filhos e viveu boa parte de sua vida. Interessada em construir um novo prédio no espaço, os responsáveis por uma construtora conseguiram adquirir quase todos os apartamentos do prédio, menos o dela. Por mais que tenha deixado bem claro que não pretende vendê-lo, Clara sofre todo tipo de assédio e ameaça para que mude de ideia. ', '445', 'NÃO', TO_DATE('2016', 'YYYY'), '108', 'Animação, Fantasia, Aventura, Comédia');
 
 
-
+/* Insercao na tabela de exibicao de filmes */
 INSERT INTO exibicaoFilme('24', TO_DATE('25.04.2016', 'DD.MM.YYYY'), '22h00min', '23h24min', '4');
 INSERT INTO exibicaoFilme('24', TO_DATE('27.07.2016', 'DD.MM.YYYY'), '23h00min', '00h24min', '5');
 INSERT INTO exibicaoFilme('24', TO_DATE('13.10.2016', 'DD.MM.YYYY'), '21h00min', '22h24min');
@@ -393,7 +351,7 @@ INSERT INTO exibicaoFilme('95', TO_DATE('03.06.2016', 'DD.MM.YYYY'), '01h00min',
 INSERT INTO exibicaoFilme('157', TO_DATE('15.08.2016', 'DD.MM.YYYY'), '06h00min', '08h46min', '5');
 INSERT INTO exibicaoFilme('84', TO_DATE('06.04.2016', 'DD.MM.YYYY'), '17h00min', '19h04min', '4');
 
-/*Inserção de séries*/
+/* Inserção de séries */
 INSERT INTO serie VALUES('50001', 'Game of Thrones', 'A série de televisão segue as múltiplas histórias dos livros de A Song of Ice and Fire. Se passando nos Sete Reinos de Westeros, onde "verões duram décadas e os invernos uma vida inteira", Game of Thrones mostra as violentas lutas dinásticas entre as famílias nobres para ter o controle do Trono de Ferro de Westeros. Enquanto isso, nas regiões desconhecidas ao norte da Muralha e nos continentes ao leste, ameaças adicionais começam a surgir.', '445', 'NÂO', 'Aventura, Drama, Épico, Fantasia', '6');
 INSERT INTO serie VALUES('50002', 'True Detective', 'True Detective é uma série de televisão americana criada por Nic Pizzolatto para o canal HBO, tendo sua primeira temporada dirigida por Cary Joji Fukunaga. A primeira temporada estrelou atores como Matthew McConaughey, Woody Harrelson, Michelle Monaghan, Michael Potts e Tory Kittles, e utiliza múltiplas linhas do tempo para traçar através de 17 anos a busca de dois detetives por um assassino em série em Louisiana. Sua primeira temporada estreou em 12 de janeiro de 2014, possuindo oito episódios, terminando no dia 09 de março de 2014.', '445', 'NÂO', 'Southern Gotic, Drama, Crime, Neo-noir, Mistério, Policial', '2');
 INSERT INTO serie VALUES('50003', 'Black Mirror', 'Black Mirror é uma série de televisão britânica criada por Charlie Brooker, produzida pela Zeppotron para a Endemol. Em relação ao conteúdo e a estrutura da série, Brooker destacou que "cada episódio tem um elenco diferente, um set diferente e até uma realidade diferente, mas todos eles são sobre a forma como vivemos agora - e a forma como nós poderemos viver em 10 minutos se formos desastrados."', '445', 'NÂO', 'Ficção científica, Sátira', '2');
@@ -403,7 +361,7 @@ INSERT INTO serie VALUES('50006', 'Justiça', 'Justiça é uma minissérie brasi
 INSERT INTO serie VALUES('50007', 'Breaking Bad', 'Breaking Bad é uma premiada série de televisão americana criada e produzida por Vince Gilligan que retrata a vida do químico Walter White, um homem brilhante frustrado em dar aulas para adolescentes do ensino médio enquanto lida com um filho sofrendo de paralisia cerebral, uma esposa grávida e dívidas intermináveis. Quando o já tenso White é diagnosticado com um câncer no pulmão, o mesmo sofre um colapso e abraça uma vida de crimes, começando a produzir e vender metanfetaminas com o seu ex-aluno Jesse Pinkman para assegurar o futuro financeiro de sua família após sua morte.', '445', 'NÂO', 'Ação, Suspense, Drama, Crime, Faroeste contemporâneo, Humor Negro', '5');
 
 
-/*Temporadas de Game of Thrones*/
+/* Temporadas de Game of Thrones */
 INSERT INTO temporada VALUES('50001', '1', '', '10');
 INSERT INTO temporada VALUES('50001', '2', '', '10');
 INSERT INTO temporada VALUES('50001', '3', '', '10');
@@ -828,29 +786,15 @@ INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('03.09.2016', 'DD.MM
 INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('10.09.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '5');
 
 
--- INSERIR JORNAL
 
-/* idPr NUMBER(5) NOT NULL,
-   tituloPr VARCHAR2(50),
-   descricaoPr VARCHAR2(200),
-   idDe NUMBER(3),
-   duracaoJo NUMBER(3),
-   abrangenciaJo VARCHAR2(20),*/
-   
+/* Insercao dos jornais */   
 INSERT INTO jornal VALUES('12345','Bom Dia Brasil', 'Jornal matinal', '789', '080', 'Nacional')
 INSERT INTO jornal VALUES('10005','EPTV', 'Jornal regional', '789', '050', 'Regional')
 INSERT INTO jornal VALUES('13154','Jornal Nacional', 'Principal jornal da emissora', '789', '080', 'Nacional')
 INSERT INTO jornal VALUES('14552','Jornal Hoje', 'Jornal da tarde', '789', '060', 'Nacional')
 
--- EXIBE JORNAL
 
-/*idPr NUMBER(5) NOT NULL, 
-  idFu NUMBER(8) NOT NULL, 
-  dataExJo DATE NOT NULL, 
-  horaInicioExJo VARCHAR2(8) NOT NULL, 
-  horaFimExJo VARCHAR2(8), --check se horario È maior
-  ibopeExJo NUMBER(2,2),*/
-  
+/* Insercao da exibicao de jornal */  
 -- Bom dia brasil exibido de seg a sex as 6h até 7h30
 INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('02.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '6,7');
 INSERT INTO exibicaoJornal VALUES('12345', '73768487', TO_DATE('03.08.2016', 'DD.MM.YYYY'), '06h00min', '07h30min', '6,3');
@@ -909,447 +853,400 @@ INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('14.04.2016', 'DD
 INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('15.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '23,2');
 INSERT INTO exibicaoJornal VALUES('13154', '15643734', TO_DATE('16.04.2016', 'DD.MM.YYYY'), '20h00min', '21h80min', '23,7');
 
--- COMERCIAL
 
-/*
-idPr NUMBER(5) NOT NULL, 
-  tituloPr VARCHAR2(20), 
-  descricaoPr VARCHAR2(200), 
-  idDe NUMBER(3),
-  */
-  
-INSERT INTO comercial VALUES ('23453', 'Novo Cruise', 'Chevrolet Cruise 2017', '445')
-INSERT INTO comercial VALUES ('29023', 'Avon com Karol', 'Nova linha de produtos da Avon', '445')
-INSERT INTO comercial VALUES ('26536', 'Esquadrao Suicida', 'Trailer do novo filme Esquadrao Suicida', '445')
-INSERT INTO comercial VALUES ('25635', 'Mr Musuculo', 'Comercial do produto de limpeza Mr Musuculo', '445')
-INSERT INTO comercial VALUES ('26536', 'Banco do Brasil', 'Abra uma conta no Banco do Brasil', '445')
-INSERT INTO comercial VALUES ('25673', 'Digitau', 'Novo comercial do Itau', '445')
-INSERT INTO comercial VALUES ('27637', 'Presunto Sadia', 'Apresentacao do novo presunto sadia sem gordura', '445')
-INSERT INTO comercial VALUES ('26764', 'Run Adidas', 'Nova linha de corrida adidas', '445')
-INSERT INTO comercial VALUES ('27637', 'Novo Samsung', 'Apresentacao do novo samsung s7', '445')
-INSERT INTO comercial VALUES ('24674', 'iPhone 7', 'Apresentacao do novo iPhone da Apple', '445')
-INSERT INTO comercial VALUES ('24764', 'NET Combo', 'Promocao Net Combo', '445')
-INSERT INTO comercial VALUES ('24784', 'Claro Plano Familia', 'Apresenta a linha familiar da claro para menor preco', '445')
-INSERT INTO comercial VALUES ('29200', 'Vivo TV', 'Novos pacotes de tv com desconto', '445')
-INSERT INTO comercial VALUES ('20094', 'Promocoes Casas Bahia', 'Promocoes de setembro', '445')
-INSERT INTO comercial VALUES ('21099', 'Pequenos Precos Walmart', 'promocoes da semana do walmart', '445')
-INSERT INTO comercial VALUES ('23333', 'Raid', 'Divulgacao da nova formula de Raid', '445')
-INSERT INTO comercial VALUES ('23444', 'Lojas Americanas', 'Promocoes do mes', '445')
-INSERT INTO comercial VALUES ('27565', 'Oculos Chilli Beans', 'Novidades nas lojas', '445')
-INSERT INTO comercial VALUES ('27777', 'Lançamentos Passarela', 'Novidades das lojas passarela', '445')
-INSERT INTO comercial VALUES ('29999', 'XBOX Live', 'Divulgacao da rede do xbox', '445')
-INSERT INTO comercial VALUES ('27766', 'Zenfone Go', 'Divulgacao do novo zenfone', '445')
-INSERT INTO comercial VALUES ('25522', 'Motorola GX', 'Novo Motorola com 5G', '445')
-INSERT INTO comercial VALUES ('21590', 'Sony Z45', 'Divulgacao do novo smartphone Sony a prova dagua', '445')
+/* Insercao na tabela comercial */  
+INSERT INTO comercial VALUES ('23453', 'Novo Cruise', 'Chevrolet Cruise 2017', '445');
+INSERT INTO comercial VALUES ('29023', 'Avon com Karol', 'Nova linha de produtos da Avon', '445');
+INSERT INTO comercial VALUES ('26536', 'Esquadrao Suicida', 'Trailer do novo filme Esquadrao Suicida', '445');
+INSERT INTO comercial VALUES ('25635', 'Mr Musuculo', 'Comercial do produto de limpeza Mr Musuculo', '445');
+INSERT INTO comercial VALUES ('26536', 'Banco do Brasil', 'Abra uma conta no Banco do Brasil', '445');
+INSERT INTO comercial VALUES ('25673', 'Digitau', 'Novo comercial do Itau', '445');
+INSERT INTO comercial VALUES ('27637', 'Presunto Sadia', 'Apresentacao do novo presunto sadia sem gordura', '445');
+INSERT INTO comercial VALUES ('26764', 'Run Adidas', 'Nova linha de corrida adidas', '445');
+INSERT INTO comercial VALUES ('27637', 'Novo Samsung', 'Apresentacao do novo samsung s7', '445');
+INSERT INTO comercial VALUES ('24674', 'iPhone 7', 'Apresentacao do novo iPhone da Apple', '445');
+INSERT INTO comercial VALUES ('24764', 'NET Combo', 'Promocao Net Combo', '445');
+INSERT INTO comercial VALUES ('24784', 'Claro Plano Familia', 'Apresenta a linha familiar da claro para menor preco', '445');
+INSERT INTO comercial VALUES ('29200', 'Vivo TV', 'Novos pacotes de tv com desconto', '445');
+INSERT INTO comercial VALUES ('20094', 'Promocoes Casas Bahia', 'Promocoes de setembro', '445');
+INSERT INTO comercial VALUES ('21099', 'Pequenos Precos Walmart', 'promocoes da semana do walmart', '445');
+INSERT INTO comercial VALUES ('23333', 'Raid', 'Divulgacao da nova formula de Raid', '445');
+INSERT INTO comercial VALUES ('23444', 'Lojas Americanas', 'Promocoes do mes', '445');
+INSERT INTO comercial VALUES ('27565', 'Oculos Chilli Beans', 'Novidades nas lojas', '445');
+INSERT INTO comercial VALUES ('27777', 'Lançamentos Passarela', 'Novidades das lojas passarela', '445');
+INSERT INTO comercial VALUES ('29999', 'XBOX Live', 'Divulgacao da rede do xbox', '445');
+INSERT INTO comercial VALUES ('27766', 'Zenfone Go', 'Divulgacao do novo zenfone', '445');
+INSERT INTO comercial VALUES ('25522', 'Motorola GX', 'Novo Motorola com 5G', '445');
+INSERT INTO comercial VALUES ('21590', 'Sony Z45', 'Divulgacao do novo smartphone Sony a prova dagua', '445');
 
-
-
-/**
-  *Tabela de cliente
-  * @cnpjCl,
-  * @nomeCompletoCl,
-  * @nomeFantasiaCl
-  **/
-
-INSERT INTO cliente VALUES ('42.064.632/0001-69', 'Gmac Administradora de Consorcios Ltda.' , 'Consorcio Nacional Chevrolet')
-INSERT INTO cliente VALUES ('45.610.956/0001-43', 'Avon Cosmeticos Ltda.' , 'Avon')
-INSERT INTO cliente VALUES ('03.082.623/0001-49', 'Warner Bros Entertainment Inc' ,  'Warner Bros Studios')
-INSERT INTO cliente VALUES ('69.351.243/0001-70', 'Sc Johnson & Son de Argentina Saic' , 'SC Johnson')
-INSERT INTO cliente VALUES ('19.002.876/0001-04', 'Banco Mercantil do Brasil Sa' , 'Banco do Brasil')
-INSERT INTO cliente VALUES ('07.400.431/0001-94', 'Itau Unibanco S.A.' , 'Itau')
-INSERT INTO cliente VALUES ('36.973.232/0001-73', 'Comercio Alimenticio Sadia Ltda.' , 'Sadia')
-INSERT INTO cliente VALUES ('57.038.652/0001-32', 'Adidas do Brasil Ltda' , 'Adidas')
-INSERT INTO cliente VALUES ('48.084.184/0001-41', 'Samsung S.A.', 'Samsung')
-INSERT INTO cliente VALUES ('50.923.414/0001-60', 'Apple Inc.', 'Apple')
-INSERT INTO cliente VALUES ('19.310.585/0001-74', 'Telecom Net S/A Logistica Digital' , 'NET')
-INSERT INTO cliente VALUES ('12.615.501/0001-61', 'Claro S.A.', 'Claro')
-INSERT INTO cliente VALUES ('28.386.593/0001-95', 'Telefonica Brasil S.A.', 'Vivo')
-INSERT INTO cliente VALUES ('20.653.075/0001-89', 'Casa Bahia Comercial Ltda. ', 'Casas Bahia')
-INSERT INTO cliente VALUES ('38.377.766/0001-62', 'WalMart Brasil Ltda', 'Walmart')
-INSERT INTO cliente VALUES ('65.257.376/0001-21', 'Lojas Americanas S.A.', 'Lojas Americanas')
-INSERT INTO cliente VALUES ('81.754.726/0001-11', 'Chilli Beans S.A.', 'Chilli Beans')
-INSERT INTO cliente VALUES ('84.707.920/0001-34', 'Passarela Modas Ltda', 'Passarela')
-INSERT INTO cliente VALUES ('48.987.632/0001-69', 'Microsoft Informatica Ltda', 'Microsoft')
-INSERT INTO cliente VALUES ('78.288.012/0001-50', 'Sony Brasil Ltda', 'Sony')
-INSERT INTO cliente VALUES ('70.921.517/0001-08', 'Asus Comercio de eletronicos Ltda', 'Asus')
-INSERT INTO cliente VALUES ('40.104.750/0001-28', 'Motorola do Brasil Ltda', 'Motorola')
+/* Insercao na tabela de cliente */
+INSERT INTO cliente VALUES ('42.064.632/0001-69', 'Gmac Administradora de Consorcios Ltda.' , 'Consorcio Nacional Chevrolet');
+INSERT INTO cliente VALUES ('45.610.956/0001-43', 'Avon Cosmeticos Ltda.' , 'Avon');
+INSERT INTO cliente VALUES ('03.082.623/0001-49', 'Warner Bros Entertainment Inc' ,  'Warner Bros Studios');
+INSERT INTO cliente VALUES ('69.351.243/0001-70', 'Sc Johnson & Son de Argentina Saic' , 'SC Johnson');
+INSERT INTO cliente VALUES ('19.002.876/0001-04', 'Banco Mercantil do Brasil Sa' , 'Banco do Brasil');
+INSERT INTO cliente VALUES ('07.400.431/0001-94', 'Itau Unibanco S.A.' , 'Itau');
+INSERT INTO cliente VALUES ('36.973.232/0001-73', 'Comercio Alimenticio Sadia Ltda.' , 'Sadia');
+INSERT INTO cliente VALUES ('57.038.652/0001-32', 'Adidas do Brasil Ltda' , 'Adidas');
+INSERT INTO cliente VALUES ('48.084.184/0001-41', 'Samsung S.A.', 'Samsung');
+INSERT INTO cliente VALUES ('50.923.414/0001-60', 'Apple Inc.', 'Apple');
+INSERT INTO cliente VALUES ('19.310.585/0001-74', 'Telecom Net S/A Logistica Digital' , 'NET');
+INSERT INTO cliente VALUES ('12.615.501/0001-61', 'Claro S.A.', 'Claro');
+INSERT INTO cliente VALUES ('28.386.593/0001-95', 'Telefonica Brasil S.A.', 'Vivo');
+INSERT INTO cliente VALUES ('20.653.075/0001-89', 'Casa Bahia Comercial Ltda. ', 'Casas Bahia');
+INSERT INTO cliente VALUES ('38.377.766/0001-62', 'WalMart Brasil Ltda', 'Walmart');
+INSERT INTO cliente VALUES ('65.257.376/0001-21', 'Lojas Americanas S.A.', 'Lojas Americanas');
+INSERT INTO cliente VALUES ('81.754.726/0001-11', 'Chilli Beans S.A.', 'Chilli Beans');
+INSERT INTO cliente VALUES ('84.707.920/0001-34', 'Passarela Modas Ltda', 'Passarela');
+INSERT INTO cliente VALUES ('48.987.632/0001-69', 'Microsoft Informatica Ltda', 'Microsoft');
+INSERT INTO cliente VALUES ('78.288.012/0001-50', 'Sony Brasil Ltda', 'Sony');
+INSERT INTO cliente VALUES ('70.921.517/0001-08', 'Asus Comercio de eletronicos Ltda', 'Asus');
+INSERT INTO cliente VALUES ('40.104.750/0001-28', 'Motorola do Brasil Ltda', 'Motorola');
 
 
-/**
-  *Tabela de exibicao de comercial
-  * @idPr,
-  * @dataExCo,
-  * @horaInicioExCo,
-  * @horaFimExCo,
-  * @precoExCo,         --atributo derivado
-  * @cnpjCl**/
-
+/*Insercao na tabela de exibicao de comercial */
 -- Comercial do novo cruise
-INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '42.064.632/0001-69')
-INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '42.064.632/0001-69')
-INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '42.064.632/0001-69')
-INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '42.064.632/0001-69')
-INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '42.064.632/0001-69')
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '42.064.632/0001-69');
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '42.064.632/0001-69');
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '42.064.632/0001-69');
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '42.064.632/0001-69');
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '42.064.632/0001-69');
 
-INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '45.610.956/0001-43')
-INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '45.610.956/0001-43')
-INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '45.610.956/0001-43')
-INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '10h00min', '10h40min', '45.610.956/0001-43')
-INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '45.610.956/0001-43')
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '45.610.956/0001-43');
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '45.610.956/0001-43');
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '45.610.956/0001-43');
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '10h00min', '10h40min', '45.610.956/0001-43');
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '45.610.956/0001-43');
 
-INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '03.082.623/0001-49')
-INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '03.082.623/0001-49')
-INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '03.082.623/0001-49')
-INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '10h00min', '10h40min', '03.082.623/0001-49')
-INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '03.082.623/0001-49')
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '03.082.623/0001-49');
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '03.082.623/0001-49');
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '03.082.623/0001-49');
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '10h00min', '10h40min', '03.082.623/0001-49');
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '03.082.623/0001-49');
 
-INSERT INTO exibicaoComercial VALUES ('25635', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '69.351.243/0001-70')
-INSERT INTO exibicaoComercial VALUES ('25635', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '69.351.243/0001-70')
+INSERT INTO exibicaoComercial VALUES ('25635', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '69.351.243/0001-70');
+INSERT INTO exibicaoComercial VALUES ('25635', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '69.351.243/0001-70');
 
-INSERT INTO exibicaoComercial VALUES ('24436', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '69.351.243/0001-70')
-INSERT INTO exibicaoComercial VALUES ('24436', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '69.351.243/0001-70')
+INSERT INTO exibicaoComercial VALUES ('24436', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '69.351.243/0001-70');
+INSERT INTO exibicaoComercial VALUES ('24436', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '69.351.243/0001-70');
 
-INSERT INTO exibicaoComercial VALUES ('25673', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '19.002.876/0001-04')
-INSERT INTO exibicaoComercial VALUES ('25673', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '19.002.876/0001-04')
+INSERT INTO exibicaoComercial VALUES ('25673', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '19.002.876/0001-04');
+INSERT INTO exibicaoComercial VALUES ('25673', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '19.002.876/0001-04');
 
-INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '12.615.501/0001-61')
-INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '12.615.501/0001-61')
+INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '12.615.501/0001-61');
+INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '12.615.501/0001-61');
 
-INSERT INTO exibicaoComercial VALUES ('26764', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '28.386.593/0001-95')
-INSERT INTO exibicaoComercial VALUES ('26764', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '28.386.593/0001-95')
+INSERT INTO exibicaoComercial VALUES ('26764', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '28.386.593/0001-95');
+INSERT INTO exibicaoComercial VALUES ('26764', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '28.386.593/0001-95');
 
-INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '20.653.075/0001-89')
-INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '20.653.075/0001-89')
+INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '20.653.075/0001-89');
+INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '20.653.075/0001-89');
 
-INSERT INTO exibicaoComercial VALUES ('24674', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '38.377.766/0001-62')
-INSERT INTO exibicaoComercial VALUES ('24674', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '38.377.766/0001-62')
+INSERT INTO exibicaoComercial VALUES ('24674', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '38.377.766/0001-62');
+INSERT INTO exibicaoComercial VALUES ('24674', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '38.377.766/0001-62');
 
-INSERT INTO exibicaoComercial VALUES ('24764', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '38.377.766/0001-62')
-INSERT INTO exibicaoComercial VALUES ('24764', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '38.377.766/0001-62')
+INSERT INTO exibicaoComercial VALUES ('24764', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '38.377.766/0001-62');
+INSERT INTO exibicaoComercial VALUES ('24764', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '38.377.766/0001-62');
 
-INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '12.615.501/0001-61')
-INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '12.615.501/0001-61')
-INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '12.615.501/0001-61')
-INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '12.615.501/0001-61')
-INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '12.615.501/0001-61')
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '12.615.501/0001-61');
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '12.615.501/0001-61');
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '12.615.501/0001-61');
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '12.615.501/0001-61');
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '12.615.501/0001-61');
 
-INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '28.386.593/0001-95')
-INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '28.386.593/0001-95')
-INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '28.386.593/0001-95')
-INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '28.386.593/0001-95')
-INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '28.386.593/0001-95')
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '28.386.593/0001-95');
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '28.386.593/0001-95');
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '28.386.593/0001-95');
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '28.386.593/0001-95');
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '28.386.593/0001-95');
 
-INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '20.653.075/0001-89')
-INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '20.653.075/0001-89')
-INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '20.653.075/0001-89')
-INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '20.653.075/0001-89')
-INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '20.653.075/0001-89')
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '20.653.075/0001-89');
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '20.653.075/0001-89');
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '20.653.075/0001-89');
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '20.653.075/0001-89');
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '20.653.075/0001-89');
 
-INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '38.377.766/0001-62')
-INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '38.377.766/0001-62')
-INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '38.377.766/0001-62')
-INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '38.377.766/0001-62')
-INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '38.377.766/0001-62')
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '38.377.766/0001-62');
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '38.377.766/0001-62');
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '38.377.766/0001-62');
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '38.377.766/0001-62');
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '38.377.766/0001-62');
 
-INSERT INTO exibicaoComercial VALUES ('23333', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '69.351.243/0001-70')
-INSERT INTO exibicaoComercial VALUES ('23333', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '69.351.243/0001-70')
+INSERT INTO exibicaoComercial VALUES ('23333', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '69.351.243/0001-70');
+INSERT INTO exibicaoComercial VALUES ('23333', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '69.351.243/0001-70');
 
-INSERT INTO exibicaoComercial VALUES ('23444', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '65.257.376/0001-21')
-INSERT INTO exibicaoComercial VALUES ('23444', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '65.257.376/0001-21')
+INSERT INTO exibicaoComercial VALUES ('23444', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '65.257.376/0001-21');
+INSERT INTO exibicaoComercial VALUES ('23444', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '65.257.376/0001-21');
 
-INSERT INTO exibicaoComercial VALUES ('27777', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '84.707.920/0001-34')
-INSERT INTO exibicaoComercial VALUES ('27777', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '84.707.920/0001-34')
+INSERT INTO exibicaoComercial VALUES ('27777', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '84.707.920/0001-34');
+INSERT INTO exibicaoComercial VALUES ('27777', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '84.707.920/0001-34');
 
-INSERT INTO exibicaoComercial VALUES ('29999', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '48.987.632/0001-69')
-INSERT INTO exibicaoComercial VALUES ('29999', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '48.987.632/0001-69')
+INSERT INTO exibicaoComercial VALUES ('29999', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '48.987.632/0001-69');
+INSERT INTO exibicaoComercial VALUES ('29999', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '48.987.632/0001-69');
 
-INSERT INTO exibicaoComercial VALUES ('27766', TO_DATE('03.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '70.921.517/0001-08')
-INSERT INTO exibicaoComercial VALUES ('27766', TO_DATE('03.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '70.921.517/0001-08')
+INSERT INTO exibicaoComercial VALUES ('27766', TO_DATE('03.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '70.921.517/0001-08');
+INSERT INTO exibicaoComercial VALUES ('27766', TO_DATE('03.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '70.921.517/0001-08');
 
-INSERT INTO exibicaoComercial VALUES ('25522', TO_DATE('04.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '40.104.750/0001-28')
-INSERT INTO exibicaoComercial VALUES ('25522', TO_DATE('04.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '40.104.750/0001-28')
+INSERT INTO exibicaoComercial VALUES ('25522', TO_DATE('04.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '40.104.750/0001-28');
+INSERT INTO exibicaoComercial VALUES ('25522', TO_DATE('04.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '40.104.750/0001-28');
 
-INSERT INTO exibicaoComercial VALUES ('21590', TO_DATE('05.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '78.288.012/0001-50')
-INSERT INTO exibicaoComercial VALUES ('21590', TO_DATE('05.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '78.288.012/0001-50')
+INSERT INTO exibicaoComercial VALUES ('21590', TO_DATE('05.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '78.288.012/0001-50');
+INSERT INTO exibicaoComercial VALUES ('21590', TO_DATE('05.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '78.288.012/0001-50');
   
-/** Tabela de novela
-  * @idPr
-  * @tituloPr
-  * @descricaoPr
-  * @idDe
-  * @producaoNacionalEn **/
-    
-INSERT INTO novela VALUES ('34567', 'Malhacao 2016', 'Temporada 2016 de malhacao', '445','SIM')
-INSERT INTO novela VALUES ('30008', 'Sol Nascente', 'Novela das 6 de 2016-2017', '445', 'SIM')
-INSERT INTO novela VALUES ('35000', 'Velho Chico', 'Novela das 9 exibida em 2016', '445', 'SIM' ) 
-INSERT INTO novela VALUES ('38888', 'Liberdade, Liberdade', 'Novela das 11 exibidade em 2016', '445', 'SIM')
 
-/**
-  *Tabela de episodios da novela
-  * @idPr
-  * @nroEpNo
-  * @resumoEpNo
-  * @duracaoEpNo **/
-  
+/* Insercao na tabela de novela*/    
+INSERT INTO novela VALUES ('34567', 'Malhacao 2016', 'Temporada 2016 de malhacao', '445','SIM');
+INSERT INTO novela VALUES ('30008', 'Sol Nascente', 'Novela das 6 de 2016-2017', '445', 'SIM');
+INSERT INTO novela VALUES ('35000', 'Velho Chico', 'Novela das 9 exibida em 2016', '445', 'SIM' );
+INSERT INTO novela VALUES ('38888', 'Liberdade, Liberdade', 'Novela das 11 exibidade em 2016', '445', 'SIM');
+
+
+/* Insercao na tabela de episodios das novelas */  
 --episodios de malhacao
-INSERT INTO episodioNovela VALUES ('34567', '75', 'Tito (Guilherme Leicam) percebe que foi enganado por Samurai (Felipe Titto). Luciana disfarça e expulsa Rodrigo na frente de Samurai. Artur decide acompanhar Roger. Tito questiona o trabalho de Pedro. Samurai intriga Miguel contra Ana. Pedro foge de Tito. Roger pressiona Artur. Jorge e Sueli reclamam da ausência de Luciana (Marina Moschen). Lívia (Giulia Costa) e Rodrigo falam de Miguel para Ana. Artur finge um desmaio. Krica avisa a Glauco e Cleiton que está grávida. Samurai intimida Roger. Roger ouve quando Rodrigo e Luciana marcam um encontro. Miguel discute com Tito. Samurai vê Rodrigo e Luciana se beijando.', '30')
-INSERT INTO episodioNovela VALUES ('34567', '76', 'Miguel ofende Ana. Samurai promete para si mesmo que vai se vingar de Luciana e Rodrigo (Nicolas Prattes). Cleyton fica animado com a notícia de que vai ser pai, e Glauco se irrita. Pedro (Enzo Romani) afirma a Samurai que não sabia que Rodrigo e Luciana haviam reatado o namoro. Krica tem dúvidas sobre a paternidade do bebê. Samurai oferece uma festa de noivado para Nanda e Filipe. Roger exige que Artur pague uma parte da dívida. Ana decide ficar com Tito. Filipe teme que Samurai queira usar a festa para atacar Rodrigo. Julia tenta convencer Artur a voltar para a escola. Ana conta para os filhos que ela e Tito estão juntos. Samurai chega com Luciana e o filho à casa de Rodrigo.', '30')
-INSERT INTO episodioNovela VALUES ('34567', '77', 'Samurai revela que descobriu sobre o namoro de Rodrigo e Luciana e sugere uma trégua. Julia beija Artur (Gabriel Kaufmann). Samurai convida a família de Rodrigo para ir à festa no sítio. Julia faz um acordo com Artur. Cleiton tenta convencer Glauco a desistir de descobrir quem é o pai do filho de Krica. Pedro desconfia das intenções de Samurai. Rubem afirma que Miguel foi o responsável pelo fim do casamento dele com Ana. Ana (Vanessa Gerbelli) convence Tito a pegar as chaves da loja de Samurai com Pedro. Todos chegam ao sítio para a festa de Nanda e Filipe. Tito pega a chave da Radical Total, sem que Pedro perceba. Samurai obriga Rodrigo e Luciana a anunciarem a volta do namoro aos amigos. Flávia (Marcela Fetter) encontra Roger (Brenno Leone) dormindo no Parque dos Skates. Ana e Tito entram na Radical Total. Samurai manda alguns capangas vigiarem a loja. Ana encontra um caderno com anotações de Samurai.', '30')
-INSERT INTO episodioNovela VALUES ('34567', '78', 'Ana fotografa o caderno de Samurai. Glauco deixa a festa, e  Krica e Cleyton vão atrás dele. Os capangas de Samurai entram na Radical Total. Samurai repreende Luan (Vitor Novello) e Tainá (Lara Coutinho) por tentarem abrir uma porta trancada no sítio. Rodrigo e Luciana conversam sobre as intenções de Samurai. Miguel sofre por causa de Ana. Krica e Cleiton contam a verdade para Glauco. Nanda (Amanda de Godoi) e Filipe (Francisco Vitti) ficam noivos. Rodrigo e Luciana voltam sozinhos para casa. Ana se preocupa com os filhos. Pedro ouve Samurai denunciar o carro de Rodrigo para a polícia e tenta alertá-lo. Artur chega cedo à escola e Julia (Lívian Aragão) se surpreende. Um carro de polícia para Rodrigo. Ana vai à delegacia para encontrar o filho. Miguel afirma ao delegado que o conteúdo ilícito encontrado no carro é dele.', '30')
-INSERT INTO episodioNovela VALUES ('34567', '79', 'O delegado percebe a intenção de Miguel e o repreende. Pedro critica Samurai por ter tentado incriminar Rodrigo. Miguel pede a Ana para voltar para casa. Nanda e Filipe têm a primeira noite no novo apartamento. Samurai tenta provocar Rodrigo. Ana dispensa Miguel. Samurai vai à casa de Luciana. Filipe percebe que deixou a carteira no sítio de Samurai. Glauco decide dividir a paternidade do filho de Krica com Cleiton. Tito confronta Samurai. Arthur estuda com Júlia. Pedro defende Tito de Samurai. Krica (Cynthia Senek) vai ao médico com Cleyton (Nego do Borel) e Glauco (Bruno Montaleone) e descobre que está grávida de gêmeos. Samurai entra no quarto secreto.', '30')
-
-INSERT INTO episodioNovela VALUES ('34567', '80', 'Samurai (Felipe Titto) leva Rodriguinho ao cativeiro em que mantém Ciça (Julia Konrad) como refém. Nanda revela a Filipe que Samurai vende produtos ilícitos. Filipe se alarma ao lembrar que esqueceu a carteira no sítio de Samurai. Rodrigo (Nicolas Prattes) questiona Ana (Vanessa Gerbelli) sobre Miguel e Tito. Arthur comemora o sucesso nas provas do colégio com um beijo em Júlia. Nanda pede demissão da loja de Samurai. Tito (Guilherme Leicam) mostra a Pedro o caderno de anotações que furtou de Samurai e incentiva o irmão a ir à delegacia. Filipe volta ao sítio de Samurai e liberta Ciça, mas é perseguido pelo bandido.', '30')
-INSERT INTO episodioNovela VALUES ('34567', '81', 'Samurai provoca um acidente contra Filipe. Ciça consegue fugir e liga para Rodrigo, mas Samurai a apreende novamente. Luciana (Marina Moschen) e Rodrigo vão à delegacia. Pedro revela a Tito que não pode entregar Samurai por causa de Ilza. Glauco se preocupa com o futuro de Krica (Cynthia Senek), Cleyton (Nego do Borel) e os bebês. Beto impede que Roger furte o celular de Jéssica. Flávia cuida de Roger. Luciana e Rodrigo confrontam Pedro sobre o trabalho para Samurai. Nanda (Amanda de Godoi) se desespera ao chegar ao hospital em busca de notícias sobre Filipe (Francisco Vitti). A polícia invade o sítio de Samurai.', '30')
-INSERT INTO episodioNovela VALUES ('34567', '82', 'Samurai consegue despistar a polícia. Todos lamentam a morte de Filipe. Samurai vai ao hospital e Rodrigo e Luciana o enfrentam. Roger (Brenno Leone) se recupera com a ajuda de Flávia (Marcela Fetter). Uodson discute com Alina e Vanda apoia a menina. Luciana e Rodrigo acreditam que Samurai seja responsável pela morte de Filipe. Nanda convence a família de Filipe a aceitar a doação de órgãos. Luciana e Rodrigo perseguem Samurai e resgatam Rodriguinho. Luciana e Rodrigo procuram Vanda.', '30')
-INSERT INTO episodioNovela VALUES ('34567', '83', 'Vanda insiste em levar Rodriguinho até a delegacia. Vanda confronta Samurai e não revela que Rodriguinho está no hostel. BB e Jéssica ajudam Nanda a preparar o velório de Filipe. Samurai agride Pedro (Enzo Romani) e Tito socorre o irmão. Luciana convence Vanda a levar Rodriguinho para casa. Samurai ameaça Jorge e Sueli. Todos os amigos se despedem de Filipe. Samurai vai com a polícia à casa de Vanda e Sueli, mas não encontra Rodriguinho. Rodrigo, Luciana, Alina (Pâmela Tomé) e Uodson (Lucas Lucco) fogem com Rodriguinho.', '30')
-INSERT INTO episodioNovela VALUES ('34567', '84', 'Uodson sugere esconder Rodriguinho na casa de tia Marilu. Ana chega de viagem e se desespera com a situação de Rodrigo. Samurai alcança o carro de Uodson, mas Alina consegue escapar do bandido. Ciça sofre em seu cativeiro. Jorge, Sueli e Vanda decidem ir atrás de Luciana. Ana e Samurai se enfrentam na delegacia. Ana consegue falar com Rodrigo e vai ao encontro do filho. Samurai persegue Ana e avisa ao delegado. Samurai descobre que Pedro o entregou para a polícia. Samurai flagra Luciana tentando escapar com Rodriguinho.', '30')
+INSERT INTO episodioNovela VALUES ('34567', '75', 'Tito (Guilherme Leicam) percebe que foi enganado por Samurai (Felipe Titto). Luciana disfarça e expulsa Rodrigo na frente de Samurai. Artur decide acompanhar Roger. Tito questiona o trabalho de Pedro. Samurai intriga Miguel contra Ana. Pedro foge de Tito. Roger pressiona Artur. Jorge e Sueli reclamam da ausência de Luciana (Marina Moschen). Lívia (Giulia Costa) e Rodrigo falam de Miguel para Ana. Artur finge um desmaio. Krica avisa a Glauco e Cleiton que está grávida. Samurai intimida Roger. Roger ouve quando Rodrigo e Luciana marcam um encontro. Miguel discute com Tito. Samurai vê Rodrigo e Luciana se beijando.', '30');
+INSERT INTO episodioNovela VALUES ('34567', '76', 'Miguel ofende Ana. Samurai promete para si mesmo que vai se vingar de Luciana e Rodrigo (Nicolas Prattes). Cleyton fica animado com a notícia de que vai ser pai, e Glauco se irrita. Pedro (Enzo Romani) afirma a Samurai que não sabia que Rodrigo e Luciana haviam reatado o namoro. Krica tem dúvidas sobre a paternidade do bebê. Samurai oferece uma festa de noivado para Nanda e Filipe. Roger exige que Artur pague uma parte da dívida. Ana decide ficar com Tito. Filipe teme que Samurai queira usar a festa para atacar Rodrigo. Julia tenta convencer Artur a voltar para a escola. Ana conta para os filhos que ela e Tito estão juntos. Samurai chega com Luciana e o filho à casa de Rodrigo.', '30');
+INSERT INTO episodioNovela VALUES ('34567', '77', 'Samurai revela que descobriu sobre o namoro de Rodrigo e Luciana e sugere uma trégua. Julia beija Artur (Gabriel Kaufmann). Samurai convida a família de Rodrigo para ir à festa no sítio. Julia faz um acordo com Artur. Cleiton tenta convencer Glauco a desistir de descobrir quem é o pai do filho de Krica. Pedro desconfia das intenções de Samurai. Rubem afirma que Miguel foi o responsável pelo fim do casamento dele com Ana. Ana (Vanessa Gerbelli) convence Tito a pegar as chaves da loja de Samurai com Pedro. Todos chegam ao sítio para a festa de Nanda e Filipe. Tito pega a chave da Radical Total, sem que Pedro perceba. Samurai obriga Rodrigo e Luciana a anunciarem a volta do namoro aos amigos. Flávia (Marcela Fetter) encontra Roger (Brenno Leone) dormindo no Parque dos Skates. Ana e Tito entram na Radical Total. Samurai manda alguns capangas vigiarem a loja. Ana encontra um caderno com anotações de Samurai.', '30');
+INSERT INTO episodioNovela VALUES ('34567', '78', 'Ana fotografa o caderno de Samurai. Glauco deixa a festa, e  Krica e Cleyton vão atrás dele. Os capangas de Samurai entram na Radical Total. Samurai repreende Luan (Vitor Novello) e Tainá (Lara Coutinho) por tentarem abrir uma porta trancada no sítio. Rodrigo e Luciana conversam sobre as intenções de Samurai. Miguel sofre por causa de Ana. Krica e Cleiton contam a verdade para Glauco. Nanda (Amanda de Godoi) e Filipe (Francisco Vitti) ficam noivos. Rodrigo e Luciana voltam sozinhos para casa. Ana se preocupa com os filhos. Pedro ouve Samurai denunciar o carro de Rodrigo para a polícia e tenta alertá-lo. Artur chega cedo à escola e Julia (Lívian Aragão) se surpreende. Um carro de polícia para Rodrigo. Ana vai à delegacia para encontrar o filho. Miguel afirma ao delegado que o conteúdo ilícito encontrado no carro é dele.', '30');
+INSERT INTO episodioNovela VALUES ('34567', '79', 'O delegado percebe a intenção de Miguel e o repreende. Pedro critica Samurai por ter tentado incriminar Rodrigo. Miguel pede a Ana para voltar para casa. Nanda e Filipe têm a primeira noite no novo apartamento. Samurai tenta provocar Rodrigo. Ana dispensa Miguel. Samurai vai à casa de Luciana. Filipe percebe que deixou a carteira no sítio de Samurai. Glauco decide dividir a paternidade do filho de Krica com Cleiton. Tito confronta Samurai. Arthur estuda com Júlia. Pedro defende Tito de Samurai. Krica (Cynthia Senek) vai ao médico com Cleyton (Nego do Borel) e Glauco (Bruno Montaleone) e descobre que está grávida de gêmeos. Samurai entra no quarto secreto.', '30');
+INSERT INTO episodioNovela VALUES ('34567', '80', 'Samurai (Felipe Titto) leva Rodriguinho ao cativeiro em que mantém Ciça (Julia Konrad) como refém. Nanda revela a Filipe que Samurai vende produtos ilícitos. Filipe se alarma ao lembrar que esqueceu a carteira no sítio de Samurai. Rodrigo (Nicolas Prattes) questiona Ana (Vanessa Gerbelli) sobre Miguel e Tito. Arthur comemora o sucesso nas provas do colégio com um beijo em Júlia. Nanda pede demissão da loja de Samurai. Tito (Guilherme Leicam) mostra a Pedro o caderno de anotações que furtou de Samurai e incentiva o irmão a ir à delegacia. Filipe volta ao sítio de Samurai e liberta Ciça, mas é perseguido pelo bandido.', '30');
+INSERT INTO episodioNovela VALUES ('34567', '81', 'Samurai provoca um acidente contra Filipe. Ciça consegue fugir e liga para Rodrigo, mas Samurai a apreende novamente. Luciana (Marina Moschen) e Rodrigo vão à delegacia. Pedro revela a Tito que não pode entregar Samurai por causa de Ilza. Glauco se preocupa com o futuro de Krica (Cynthia Senek), Cleyton (Nego do Borel) e os bebês. Beto impede que Roger furte o celular de Jéssica. Flávia cuida de Roger. Luciana e Rodrigo confrontam Pedro sobre o trabalho para Samurai. Nanda (Amanda de Godoi) se desespera ao chegar ao hospital em busca de notícias sobre Filipe (Francisco Vitti). A polícia invade o sítio de Samurai.', '30');
+INSERT INTO episodioNovela VALUES ('34567', '82', 'Samurai consegue despistar a polícia. Todos lamentam a morte de Filipe. Samurai vai ao hospital e Rodrigo e Luciana o enfrentam. Roger (Brenno Leone) se recupera com a ajuda de Flávia (Marcela Fetter). Uodson discute com Alina e Vanda apoia a menina. Luciana e Rodrigo acreditam que Samurai seja responsável pela morte de Filipe. Nanda convence a família de Filipe a aceitar a doação de órgãos. Luciana e Rodrigo perseguem Samurai e resgatam Rodriguinho. Luciana e Rodrigo procuram Vanda.', '30');
+INSERT INTO episodioNovela VALUES ('34567', '83', 'Vanda insiste em levar Rodriguinho até a delegacia. Vanda confronta Samurai e não revela que Rodriguinho está no hostel. BB e Jéssica ajudam Nanda a preparar o velório de Filipe. Samurai agride Pedro (Enzo Romani) e Tito socorre o irmão. Luciana convence Vanda a levar Rodriguinho para casa. Samurai ameaça Jorge e Sueli. Todos os amigos se despedem de Filipe. Samurai vai com a polícia à casa de Vanda e Sueli, mas não encontra Rodriguinho. Rodrigo, Luciana, Alina (Pâmela Tomé) e Uodson (Lucas Lucco) fogem com Rodriguinho.', '30');
+INSERT INTO episodioNovela VALUES ('34567', '84', 'Uodson sugere esconder Rodriguinho na casa de tia Marilu. Ana chega de viagem e se desespera com a situação de Rodrigo. Samurai alcança o carro de Uodson, mas Alina consegue escapar do bandido. Ciça sofre em seu cativeiro. Jorge, Sueli e Vanda decidem ir atrás de Luciana. Ana e Samurai se enfrentam na delegacia. Ana consegue falar com Rodrigo e vai ao encontro do filho. Samurai persegue Ana e avisa ao delegado. Samurai descobre que Pedro o entregou para a polícia. Samurai flagra Luciana tentando escapar com Rodriguinho.', '30');
 
 -- episodios de Sol Nascente
-INSERT INTO episodioNovela VALUES ('30008', '01','Alice comanda o barco de pesca com Tanaka. Gaetano orienta os padeiros na preparação da festa da colônia italiana.  Alice conta a Tanaka que fará sua pós-graduação no Japão. Damasceno mostra uma foto antiga para Geppina, que passa mal e é levada para o hospital. Alice conforta Mario. Tanaka convida Gaetano e a esposa, Geppina, para morar em Arraial do Sol Nascente. Mario não gosta de saber que Alice vai estudar no Japão. Gaetano relembra como fugiu da máfia italiana com Geppina. Lenita não deixa que Ralf veja Felipe sair de seu quarto. Geppina avisa a Gaetano sobre o detetive Damasceno. Gaetano vê um carro preto suspeito na frente da padaria e decide mudar com a família para o litoral.','60')
-INSERT INTO episodioNovela VALUES ('30008', '02','Gaetano avisa a Tanaka que se hospedará em sua casa. Damasceno fica intrigado com a repentina mudança da família De Angeli e o fechamento da padaria. Alice pede para Yumi ajudá-la em sua preparação para a viagem. Cesar pede demissão para fazer uma pós-graduação no Japão. Mario busca Geppina no hospital. Vittorio encontra uma foto de Loretta e tenta disfarçar sua emoção para Milena. Damasceno descobre que o casal que ele procura chegou ao Brasil com documentos falsos. Mario e Alice vão a uma festa. Tanaka sugere que Gaetano abra uma nova padaria em Arraial do Sol Nascente. Felipe se assusta com o comportamento de Ralf. Mario e Alice se beijam. ','60')
-INSERT INTO episodioNovela VALUES ('30008', '03','Alice repreende Mario por tê-la beijado. Lenita desiste de contar sobre Felipe para Ralf. Mario ouve Alice comentar com Yumi que o beijo entre eles não deveria ter acontecido. Tanaka leva Vittorio e Gaetano para verem a casa que venderá para eles. Mario se desculpa com Alice. Alice mostra para Mario fotos do lugar onde irá morar no Japão. Alguns meses se passam e a obra no casarão dos De Angeli é concluída. A padaria é inaugurada em Arraial com um novo nome: Pasta Pane. César é rude com Sirlene. Mario se entristece com a proximidade da viagem de Alice. Cesar se encanta por Alice ao cruzar com ela na rua.','60')
-INSERT INTO episodioNovela VALUES ('30008', '04','César descobre que Alice será sua colega no curso de pós-graduação. Hirô finge estar feliz com a viagem de Alice. César expulsa Sirlene de seu apartamento. Paula se insinua para Mario. Geppina vê Gaetano ser gentil com Lenita e arma uma confusão na padaria. Vittorio encontra fotos de Beatriz e sofre ao lembrar de seus momentos com ela. Geppina e Gaetano discutem e a família tenta acalmar o casal. Alice e Mario passam o dia juntos. Ralf revela a Mario que teve um romance com Alice.','60')
-INSERT INTO episodioNovela VALUES ('30008', '05','Mario discute com Ralf. Milena e Peppino conversam com Loretta. Mario pensa em Alice. Vittorio procura Lenita. Gaetano constrói em Arraial uma réplica da fontana onde conheceu Geppina. Mario discute com Alice. César vai a um bingo clandestino e acaba preso. Yumi tenta consolar Alice. Mario se recusa a falar com Ralf. Yumi e Hirô arrumam Alice para sua festa de despedida. César descobre que foi preso por causa de Sirlene. Geppina tenta convencer Mario de ir à festa de despedida de Alice. Alice sofre com a ausência de Mario','60')
-INSERT INTO episodioNovela VALUES ('30008', '06','Mario decide ir à festa, mas vai embora ao ver Alice conversando com Ralf. Alice escreve uma mensagem para Mario. Tanaka vê Hirô ser desrespeitosa com Mieko e fica indignado. Chica se oferece para conversar com Mario. Yumi critica Mario por não ter comparecido à festa de despedida de Alice. Lenita e Felipe ficam juntos, enquanto Ralf faz uma tatuagem. Alice chega em Tókio. Ralf descobre que Felipe é namorado de Lenita. Mario liga para Alice.','60')
+INSERT INTO episodioNovela VALUES ('30008', '01','Alice comanda o barco de pesca com Tanaka. Gaetano orienta os padeiros na preparação da festa da colônia italiana.  Alice conta a Tanaka que fará sua pós-graduação no Japão. Damasceno mostra uma foto antiga para Geppina, que passa mal e é levada para o hospital. Alice conforta Mario. Tanaka convida Gaetano e a esposa, Geppina, para morar em Arraial do Sol Nascente. Mario não gosta de saber que Alice vai estudar no Japão. Gaetano relembra como fugiu da máfia italiana com Geppina. Lenita não deixa que Ralf veja Felipe sair de seu quarto. Geppina avisa a Gaetano sobre o detetive Damasceno. Gaetano vê um carro preto suspeito na frente da padaria e decide mudar com a família para o litoral.','60');
+INSERT INTO episodioNovela VALUES ('30008', '02','Gaetano avisa a Tanaka que se hospedará em sua casa. Damasceno fica intrigado com a repentina mudança da família De Angeli e o fechamento da padaria. Alice pede para Yumi ajudá-la em sua preparação para a viagem. Cesar pede demissão para fazer uma pós-graduação no Japão. Mario busca Geppina no hospital. Vittorio encontra uma foto de Loretta e tenta disfarçar sua emoção para Milena. Damasceno descobre que o casal que ele procura chegou ao Brasil com documentos falsos. Mario e Alice vão a uma festa. Tanaka sugere que Gaetano abra uma nova padaria em Arraial do Sol Nascente. Felipe se assusta com o comportamento de Ralf. Mario e Alice se beijam. ','60');
+INSERT INTO episodioNovela VALUES ('30008', '03','Alice repreende Mario por tê-la beijado. Lenita desiste de contar sobre Felipe para Ralf. Mario ouve Alice comentar com Yumi que o beijo entre eles não deveria ter acontecido. Tanaka leva Vittorio e Gaetano para verem a casa que venderá para eles. Mario se desculpa com Alice. Alice mostra para Mario fotos do lugar onde irá morar no Japão. Alguns meses se passam e a obra no casarão dos De Angeli é concluída. A padaria é inaugurada em Arraial com um novo nome: Pasta Pane. César é rude com Sirlene. Mario se entristece com a proximidade da viagem de Alice. Cesar se encanta por Alice ao cruzar com ela na rua.','60');
+INSERT INTO episodioNovela VALUES ('30008', '04','César descobre que Alice será sua colega no curso de pós-graduação. Hirô finge estar feliz com a viagem de Alice. César expulsa Sirlene de seu apartamento. Paula se insinua para Mario. Geppina vê Gaetano ser gentil com Lenita e arma uma confusão na padaria. Vittorio encontra fotos de Beatriz e sofre ao lembrar de seus momentos com ela. Geppina e Gaetano discutem e a família tenta acalmar o casal. Alice e Mario passam o dia juntos. Ralf revela a Mario que teve um romance com Alice.','60');
+INSERT INTO episodioNovela VALUES ('30008', '05','Mario discute com Ralf. Milena e Peppino conversam com Loretta. Mario pensa em Alice. Vittorio procura Lenita. Gaetano constrói em Arraial uma réplica da fontana onde conheceu Geppina. Mario discute com Alice. César vai a um bingo clandestino e acaba preso. Yumi tenta consolar Alice. Mario se recusa a falar com Ralf. Yumi e Hirô arrumam Alice para sua festa de despedida. César descobre que foi preso por causa de Sirlene. Geppina tenta convencer Mario de ir à festa de despedida de Alice. Alice sofre com a ausência de Mario','60');
+INSERT INTO episodioNovela VALUES ('30008', '06','Mario decide ir à festa, mas vai embora ao ver Alice conversando com Ralf. Alice escreve uma mensagem para Mario. Tanaka vê Hirô ser desrespeitosa com Mieko e fica indignado. Chica se oferece para conversar com Mario. Yumi critica Mario por não ter comparecido à festa de despedida de Alice. Lenita e Felipe ficam juntos, enquanto Ralf faz uma tatuagem. Alice chega em Tókio. Ralf descobre que Felipe é namorado de Lenita. Mario liga para Alice.','60');
 
-INSERT INTO episodioNovela VALUES ('30008', '07','Mario não consegue falar com Alice, que está no Japão. Ralf aceita o namoro de Felipe e Lenita. Ana hospeda Chica e as caiçaras em sua pousada. Mario é preso e Vittorio se desespera. Chica, Dora, Vanda e Júlia brincam em seus quartos. Felipe faz uma tatuagem em homenagem a Lenita. Alice e Mario pensam um no outro. Vittorio consegue libertar Mario. Gaetano diz que Vittorio precisa se desculpar com Lenita. César insiste para que Alice saia com ele. ','60')
-INSERT INTO episodioNovela VALUES ('30008', '08','César convida Alice para jantar. Tiago afirma a Dora que não quer ter filho. Hirô, Tanaka e Hideo postam fotos dos trabalhos de Yumi nas redes sociais. Vittorio pensa em Loretta. Gaetano sugere que Mario vá para o Japão. Yumi comenta com Hirô sobre os olhares de Ralf para ela. Tanaka repreende Mario por ter sido preso. Vittorio se irrita com a ausência de Mario na padaria. O capitão Patrick avisa a Tanaka sobre a baixa na pesca da sardinha. Alice liga para o pai, que decide não contar sobre os problemas na empresa. César planeja se aproximar de Alice pelo interesse na Arraial Pescados.','60')
-INSERT INTO episodioNovela VALUES ('30008', '09','Mario bebe e se diverte com Paula, Ralf e um grupo de turistas. Peppino reclama para Geppina do mau humor do irmão. Alice descobre sobre a prisão de Mario e tenta conversar com o amigo. Chica aconselha Mario. Júlia se preocupa quando Dora decide mergulhar no mar, mesmo com a proximidade de uma tempestade. Mario pensa em Alice. Yumi se encanta por Tiago e por sua habilidade com as peças de bambu. Alice encontra Cesar. Alguns meses se passam e Mario está triste e depressivo. Felipe pede Lenita em casamento. Cesar se oferece para cozinhar para Alice. Mario entra no mar embriagado.','60')
-INSERT INTO episodioNovela VALUES ('30008', '10','Tiago salva Mario de um afogamento e o leva até Chica. Alice tem um mau pressentimento. Ralf tenta convencer Lenita a se casar com Felipe. Cesar questiona Alice sobre a família Tanaka. Chica conta para Vittorio que Tiago salvou a vida de Mario. Mieko e os filhos se preocupam com Tanaka. Vittorio ouve Milena conversar com Loretta e fica abalado. Bernardo conhece o trabalho de Yumi e a convida para participar de uma exposição. Tanaka vende um dos barcos da empresa. Mario conserta o barco de Chica. Hirô demite Paula da Arraial Pescados. Peppino conta para Gaetano que Tanaka está passando por dificuldades financeiras. Mario fala com Alice.','60')
-INSERT INTO episodioNovela VALUES ('30008', '11','Tanaka e Yumi contam as novidades para Alice. Mario volta para casa e toda a família De Angeli se emociona. Bernardo chega a Arraial. Damasceno pensa em espalhar cartazes com a foto de Geppina pela cidade. Yumi e Bernardo trocam olhares e Mieko percebe. Dois anos se passam. Alice e César voltam do Japão e Mario vê os dois se beijando no aeroporto. César sente ciúmes de Mario e decide ir para Arraial com Alice. Mario afirma a Gaetano que lutará para ficar com Alice.','60')
-INSERT INTO episodioNovela VALUES ('30008', '12','Alice diz a Mario que está apaixonada por César. Mario conta para Ralf que se declarou para Alice. Alice confessa a Yumi que se envolveu com César e teme que sua amizade com Mario acabe. Tiago desiste de ir para o bambuzal, depois de pensar em Yumi. César escuta quando Patrick e Ana falam sobre os problemas financeiros da empresa do pai de Alice. Tanaka convida César para jantar. Felipe volta para São Paulo. Mario arruma um emprego para Paula. César questiona Alice sobre as intenções de Mario. Lenita se aproxima de Vittorio. Chica pressente que Mario salvará Alice.','60')
+INSERT INTO episodioNovela VALUES ('30008', '07','Mario não consegue falar com Alice, que está no Japão. Ralf aceita o namoro de Felipe e Lenita. Ana hospeda Chica e as caiçaras em sua pousada. Mario é preso e Vittorio se desespera. Chica, Dora, Vanda e Júlia brincam em seus quartos. Felipe faz uma tatuagem em homenagem a Lenita. Alice e Mario pensam um no outro. Vittorio consegue libertar Mario. Gaetano diz que Vittorio precisa se desculpar com Lenita. César insiste para que Alice saia com ele. ','60');
+INSERT INTO episodioNovela VALUES ('30008', '08','César convida Alice para jantar. Tiago afirma a Dora que não quer ter filho. Hirô, Tanaka e Hideo postam fotos dos trabalhos de Yumi nas redes sociais. Vittorio pensa em Loretta. Gaetano sugere que Mario vá para o Japão. Yumi comenta com Hirô sobre os olhares de Ralf para ela. Tanaka repreende Mario por ter sido preso. Vittorio se irrita com a ausência de Mario na padaria. O capitão Patrick avisa a Tanaka sobre a baixa na pesca da sardinha. Alice liga para o pai, que decide não contar sobre os problemas na empresa. César planeja se aproximar de Alice pelo interesse na Arraial Pescados.','60');
+INSERT INTO episodioNovela VALUES ('30008', '09','Mario bebe e se diverte com Paula, Ralf e um grupo de turistas. Peppino reclama para Geppina do mau humor do irmão. Alice descobre sobre a prisão de Mario e tenta conversar com o amigo. Chica aconselha Mario. Júlia se preocupa quando Dora decide mergulhar no mar, mesmo com a proximidade de uma tempestade. Mario pensa em Alice. Yumi se encanta por Tiago e por sua habilidade com as peças de bambu. Alice encontra Cesar. Alguns meses se passam e Mario está triste e depressivo. Felipe pede Lenita em casamento. Cesar se oferece para cozinhar para Alice. Mario entra no mar embriagado.','60');
+INSERT INTO episodioNovela VALUES ('30008', '10','Tiago salva Mario de um afogamento e o leva até Chica. Alice tem um mau pressentimento. Ralf tenta convencer Lenita a se casar com Felipe. Cesar questiona Alice sobre a família Tanaka. Chica conta para Vittorio que Tiago salvou a vida de Mario. Mieko e os filhos se preocupam com Tanaka. Vittorio ouve Milena conversar com Loretta e fica abalado. Bernardo conhece o trabalho de Yumi e a convida para participar de uma exposição. Tanaka vende um dos barcos da empresa. Mario conserta o barco de Chica. Hirô demite Paula da Arraial Pescados. Peppino conta para Gaetano que Tanaka está passando por dificuldades financeiras. Mario fala com Alice.','60');
+INSERT INTO episodioNovela VALUES ('30008', '11','Tanaka e Yumi contam as novidades para Alice. Mario volta para casa e toda a família De Angeli se emociona. Bernardo chega a Arraial. Damasceno pensa em espalhar cartazes com a foto de Geppina pela cidade. Yumi e Bernardo trocam olhares e Mieko percebe. Dois anos se passam. Alice e César voltam do Japão e Mario vê os dois se beijando no aeroporto. César sente ciúmes de Mario e decide ir para Arraial com Alice. Mario afirma a Gaetano que lutará para ficar com Alice.','60');
+INSERT INTO episodioNovela VALUES ('30008', '12','Alice diz a Mario que está apaixonada por César. Mario conta para Ralf que se declarou para Alice. Alice confessa a Yumi que se envolveu com César e teme que sua amizade com Mario acabe. Tiago desiste de ir para o bambuzal, depois de pensar em Yumi. César escuta quando Patrick e Ana falam sobre os problemas financeiros da empresa do pai de Alice. Tanaka convida César para jantar. Felipe volta para São Paulo. Mario arruma um emprego para Paula. César questiona Alice sobre as intenções de Mario. Lenita se aproxima de Vittorio. Chica pressente que Mario salvará Alice.','60');
 
 --episodios de velho chico
-INSERT INTO episodioNovela VALUES ('3500', '55','Ceci reza por Martim. Queiroz afirma a Carlos que Martim foi embora. Cícero comenta com Tereza seu estranhamento com o comportamento de Encarnação. Bento e Beatriz elaboram um plano de governo para sua campanha. Lucas avisa a Santo que precisará dispor de sua fazenda para financiar o projeto de Miguel e Olívia. Raimundo reclama do apoio de Padre Benício à candidatura de Beatriz. Martim tenta se instalar em uma cidade ribeirinha. Santo teme perder sua fazenda.','60')
-INSERT INTO episodioNovela VALUES ('3500', '56','Queiroz e Raimundo contam para Carlos que Beatriz se candidatará à prefeitura com o apoio de Bento. Encarnação exige que Afrânio coloque a parte que lhe cabe na herança da família em seu nome. Afrânio declara guerra contra a família Dos Anjos. Martim fotografa a empresa que aparece no dossiê entregue a Bento. Miguel e Olívia orientam os funcionários da fazenda na plantação. Cícero leva Padre Benício até a fazenda. Encarnação decide se confessar para Padre Benício.','60')
-INSERT INTO episodioNovela VALUES ('3500', '57','Encarnação revela seu maior segredo a Padre Benício. Afrânio tenta descobrir algo sobre a mudança na fazenda de Santo. Martim fotografa Carlos recebendo dinheiro de um empreiteiro. Encarnação termina de tecer sua mortalha. Carlos persegue Martim por uma estrada sinuosa perto do Rio São Francisco. Carlos atira contra Martim e Encarnação tem um mau pressentimento com o neto.','60')
-INSERT INTO episodioNovela VALUES ('3500', '58','Encarnação ouve o apito do barco do Gaiola Encantado e vai até o rio. Encarnação manda Cícero executar Bento e Dalva fica aflita. Miguel procura por Martim pela cidade e Bento e Chico Criatura o ajudam. Queiroz alerta Carlos que Martim está sendo procurado por todos. Padre Benício decide voltar a falar com Encarnação. Bento encontra Cícero em sua casa. ','60')
-INSERT INTO episodioNovela VALUES ('3500', '59','Bento e Cícero se enfrentam. Cícero avisa a Tereza que todos correm perigo até que Martim seja encontrado. Cícero enfrenta Encarnação. Encarnação reconhece o valor de Afrânio. Tereza e Germano analisam as pistas sobre o sumiço de Martim. Bento revela a Beatriz que Martim havia roubado o dossiê contra os de Sá Ribeiro. Santo conversa com Miguel sobre Carlos. Encarnação caminha até a fazenda de Santo. ','60')
-INSERT INTO episodioNovela VALUES ('3500', '60','Dalva anuncia a Iolanda e Doninha que Encarnação desapareceu. Beatriz teme pela segurança de Bento. Encarnação implora o perdão de Piedade. Bento procura pistas sobre Martim e Queiroz é alertado. Luzia telefona para Bento e pede que ele volte pra casa. Iolanda se comove com o estado de Encarnação. Carlos jura vingança contra Miguel. ','60')
+INSERT INTO episodioNovela VALUES ('3500', '55','Ceci reza por Martim. Queiroz afirma a Carlos que Martim foi embora. Cícero comenta com Tereza seu estranhamento com o comportamento de Encarnação. Bento e Beatriz elaboram um plano de governo para sua campanha. Lucas avisa a Santo que precisará dispor de sua fazenda para financiar o projeto de Miguel e Olívia. Raimundo reclama do apoio de Padre Benício à candidatura de Beatriz. Martim tenta se instalar em uma cidade ribeirinha. Santo teme perder sua fazenda.','60');
+INSERT INTO episodioNovela VALUES ('3500', '56','Queiroz e Raimundo contam para Carlos que Beatriz se candidatará à prefeitura com o apoio de Bento. Encarnação exige que Afrânio coloque a parte que lhe cabe na herança da família em seu nome. Afrânio declara guerra contra a família Dos Anjos. Martim fotografa a empresa que aparece no dossiê entregue a Bento. Miguel e Olívia orientam os funcionários da fazenda na plantação. Cícero leva Padre Benício até a fazenda. Encarnação decide se confessar para Padre Benício.','60');
+INSERT INTO episodioNovela VALUES ('3500', '57','Encarnação revela seu maior segredo a Padre Benício. Afrânio tenta descobrir algo sobre a mudança na fazenda de Santo. Martim fotografa Carlos recebendo dinheiro de um empreiteiro. Encarnação termina de tecer sua mortalha. Carlos persegue Martim por uma estrada sinuosa perto do Rio São Francisco. Carlos atira contra Martim e Encarnação tem um mau pressentimento com o neto.','60');
+INSERT INTO episodioNovela VALUES ('3500', '58','Encarnação ouve o apito do barco do Gaiola Encantado e vai até o rio. Encarnação manda Cícero executar Bento e Dalva fica aflita. Miguel procura por Martim pela cidade e Bento e Chico Criatura o ajudam. Queiroz alerta Carlos que Martim está sendo procurado por todos. Padre Benício decide voltar a falar com Encarnação. Bento encontra Cícero em sua casa. ','60');
+INSERT INTO episodioNovela VALUES ('3500', '59','Bento e Cícero se enfrentam. Cícero avisa a Tereza que todos correm perigo até que Martim seja encontrado. Cícero enfrenta Encarnação. Encarnação reconhece o valor de Afrânio. Tereza e Germano analisam as pistas sobre o sumiço de Martim. Bento revela a Beatriz que Martim havia roubado o dossiê contra os de Sá Ribeiro. Santo conversa com Miguel sobre Carlos. Encarnação caminha até a fazenda de Santo. ','60');
+INSERT INTO episodioNovela VALUES ('3500', '60','Dalva anuncia a Iolanda e Doninha que Encarnação desapareceu. Beatriz teme pela segurança de Bento. Encarnação implora o perdão de Piedade. Bento procura pistas sobre Martim e Queiroz é alertado. Luzia telefona para Bento e pede que ele volte pra casa. Iolanda se comove com o estado de Encarnação. Carlos jura vingança contra Miguel. ','60');
 
-INSERT INTO episodioNovela VALUES ('3500', '61','Luzia, Bento e Santo questionam Piedade sobre a conversa com Encarnação. Padre Benício vai ao encontro de Encarnação. Queiroz convence Carlos a poupar a vida de Bento. Luzia revela a Germano que Bento esconde algo da polícia. Germano pede que Bento confie nele. Iolanda anuncia a Afrânio que deixará a mansão.','60')
-INSERT INTO episodioNovela VALUES ('3500', '62','Bento é preso e Beatriz culpa Luzia. Bento se recusa a falar sobre o dossiê com Santo. O advogado de Encarnação pede para conversar com a família dela. Santo confidencia a Beatriz que irá procurar por Martim. Bento afirma a Queiroz que se afastará das investigações. Iolanda deixa a mansão dos de Sá Ribeiro. Piedade confronta Afrânio. ','60')
-INSERT INTO episodioNovela VALUES ('3500', '63','Beatriz e Padre Benício lideram os encontros políticos para atender às demandas da população. Luzia garante a Piedade que Bento está mais seguro na prisão. Santo encontra um envelope deixado na sua porta. Olívia discute com Miguel. Santo leva as fotos tiradas por Martim até Bento. Dalva decide deixar a mansão dos de Sá Ribeiro. Cícero conversa com Afrânio sobre Dalva.','60')
-INSERT INTO episodioNovela VALUES ('3500', '64','Carlos e Cícero se enfrentam. Afrânio sofre com a ausência de Martim. Iolanda visita sua antiga casa de show. Afrânio decide emparedar os quartos de Encarnação, Inácio e Martim. Santo alerta Miguel sobre a armação de Carlos contra ele. Queiroz interrompe o encontro político de Beatriz e Bento com a população. Santo procura Afrânio.','60')
-INSERT INTO episodioNovela VALUES ('3500', '65','Afrânio ameaça Santo, que mostra ao coronel as fotos tiradas por Martim. Doninha e Cícero se preocupam com o estado de Afrânio. Matilde encoraja Iolanda a voltar a cantar. Afrânio ameaça a vida de Carlos. Dalva canta no bar de Chico Criatura, acompanhada por Faísca. Tereza confronta Afrânio, que afirma à filha que encontrará Martim. Carlos alerta Queiroz sobre as intenções do coronel. ','60')
+INSERT INTO episodioNovela VALUES ('3500', '61','Luzia, Bento e Santo questionam Piedade sobre a conversa com Encarnação. Padre Benício vai ao encontro de Encarnação. Queiroz convence Carlos a poupar a vida de Bento. Luzia revela a Germano que Bento esconde algo da polícia. Germano pede que Bento confie nele. Iolanda anuncia a Afrânio que deixará a mansão.','60');
+INSERT INTO episodioNovela VALUES ('3500', '62','Bento é preso e Beatriz culpa Luzia. Bento se recusa a falar sobre o dossiê com Santo. O advogado de Encarnação pede para conversar com a família dela. Santo confidencia a Beatriz que irá procurar por Martim. Bento afirma a Queiroz que se afastará das investigações. Iolanda deixa a mansão dos de Sá Ribeiro. Piedade confronta Afrânio. ','60');
+INSERT INTO episodioNovela VALUES ('3500', '63','Beatriz e Padre Benício lideram os encontros políticos para atender às demandas da população. Luzia garante a Piedade que Bento está mais seguro na prisão. Santo encontra um envelope deixado na sua porta. Olívia discute com Miguel. Santo leva as fotos tiradas por Martim até Bento. Dalva decide deixar a mansão dos de Sá Ribeiro. Cícero conversa com Afrânio sobre Dalva.','60');
+INSERT INTO episodioNovela VALUES ('3500', '64','Carlos e Cícero se enfrentam. Afrânio sofre com a ausência de Martim. Iolanda visita sua antiga casa de show. Afrânio decide emparedar os quartos de Encarnação, Inácio e Martim. Santo alerta Miguel sobre a armação de Carlos contra ele. Queiroz interrompe o encontro político de Beatriz e Bento com a população. Santo procura Afrânio.','60');
+INSERT INTO episodioNovela VALUES ('3500', '65','Afrânio ameaça Santo, que mostra ao coronel as fotos tiradas por Martim. Doninha e Cícero se preocupam com o estado de Afrânio. Matilde encoraja Iolanda a voltar a cantar. Afrânio ameaça a vida de Carlos. Dalva canta no bar de Chico Criatura, acompanhada por Faísca. Tereza confronta Afrânio, que afirma à filha que encontrará Martim. Carlos alerta Queiroz sobre as intenções do coronel. ','60');
 
 -- episodios de liberdade, liberdade
-INSERT INTO episodioNovela VALUES ('3888', '43','Xavier (Bruno Ferrari) tenta alcançar Joaquina (Andreia Horta) antes da consumação de seu casamento com Rubião (Mateus Solano). Virgínia (Lilia Cabral) desperta e Ascensão (Zezé Polessa) ordena que fique em repouso. Branca (Nathalia Dill) arma contra Xavier. Joaquina e Rubião se casam, e Xavier se desespera. Rubião não gosta do envolvimento entre Ventura (Vitor Thiré) e Bertoleza (Sheron Menezzes). Branca sabota a bebida que planeja dar para Joaquina. Branca se confunde e acaba ingerindo a bebida envenenada. Rubião salva o Príncipe Regente.', '50')
-INSERT INTO episodioNovela VALUES ('3888', '44','Xavier (Bruno Ferrari) tenta alcançar Joaquina (Andreia Horta) antes da consumação de seu casamento com Rubião (Mateus Solano). Virgínia (Lilia Cabral) desperta e Ascensão (Zezé Polessa) ordena que fique em repouso. Branca (Nathalia Dill) arma contra Xavier. Joaquina e Rubião se casam, e Xavier se desespera. Rubião não gosta do envolvimento entre Ventura (Vitor Thiré) e Bertoleza (Sheron Menezzes). Branca sabota a bebida que planeja dar para Joaquina. Branca se confunde e acaba ingerindo a bebida envenenada. Rubião salva o Príncipe Regente.', '50')
-INSERT INTO episodioNovela VALUES ('3888', '45','Rubião apreende Duque de Ega (Gabriel Braga Nunes) e Alexandra (Juliana Carneiro da Cunha) e é aclamado por Dom João (Beto Vandesteen). Anita (Joana Solnado) sofre de ciúmes com a primeira noite de amor entre Joaquina e Rubião. Virgínia insiste para que Xavier alerte Joaquina sobre Rubião. Joaquina admira o livro de Tiradentes (Thiago Lacerda). Mimi (Yanna Lavigne) volta ao bordel de Virgínia. Rubião exige que Ventura se afaste de Bertoleza. Tolentino (Ricardo Pereira) vê André (Caio Blat) com Otto (Luan Vieira). Bertoleza concede liberdade a Luanda (Heloisa Jorge). Rubião executa Alexandra e o Duque de Ega. Xavier procura Joaquina.', '50')
-INSERT INTO episodioNovela VALUES ('3888', '46','Xavier revela a Joaquina que Rubião conspirou contra a vida de Virgínia. Joaquina pensa em fugir com Xavier, mas Ventura rende o rapaz, que acaba preso pela Intendência. Rubião ordena que Anita vigie Joaquina. Caldeira (Jairo Mattos) avisa a Omar (Bukassa Kebengele) sobre a prisão de Xavier. Brites (Rita Clemente) e Matias (Mario Borges) são presos. Mão de Luva (Marco Ricca), Virgínia e Simão (Nikolas Antunes) tramam a libertação de Xavier. Anita descobre o livro de Tiradentes nos pertences de Joaquina. Rubião flagra a esposa tentando ajudar Xavier a fugir.', '50')
-INSERT INTO episodioNovela VALUES ('3888', '47','Rubião prende Joaquina em casa. Anita entrega o livro de Tiradentes e a arma de Joaquina a Rubião. Rubião planeja executar Xavier. Joaquina revela a Rubião que é filha de Tiradentes. Rubião ameaça a esposa. Rubião promove Tolentino. Rubião queima o livro de Tiradentes. Virgínia e Mão de Luva orientam Carmina (Jacque Moura), Mimi e Vidinha (Yasmin Gomlevsky) no plano para libertar Xavier. Matias não resiste e falece na prisão. Rubião humilha Anita. Anita entrega o lenço de Raposo a Joaquina.', '50')
+INSERT INTO episodioNovela VALUES ('3888', '43','Xavier (Bruno Ferrari) tenta alcançar Joaquina (Andreia Horta) antes da consumação de seu casamento com Rubião (Mateus Solano). Virgínia (Lilia Cabral) desperta e Ascensão (Zezé Polessa) ordena que fique em repouso. Branca (Nathalia Dill) arma contra Xavier. Joaquina e Rubião se casam, e Xavier se desespera. Rubião não gosta do envolvimento entre Ventura (Vitor Thiré) e Bertoleza (Sheron Menezzes). Branca sabota a bebida que planeja dar para Joaquina. Branca se confunde e acaba ingerindo a bebida envenenada. Rubião salva o Príncipe Regente.', '50');
+INSERT INTO episodioNovela VALUES ('3888', '44','Xavier (Bruno Ferrari) tenta alcançar Joaquina (Andreia Horta) antes da consumação de seu casamento com Rubião (Mateus Solano). Virgínia (Lilia Cabral) desperta e Ascensão (Zezé Polessa) ordena que fique em repouso. Branca (Nathalia Dill) arma contra Xavier. Joaquina e Rubião se casam, e Xavier se desespera. Rubião não gosta do envolvimento entre Ventura (Vitor Thiré) e Bertoleza (Sheron Menezzes). Branca sabota a bebida que planeja dar para Joaquina. Branca se confunde e acaba ingerindo a bebida envenenada. Rubião salva o Príncipe Regente.', '50');
+INSERT INTO episodioNovela VALUES ('3888', '45','Rubião apreende Duque de Ega (Gabriel Braga Nunes) e Alexandra (Juliana Carneiro da Cunha) e é aclamado por Dom João (Beto Vandesteen). Anita (Joana Solnado) sofre de ciúmes com a primeira noite de amor entre Joaquina e Rubião. Virgínia insiste para que Xavier alerte Joaquina sobre Rubião. Joaquina admira o livro de Tiradentes (Thiago Lacerda). Mimi (Yanna Lavigne) volta ao bordel de Virgínia. Rubião exige que Ventura se afaste de Bertoleza. Tolentino (Ricardo Pereira) vê André (Caio Blat) com Otto (Luan Vieira). Bertoleza concede liberdade a Luanda (Heloisa Jorge). Rubião executa Alexandra e o Duque de Ega. Xavier procura Joaquina.', '50');
+INSERT INTO episodioNovela VALUES ('3888', '46','Xavier revela a Joaquina que Rubião conspirou contra a vida de Virgínia. Joaquina pensa em fugir com Xavier, mas Ventura rende o rapaz, que acaba preso pela Intendência. Rubião ordena que Anita vigie Joaquina. Caldeira (Jairo Mattos) avisa a Omar (Bukassa Kebengele) sobre a prisão de Xavier. Brites (Rita Clemente) e Matias (Mario Borges) são presos. Mão de Luva (Marco Ricca), Virgínia e Simão (Nikolas Antunes) tramam a libertação de Xavier. Anita descobre o livro de Tiradentes nos pertences de Joaquina. Rubião flagra a esposa tentando ajudar Xavier a fugir.', '50');
+INSERT INTO episodioNovela VALUES ('3888', '47','Rubião prende Joaquina em casa. Anita entrega o livro de Tiradentes e a arma de Joaquina a Rubião. Rubião planeja executar Xavier. Joaquina revela a Rubião que é filha de Tiradentes. Rubião ameaça a esposa. Rubião promove Tolentino. Rubião queima o livro de Tiradentes. Virgínia e Mão de Luva orientam Carmina (Jacque Moura), Mimi e Vidinha (Yasmin Gomlevsky) no plano para libertar Xavier. Matias não resiste e falece na prisão. Rubião humilha Anita. Anita entrega o lenço de Raposo a Joaquina.', '50');
 
-INSERT INTO episodioNovela VALUES ('3888', '48','Joaquina (Andreia Horta) descobre outras maldades de Rubião (Mateus Solano). Anita (Joana Solnado) leva a filha de Tiradentes ao sótão para mostrar o ouro roubado e desaparecido da família da revolucionária. Joaquina fuge da casa de Rubião. É neste capítulo também que Mão de Luva (Marco Ricca) se declara para Dionísia (Maitê Proença). O bandido enche a casa de flores e deixa a tia de Joaquina encantada. André (Caio Blat) e Otto discutem por causa de Tolentino (Ricardo Pereira). Ventura (Vitor Thirré) decide fugir com Bertoleza (Sheron Menezzes) para Portugal, mas esbarram em Anita.', '50')
-INSERT INTO episodioNovela VALUES ('3888', '49','No penúltimo capítulo de Liberdade, Liberdade Rubião manda prender André, e quem cumpre a ordem é Tolentino, com quem o irmão de Joaquina teve um caso de amor. Otto é morto. Na cadeia com Xavier, André descobre que os dois serão levados à forca. Xavier faz de tudo para salvar André. Joaquina, Virgínia e Mão de Luva lideram a invasão a Vila Rica. Joaquina fica na mira de Rubião.', '50')
-INSERT INTO episodioNovela VALUES ('3888', '50','O último capítulo é marcado pela morte de Tolentino. Rubião também não resiste e Anita é revelada como a assassina do vilão. Joaquina é levada à forca. A filha de Tiradentes escapa da morte e vai para Portugal ao lado de Xavier, seu grande amor.', '50')
-INSERT INTO episodioNovela VALUES ('3888', '51','(Reexibicao do ultimo capitulo) O último capítulo é marcado pela morte de Tolentino. Rubião também não resiste e Anita é revelada como a assassina do vilão. Joaquina é levada à forca. A filha de Tiradentes escapa da morte e vai para Portugal ao lado de Xavier, seu grande amor.', '50')
+INSERT INTO episodioNovela VALUES ('3888', '48','Joaquina (Andreia Horta) descobre outras maldades de Rubião (Mateus Solano). Anita (Joana Solnado) leva a filha de Tiradentes ao sótão para mostrar o ouro roubado e desaparecido da família da revolucionária. Joaquina fuge da casa de Rubião. É neste capítulo também que Mão de Luva (Marco Ricca) se declara para Dionísia (Maitê Proença). O bandido enche a casa de flores e deixa a tia de Joaquina encantada. André (Caio Blat) e Otto discutem por causa de Tolentino (Ricardo Pereira). Ventura (Vitor Thirré) decide fugir com Bertoleza (Sheron Menezzes) para Portugal, mas esbarram em Anita.', '50');
+INSERT INTO episodioNovela VALUES ('3888', '49','No penúltimo capítulo de Liberdade, Liberdade Rubião manda prender André, e quem cumpre a ordem é Tolentino, com quem o irmão de Joaquina teve um caso de amor. Otto é morto. Na cadeia com Xavier, André descobre que os dois serão levados à forca. Xavier faz de tudo para salvar André. Joaquina, Virgínia e Mão de Luva lideram a invasão a Vila Rica. Joaquina fica na mira de Rubião.', '50');
+INSERT INTO episodioNovela VALUES ('3888', '50','O último capítulo é marcado pela morte de Tolentino. Rubião também não resiste e Anita é revelada como a assassina do vilão. Joaquina é levada à forca. A filha de Tiradentes escapa da morte e vai para Portugal ao lado de Xavier, seu grande amor.', '50');
+INSERT INTO episodioNovela VALUES ('3888', '51','(Reexibicao do ultimo capitulo) O último capítulo é marcado pela morte de Tolentino. Rubião também não resiste e Anita é revelada como a assassina do vilão. Joaquina é levada à forca. A filha de Tiradentes escapa da morte e vai para Portugal ao lado de Xavier, seu grande amor.', '50');
 
-/**
-  * Tabela de exibicao de novela
-  * @idPr
-  * @nroEpNo
-  * @dataExNo
-  * @horaInicioExNo
-  * @horaFimExNo
-  * @ibopeExNo **/
+
+/* Insercao na tabela de exibicao de novela */
+/* Exibicao de "Malhacao" */
+INSERT INTO exibicaoNovela VALUES ('34567', '75', ('02.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,3');
+INSERT INTO exibicaoNovela VALUES ('34567', '76', ('03.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,8');
+INSERT INTO exibicaoNovela VALUES ('34567', '77', ('04.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,0');
+INSERT INTO exibicaoNovela VALUES ('34567', '78', ('05.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,1');
+INSERT INTO exibicaoNovela VALUES ('34567', '79', ('06.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '11,3');
+
+INSERT INTO exibicaoNovela VALUES ('34567', '80', ('09.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,2');
+INSERT INTO exibicaoNovela VALUES ('34567', '81', ('10.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,8');
+INSERT INTO exibicaoNovela VALUES ('34567', '82', ('11.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,0');
+INSERT INTO exibicaoNovela VALUES ('34567', '83', ('12.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '11,5');
+INSERT INTO exibicaoNovela VALUES ('34567', '84', ('13.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '12,3');
+
+/* Exibicao de "Sol Nascente" */
+INSERT INTO exibicaoNovela VALUES ('30008', '01', ('29.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,6');
+INSERT INTO exibicaoNovela VALUES ('30008', '02', ('30.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3');
+INSERT INTO exibicaoNovela VALUES ('30008', '03', ('31.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,9');
+INSERT INTO exibicaoNovela VALUES ('30008', '04', ('01.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,6');
+INSERT INTO exibicaoNovela VALUES ('30008', '05', ('02.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,1');
+INSERT INTO exibicaoNovela VALUES ('30008', '06', ('03.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,0');
+
+INSERT INTO exibicaoNovela VALUES ('30008', '07', ('04.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '15,3');
+INSERT INTO exibicaoNovela VALUES ('30008', '08', ('05.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,9');
+INSERT INTO exibicaoNovela VALUES ('30008', '09', ('06.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,5');
+INSERT INTO exibicaoNovela VALUES ('30008', '10', ('07.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,0');
+INSERT INTO exibicaoNovela VALUES ('30008', '11', ('08.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '15,5');
+INSERT INTO exibicaoNovela VALUES ('30008', '12', ('09.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '15,6');
+
+/* Exibicao de "Velho Chico" */
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('29.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,9');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('30.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,3');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('31.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,3');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('01.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,0');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('02.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,9');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('03.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,8');
+
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('04.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,5');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('05.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,3');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('06.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,6');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('07.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,9');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('08.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,0');
+INSERT INTO exibicaoNovela VALUES ('35000', '01', ('09.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,9');
+
+/* Exibicao de "Liberdade, Liberdade" */
+INSERT INTO exibicaoNovela VALUES ('38888', '43', ('03.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,9');
+INSERT INTO exibicaoNovela VALUES ('38888', '44', ('03.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,9');
+INSERT INTO exibicaoNovela VALUES ('38888', '45', ('04.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,1');
+INSERT INTO exibicaoNovela VALUES ('38888', '46', ('05.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,2');
+INSERT INTO exibicaoNovela VALUES ('38888', '47', ('06.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '22,9');
+
+INSERT INTO exibicaoNovela VALUES ('38888', '48', ('09.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,0');
+INSERT INTO exibicaoNovela VALUES ('38888', '49', ('10.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,8');
+INSERT INTO exibicaoNovela VALUES ('38888', '50', ('11.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,3');
+INSERT INTO exibicaoNovela VALUES ('38888', '51', ('12.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '22,9');
+
+/* Reexibicao de "Liberdade, Liberdade" em 2018 */
+INSERT INTO exibicaoNovela VALUES ('38888', '43', ('01.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min');
+INSERT INTO exibicaoNovela VALUES ('38888', '44', ('02.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min');
+INSERT INTO exibicaoNovela VALUES ('38888', '45', ('03.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min');
+INSERT INTO exibicaoNovela VALUES ('38888', '46', ('04.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min');
+INSERT INTO exibicaoNovela VALUES ('38888', '47', ('05.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min');
+
+INSERT INTO exibicaoNovela VALUES ('38888', '48', ('08.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min');
+INSERT INTO exibicaoNovela VALUES ('38888', '49', ('09.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min');
+INSERT INTO exibicaoNovela VALUES ('38888', '50', ('10.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min');
+INSERT INTO exibicaoNovela VALUES ('38888', '51', ('11.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min');
   
--- exibicao de malhacao  
-INSERT INTO exibicaoNovela VALUES ('34567', '75', ('02.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,3')
-INSERT INTO exibicaoNovela VALUES ('34567', '76', ('03.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,8')
-INSERT INTO exibicaoNovela VALUES ('34567', '77', ('04.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,0')
-INSERT INTO exibicaoNovela VALUES ('34567', '78', ('05.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,1')
-INSERT INTO exibicaoNovela VALUES ('34567', '79', ('06.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '11,3')
-
-INSERT INTO exibicaoNovela VALUES ('34567', '80', ('09.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,2')
-INSERT INTO exibicaoNovela VALUES ('34567', '81', ('10.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,8')
-INSERT INTO exibicaoNovela VALUES ('34567', '82', ('11.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '10,0')
-INSERT INTO exibicaoNovela VALUES ('34567', '83', ('12.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '11,5')
-INSERT INTO exibicaoNovela VALUES ('34567', '84', ('13.08.2016', 'DD.MM.YYYY'), '17h30min', '18h15min', '12,3')
-
---exibicao de sol nascente
-INSERT INTO exibicaoNovela VALUES ('30008', '01', ('29.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,6')
-INSERT INTO exibicaoNovela VALUES ('30008', '02', ('30.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '03', ('31.08.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,9')
-INSERT INTO exibicaoNovela VALUES ('30008', '04', ('01.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,6')
-INSERT INTO exibicaoNovela VALUES ('30008', '05', ('02.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,1')
-INSERT INTO exibicaoNovela VALUES ('30008', '06', ('03.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,0')
-
-INSERT INTO exibicaoNovela VALUES ('30008', '07', ('04.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '15,3')
-INSERT INTO exibicaoNovela VALUES ('30008', '08', ('05.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,9')
-INSERT INTO exibicaoNovela VALUES ('30008', '09', ('06.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,5')
-INSERT INTO exibicaoNovela VALUES ('30008', '10', ('07.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '14,0')
-INSERT INTO exibicaoNovela VALUES ('30008', '11', ('08.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '15,5')
-INSERT INTO exibicaoNovela VALUES ('30008', '12', ('09.09.2016', 'DD.MM.YYYY'), '18h15min', '19h30min', '15,6')
-
---exibicao de velho chico
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('29.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,9')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('30.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,3')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('31.08.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,3')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('01.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,0')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('02.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,9')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('03.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,8')
-
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('04.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,5')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('05.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,3')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('06.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,6')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('07.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '18,9')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('08.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,0')
-INSERT INTO exibicaoNovela VALUES ('35000', '01', ('09.09.2016', 'DD.MM.YYYY'), '21h30min', '22h45min', '19,9')
-
---exibicao de liberdade, liberdade
-INSERT INTO exibicaoNovela VALUES ('38888', '43', ('03.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,9')
-INSERT INTO exibicaoNovela VALUES ('38888', '44', ('03.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,9')
-INSERT INTO exibicaoNovela VALUES ('38888', '45', ('04.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,1')
-INSERT INTO exibicaoNovela VALUES ('38888', '46', ('05.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,2')
-INSERT INTO exibicaoNovela VALUES ('38888', '47', ('06.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '22,9')
-
-INSERT INTO exibicaoNovela VALUES ('38888', '48', ('09.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,0')
-INSERT INTO exibicaoNovela VALUES ('38888', '49', ('10.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,8')
-INSERT INTO exibicaoNovela VALUES ('38888', '50', ('11.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '21,3')
-INSERT INTO exibicaoNovela VALUES ('38888', '51', ('12.08.2016', 'DD.MM.YYYY'), '23h00min', '00h00min', '22,9')
-
---reexibicao de liberdade, liberdade
-INSERT INTO exibicaoNovela VALUES ('38888', '43', ('01.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-INSERT INTO exibicaoNovela VALUES ('38888', '44', ('02.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-INSERT INTO exibicaoNovela VALUES ('38888', '45', ('03.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-INSERT INTO exibicaoNovela VALUES ('38888', '46', ('04.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-INSERT INTO exibicaoNovela VALUES ('38888', '47', ('05.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-
-INSERT INTO exibicaoNovela VALUES ('38888', '48', ('08.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-INSERT INTO exibicaoNovela VALUES ('38888', '49', ('09.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-INSERT INTO exibicaoNovela VALUES ('38888', '50', ('10.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-INSERT INTO exibicaoNovela VALUES ('38888', '51', ('11.01.2018', 'DD.MM.YYYY'), '23h30min', '00h30min')
-  
-  
-/**
-  * Tabela de valor do comercial
-  * @anoVaCo
-  * @diaSemanaVaCo
-  * @horaInicioVaCo
-  * @precoPorSegundoVaCo **/
+/* Insercao na tabela de valor comercial utilizando valores para 2015 e 2016 */  
 -- precos de 2016
 --valores de domingo  
-INSERT INTO valorComercial VALUES ('2016', 'Domingo', '10h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Domingo', '12h00m', '5000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Domingo', '15h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Domingo', '16h00m', '9000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Domingo', '19h00m', '10000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Domingo', '22h00m', '12400,00')
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '10h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '12h00m', '5000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '15h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '16h00m', '9000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '19h00m', '10000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Domingo', '22h00m', '12400,00');
 
 --valores de segunda
-INSERT INTO valorComercial VALUES ('2016', 'Segunda', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Segunda', '12h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Segunda', '14h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Segunda', '16h00m', '4500,00')
-INSERT INTO valorComercial VALUES ('2016', 'Segunda', '18h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Segunda', '20h00m', '8000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Segunda', '22h00m', '12500,00')
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '12h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '14h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '16h00m', '4500,00');
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '18h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '20h00m', '8000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Segunda', '22h00m', '12500,00');
 
 --valores de terca
-INSERT INTO valorComercial VALUES ('2016', 'Terca', '10h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Terca', '12h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Terca', '14h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Terca', '16h00m', '3500,00')
-INSERT INTO valorComercial VALUES ('2016', 'Terca', '18h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Terca', '20h00m', '11000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Terca', '22h00m', '15000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '10h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '12h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '14h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '16h00m', '3500,00');
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '18h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '20h00m', '11000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Terca', '22h00m', '15000,00');
 
 --valores de quarta
-INSERT INTO valorComercial VALUES ('2016', 'Quarta', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quarta', '12h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quarta', '14h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quarta', '16h00m', '4500,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quarta', '18h00m', '5000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quarta', '20h00m', '8000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quarta', '22h00m', '18000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '12h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '14h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '16h00m', '4500,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '18h00m', '5000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '20h00m', '8000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quarta', '22h00m', '18000,00');
 
 --valores de quinta
-INSERT INTO valorComercial VALUES ('2016', 'Quinta', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quinta', '12h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quinta', '14h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quinta', '16h00m', '4500,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quinta', '18h00m', '5000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quinta', '20h00m', '8000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Quinta', '22h00m', '12000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '12h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '14h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '16h00m', '4500,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '18h00m', '5000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '20h00m', '8000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Quinta', '22h00m', '12000,00');
 
 --valores de sexta
-INSERT INTO valorComercial VALUES ('2016', 'Sexta', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sexta', '12h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sexta', '14h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sexta', '16h00m', '8000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sexta', '18h00m', '10000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sexta', '20h00m', '12000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sexta', '22h00m', '20000,00')
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '12h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '14h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '16h00m', '8000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '18h00m', '10000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '20h00m', '12000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sexta', '22h00m', '20000,00');
 
---valores de sabado
-INSERT INTO valorComercial VALUES ('2016', 'Sabado', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sabado', '12h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sabado', '14h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sabado', '16h00m', '5500,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sabado', '18h00m', '9000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sabado', '20h00m', '14000,00')
-INSERT INTO valorComercial VALUES ('2016', 'Sabado', '22h00m', '22000,00')
+/* Valores de sabado */
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '12h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '14h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '16h00m', '5500,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '18h00m', '9000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '20h00m', '14000,00');
+INSERT INTO valorComercial VALUES ('2016', 'Sabado', '22h00m', '22000,00');
 
--- valores de 2015
---valores de domingo  
-INSERT INTO valorComercial VALUES ('2015', 'Domingo', '10h00m', '5000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Domingo', '12h00m', '6000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Domingo', '15h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Domingo', '16h00m', '10000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Domingo', '19h00m', '12000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Domingo', '22h00m', '14400,00')
+/* Valores de 2015 */
+/* Valores de domingo */  
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '10h00m', '5000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '12h00m', '6000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '15h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '16h00m', '10000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '19h00m', '12000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Domingo', '22h00m', '14400,00');
 
---valores de segunda
-INSERT INTO valorComercial VALUES ('2015', 'Segunda', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Segunda', '12h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Segunda', '14h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Segunda', '16h00m', '4500,00')
-INSERT INTO valorComercial VALUES ('2015', 'Segunda', '18h00m', '5000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Segunda', '20h00m', '8000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Segunda', '22h00m', '11000,00')
+/* Valores de segunda - feira */
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '12h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '14h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '16h00m', '4500,00');
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '18h00m', '5000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '20h00m', '8000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Segunda', '22h00m', '11000,00');
 
---valores de terca
-INSERT INTO valorComercial VALUES ('2015', 'Terca', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Terca', '12h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Terca', '14h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Terca', '16h00m', '4500,00')
-INSERT INTO valorComercial VALUES ('2015', 'Terca', '18h00m', '5000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Terca', '20h00m', '9000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Terca', '22h00m', '11000,00')
+/* Valores de terca - feira */
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '12h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '14h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '16h00m', '4500,00');
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '18h00m', '5000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '20h00m', '9000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Terca', '22h00m', '11000,00');
 
---valores de quarta
-INSERT INTO valorComercial VALUES ('2015', 'Quarta', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quarta', '12h00m', '2800,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quarta', '14h00m', '4800,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quarta', '16h00m', '4500,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quarta', '18h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quarta', '20h00m', '8000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quarta', '22h00m', '15000,00')
+/* Valores de quarta - feira */
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '12h00m', '2800,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '14h00m', '4800,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '16h00m', '4500,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '18h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '20h00m', '8000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quarta', '22h00m', '15000,00');
 
---valores de quinta
-INSERT INTO valorComercial VALUES ('2015', 'Quinta', '10h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quinta', '12h00m', '1000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quinta', '14h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quinta', '16h00m', '3500,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quinta', '18h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quinta', '20h00m', '8500,00')
-INSERT INTO valorComercial VALUES ('2015', 'Quinta', '22h00m', '11000,00')
+/* Valores de quinta - feira */
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '10h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '12h00m', '1000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '14h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '16h00m', '3500,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '18h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '20h00m', '8500,00');
+INSERT INTO valorComercial VALUES ('2015', 'Quinta', '22h00m', '11000,00');
 
---valores de sexta
-INSERT INTO valorComercial VALUES ('2015', 'Sexta', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sexta', '12h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sexta', '14h00m', '3500,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sexta', '16h00m', '6000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sexta', '18h00m', '8000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sexta', '20h00m', '10000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sexta', '22h00m', '18000,00')
+/* Valores de sexta -feira */
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '12h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '14h00m', '3500,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '16h00m', '6000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '18h00m', '8000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '20h00m', '10000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sexta', '22h00m', '18000,00');
 
---valores de sabado
-INSERT INTO valorComercial VALUES ('2015', 'Sabado', '10h00m', '3000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sabado', '12h00m', '2000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sabado', '14h00m', '4000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sabado', '16h00m', '4500,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sabado', '18h00m', '8000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sabado', '20h00m', '12000,00')
-INSERT INTO valorComercial VALUES ('2015', 'Sabado', '22h00m', '20000,00')
+/* Valores de sabado */
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '10h00m', '3000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '12h00m', '2000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '14h00m', '4000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '16h00m', '4500,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '18h00m', '8000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '20h00m', '12000,00');
+INSERT INTO valorComercial VALUES ('2015', 'Sabado', '22h00m', '20000,00');
