@@ -938,6 +938,11 @@ INSERT INTO comercial VALUES ('23444', 'Lojas Americanas', 'Promocoes do mes', '
 INSERT INTO comercial VALUES ('27565', 'Oculos Chilli Beans', 'Novidades nas lojas', '445')
 INSERT INTO comercial VALUES ('27777', 'Lançamentos Passarela', 'Novidades das lojas passarela', '445')
 INSERT INTO comercial VALUES ('29999', 'XBOX Live', 'Divulgacao da rede do xbox', '445')
+INSERT INTO comercial VALUES ('27766', 'Zenfone Go', 'Divulgacao do novo zenfone', '445')
+INSERT INTO comercial VALUES ('25522', 'Motorola GX', 'Novo Motorola com 5G', '445')
+INSERT INTO comercial VALUES ('21590', 'Sony Z45', 'Divulgacao do novo smartphone Sony a prova dagua', '445')
+
+
 
 /**
   *Tabela de cliente
@@ -965,6 +970,10 @@ INSERT INTO cliente VALUES ('65.257.376/0001-21', 'Lojas Americanas S.A.', 'Loja
 INSERT INTO cliente VALUES ('81.754.726/0001-11', 'Chilli Beans S.A.', 'Chilli Beans')
 INSERT INTO cliente VALUES ('84.707.920/0001-34', 'Passarela Modas Ltda', 'Passarela')
 INSERT INTO cliente VALUES ('48.987.632/0001-69', 'Microsoft Informatica Ltda', 'Microsoft')
+INSERT INTO cliente VALUES ('78.288.012/0001-50', 'Sony Brasil Ltda', 'Sony')
+INSERT INTO cliente VALUES ('70.921.517/0001-08', 'Asus Comercio de eletronicos Ltda', 'Asus')
+INSERT INTO cliente VALUES ('40.104.750/0001-28', 'Motorola do Brasil Ltda', 'Motorola')
+
 
 /**
   *Tabela de exibicao de comercial
@@ -972,34 +981,96 @@ INSERT INTO cliente VALUES ('48.987.632/0001-69', 'Microsoft Informatica Ltda', 
   * @dataExCo,
   * @horaInicioExCo,
   * @horaFimExCo,
-  * @precoExCo,
+  * @precoExCo,         --atributo derivado
   * @cnpjCl**/
 
-INSERT INTO exibicaoComercial VALUES ('23453' 
-INSERT INTO exibicaoComercial VALUES ('29023'
-INSERT INTO exibicaoComercial VALUES ('26536'
-INSERT INTO exibicaoComercial VALUES ('25635'
-INSERT INTO exibicaoComercial VALUES ('24436'
-INSERT INTO exibicaoComercial VALUES ('25673'
-INSERT INTO exibicaoComercial VALUES ('27637'
-INSERT INTO exibicaoComercial VALUES ('26764'
-INSERT INTO exibicaoComercial VALUES ('27637'
-INSERT INTO exibicaoComercial VALUES ('24674'
-INSERT INTO exibicaoComercial VALUES ('24764'
-INSERT INTO exibicaoComercial VALUES ('24784'
-INSERT INTO exibicaoComercial VALUES ('24784'
-INSERT INTO exibicaoComercial VALUES ('29200'
-INSERT INTO exibicaoComercial VALUES ('20094'
-INSERT INTO exibicaoComercial VALUES ('21099'
-INSERT INTO exibicaoComercial VALUES ('23333'
-INSERT INTO exibicaoComercial VALUES ('23444'
-INSERT INTO exibicaoComercial VALUES ('27777'
-INSERT INTO exibicaoComercial VALUES ('29999'
-INSERT INTO exibicaoComercial VALUES (
-INSERT INTO exibicaoComercial VALUES (
-INSERT INTO exibicaoComercial VALUES (
-INSERT INTO exibicaoComercial VALUES (
-INSERT INTO exibicaoComercial VALUES (
+-- Comercial do novo cruise
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '42.064.632/0001-69')
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '42.064.632/0001-69')
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '42.064.632/0001-69')
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '42.064.632/0001-69')
+INSERT INTO exibicaoComercial VALUES ('23453', TO_DATE('01.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '42.064.632/0001-69')
+
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '45.610.956/0001-43')
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '45.610.956/0001-43')
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '45.610.956/0001-43')
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '10h00min', '10h40min', '45.610.956/0001-43')
+INSERT INTO exibicaoComercial VALUES ('29023', TO_DATE('01.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '45.610.956/0001-43')
+
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '03.082.623/0001-49')
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '03.082.623/0001-49')
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '03.082.623/0001-49')
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '10h00min', '10h40min', '03.082.623/0001-49')
+INSERT INTO exibicaoComercial VALUES ('26536', TO_DATE('01.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '03.082.623/0001-49')
+
+INSERT INTO exibicaoComercial VALUES ('25635', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '69.351.243/0001-70')
+INSERT INTO exibicaoComercial VALUES ('25635', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '69.351.243/0001-70')
+
+INSERT INTO exibicaoComercial VALUES ('24436', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '69.351.243/0001-70')
+INSERT INTO exibicaoComercial VALUES ('24436', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '69.351.243/0001-70')
+
+INSERT INTO exibicaoComercial VALUES ('25673', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '19.002.876/0001-04')
+INSERT INTO exibicaoComercial VALUES ('25673', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '19.002.876/0001-04')
+
+INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '12.615.501/0001-61')
+INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '12.615.501/0001-61')
+
+INSERT INTO exibicaoComercial VALUES ('26764', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '28.386.593/0001-95')
+INSERT INTO exibicaoComercial VALUES ('26764', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '28.386.593/0001-95')
+
+INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '20.653.075/0001-89')
+INSERT INTO exibicaoComercial VALUES ('27637', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '20.653.075/0001-89')
+
+INSERT INTO exibicaoComercial VALUES ('24674', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '38.377.766/0001-62')
+INSERT INTO exibicaoComercial VALUES ('24674', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h00min', '38.377.766/0001-62')
+
+INSERT INTO exibicaoComercial VALUES ('24764', TO_DATE('01.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '38.377.766/0001-62')
+INSERT INTO exibicaoComercial VALUES ('24764', TO_DATE('01.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '38.377.766/0001-62')
+
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '12.615.501/0001-61')
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '12.615.501/0001-61')
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '12.615.501/0001-61')
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '12.615.501/0001-61')
+INSERT INTO exibicaoComercial VALUES ('24784', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '12.615.501/0001-61')
+
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '28.386.593/0001-95')
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '28.386.593/0001-95')
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '28.386.593/0001-95')
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '28.386.593/0001-95')
+INSERT INTO exibicaoComercial VALUES ('29200', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '28.386.593/0001-95')
+
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '20.653.075/0001-89')
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '20.653.075/0001-89')
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '20.653.075/0001-89')
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '20.653.075/0001-89')
+INSERT INTO exibicaoComercial VALUES ('20094', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '20.653.075/0001-89')
+
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '21h00min', '22h00min', '38.377.766/0001-62')
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '19h00min', '19h40min', '38.377.766/0001-62')
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '11h00min', '14h00min', '38.377.766/0001-62')
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '10h00min', '10h20min', '38.377.766/0001-62')
+INSERT INTO exibicaoComercial VALUES ('21099', TO_DATE('02.09.2016','DD.MM.YYYY'), '15h00min', '16h20min', '38.377.766/0001-62')
+
+INSERT INTO exibicaoComercial VALUES ('23333', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '69.351.243/0001-70')
+INSERT INTO exibicaoComercial VALUES ('23333', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '69.351.243/0001-70')
+
+INSERT INTO exibicaoComercial VALUES ('23444', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '65.257.376/0001-21')
+INSERT INTO exibicaoComercial VALUES ('23444', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '65.257.376/0001-21')
+
+INSERT INTO exibicaoComercial VALUES ('27777', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '84.707.920/0001-34')
+INSERT INTO exibicaoComercial VALUES ('27777', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '84.707.920/0001-34')
+
+INSERT INTO exibicaoComercial VALUES ('29999', TO_DATE('02.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '48.987.632/0001-69')
+INSERT INTO exibicaoComercial VALUES ('29999', TO_DATE('02.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '48.987.632/0001-69')
+
+INSERT INTO exibicaoComercial VALUES ('27766', TO_DATE('03.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '70.921.517/0001-08')
+INSERT INTO exibicaoComercial VALUES ('27766', TO_DATE('03.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '70.921.517/0001-08')
+
+INSERT INTO exibicaoComercial VALUES ('25522', TO_DATE('04.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '40.104.750/0001-28')
+INSERT INTO exibicaoComercial VALUES ('25522', TO_DATE('04.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '40.104.750/0001-28')
+
+INSERT INTO exibicaoComercial VALUES ('21590', TO_DATE('05.09.2016','DD.MM.YYYY'), '22h00min', '23h30min', '78.288.012/0001-50')
+INSERT INTO exibicaoComercial VALUES ('21590', TO_DATE('05.09.2016','DD.MM.YYYY'), '12h00min', '14h30min', '78.288.012/0001-50')
   
 /** Tabela de novela
   * @idPr
@@ -1063,6 +1134,7 @@ INSERT INTO episodioNovela VALUES ('3500', '64','Carlos e Cícero se enfrentam. 
 INSERT INTO episodioNovela VALUES ('3500', '65','Afrânio ameaça Santo, que mostra ao coronel as fotos tiradas por Martim. Doninha e Cícero se preocupam com o estado de Afrânio. Matilde encoraja Iolanda a voltar a cantar. Afrânio ameaça a vida de Carlos. Dalva canta no bar de Chico Criatura, acompanhada por Faísca. Tereza confronta Afrânio, que afirma à filha que encontrará Martim. Carlos alerta Queiroz sobre as intenções do coronel. ','60')
 
 -- episodios de liberdade, liberdade
+INSERT INTO episodioNovela VALUES ('3888', '43','Xavier (Bruno Ferrari) tenta alcançar Joaquina (Andreia Horta) antes da consumação de seu casamento com Rubião (Mateus Solano). Virgínia (Lilia Cabral) desperta e Ascensão (Zezé Polessa) ordena que fique em repouso. Branca (Nathalia Dill) arma contra Xavier. Joaquina e Rubião se casam, e Xavier se desespera. Rubião não gosta do envolvimento entre Ventura (Vitor Thiré) e Bertoleza (Sheron Menezzes). Branca sabota a bebida que planeja dar para Joaquina. Branca se confunde e acaba ingerindo a bebida envenenada. Rubião salva o Príncipe Regente.', '50')
 INSERT INTO episodioNovela VALUES ('3888', '44','Xavier (Bruno Ferrari) tenta alcançar Joaquina (Andreia Horta) antes da consumação de seu casamento com Rubião (Mateus Solano). Virgínia (Lilia Cabral) desperta e Ascensão (Zezé Polessa) ordena que fique em repouso. Branca (Nathalia Dill) arma contra Xavier. Joaquina e Rubião se casam, e Xavier se desespera. Rubião não gosta do envolvimento entre Ventura (Vitor Thiré) e Bertoleza (Sheron Menezzes). Branca sabota a bebida que planeja dar para Joaquina. Branca se confunde e acaba ingerindo a bebida envenenada. Rubião salva o Príncipe Regente.', '50')
 INSERT INTO episodioNovela VALUES ('3888', '45','Rubião apreende Duque de Ega (Gabriel Braga Nunes) e Alexandra (Juliana Carneiro da Cunha) e é aclamado por Dom João (Beto Vandesteen). Anita (Joana Solnado) sofre de ciúmes com a primeira noite de amor entre Joaquina e Rubião. Virgínia insiste para que Xavier alerte Joaquina sobre Rubião. Joaquina admira o livro de Tiradentes (Thiago Lacerda). Mimi (Yanna Lavigne) volta ao bordel de Virgínia. Rubião exige que Ventura se afaste de Bertoleza. Tolentino (Ricardo Pereira) vê André (Caio Blat) com Otto (Luan Vieira). Bertoleza concede liberdade a Luanda (Heloisa Jorge). Rubião executa Alexandra e o Duque de Ega. Xavier procura Joaquina.', '50')
 INSERT INTO episodioNovela VALUES ('3888', '46','Xavier revela a Joaquina que Rubião conspirou contra a vida de Virgínia. Joaquina pensa em fugir com Xavier, mas Ventura rende o rapaz, que acaba preso pela Intendência. Rubião ordena que Anita vigie Joaquina. Caldeira (Jairo Mattos) avisa a Omar (Bukassa Kebengele) sobre a prisão de Xavier. Brites (Rita Clemente) e Matias (Mario Borges) são presos. Mão de Luva (Marco Ricca), Virgínia e Simão (Nikolas Antunes) tramam a libertação de Xavier. Anita descobre o livro de Tiradentes nos pertences de Joaquina. Rubião flagra a esposa tentando ajudar Xavier a fugir.', '50')
