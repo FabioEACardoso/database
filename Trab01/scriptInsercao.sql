@@ -391,24 +391,24 @@ INSERT INTO temporada VALUES('50007', '4', '', '13');
 INSERT INTO temporada VALUES('50007', '5', '', '16');
 
 /*Temporadas de South Park*/
-INSERT INTO temporada VALUES('50004', '1', '', '13');
-INSERT INTO temporada VALUES('50004', '2', '', '18');
-INSERT INTO temporada VALUES('50004', '3', '', '17');
-INSERT INTO temporada VALUES('50004', '4', '', '17');
-INSERT INTO temporada VALUES('50004', '5', '', '14');
-INSERT INTO temporada VALUES('50004', '6', '', '17');
-INSERT INTO temporada VALUES('50004', '7', '', '15');
-INSERT INTO temporada VALUES('50004', '8', '', '14');
-INSERT INTO temporada VALUES('50004', '9', '', '14');
-INSERT INTO temporada VALUES('50004', '10', '', '14');
-INSERT INTO temporada VALUES('50004', '11', '', '14');
-INSERT INTO temporada VALUES('50004', '12', '', '14');
-INSERT INTO temporada VALUES('50004', '13', '', '14');
-INSERT INTO temporada VALUES('50004', '14', '', '14');
-INSERT INTO temporada VALUES('50004', '15', '', '14');
-INSERT INTO temporada VALUES('50004', '16', '', '14');
-INSERT INTO temporada VALUES('50004', '17', '', '10');
-INSERT INTO temporada VALUES('50004', '18', '', '10');
+INSERT INTO temporada VALUES('50004', '1', '', '1');
+INSERT INTO temporada VALUES('50004', '2', '', '1');
+INSERT INTO temporada VALUES('50004', '3', '', '1');
+INSERT INTO temporada VALUES('50004', '4', '', '1');
+INSERT INTO temporada VALUES('50004', '5', '', '1');
+INSERT INTO temporada VALUES('50004', '6', '', '1');
+INSERT INTO temporada VALUES('50004', '7', '', '1');
+INSERT INTO temporada VALUES('50004', '8', '', '1');
+INSERT INTO temporada VALUES('50004', '9', '', '1');
+INSERT INTO temporada VALUES('50004', '10', '', '1');
+INSERT INTO temporada VALUES('50004', '11', '', '1');
+INSERT INTO temporada VALUES('50004', '12', '', '1');
+INSERT INTO temporada VALUES('50004', '13', '', '1');
+INSERT INTO temporada VALUES('50004', '14', '', '1');
+INSERT INTO temporada VALUES('50004', '15', '', '1');
+INSERT INTO temporada VALUES('50004', '16', '', '1');
+INSERT INTO temporada VALUES('50004', '17', '', '1');
+INSERT INTO temporada VALUES('50004', '18', '', '1');
 
 
 /*Episódios de Game of Thrones*/
