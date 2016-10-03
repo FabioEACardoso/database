@@ -242,7 +242,7 @@
     generoFi VARCHAR2(100),
     
     CONSTRAINT PK_FILME PRIMARY KEY (idPr),
-    CONSTRAINT FK_FILME1 FOREIGN KEY (idDe) REFERENCES departamento(idDe)
+    CONSTRAINT FK_FILME1 FOREIGN KEY (idDe) REFERENCES departamento(idDe),
     CONSTRAINT CH_FILME CHECK (EXTRACT(YEAR FROM anoLancamentoFi) >= 1895),
     CONSTRAINT CH_FILME1 CHECK (duracaoFi >=0),
     CONSTRAINT CH_FILME2 CHECK (UPPER(producaoNacionalEn) IN ('SIM', 'NAO', 'N√O'))
@@ -335,7 +335,6 @@
   
 
   
-  drop table episodioSerie cascade constraints;
 /**
    *Tabela episodioSerie
    * @idPr,         chave primaria
