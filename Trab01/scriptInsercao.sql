@@ -775,15 +775,15 @@ INSERT INTO exibicaoSerie VALUES('50001', '6', '10', TO_DATE('01.03.2017', 'DD.M
 
 /*Exibição de episodios de O Grande Gonzalez em Sábados às 16h30min a partir de 2 de julho de 2016*/
 INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('02.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '4');
-INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('09.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '4');
-INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('16.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
-INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('23.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
-INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('30.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
-INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('13.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
-INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('20.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '1');
-INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('27.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
-INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('03.09.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
-INSERT INTO exibicaoSerie VALUES('50005', '1', '1', TO_DATE('10.09.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '5');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '2', TO_DATE('09.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '4');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '3', TO_DATE('16.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '4', TO_DATE('23.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '5', TO_DATE('30.07.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '6', TO_DATE('13.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '7', TO_DATE('20.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '1');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '8', TO_DATE('27.08.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '2');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '9', TO_DATE('03.09.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '3');
+INSERT INTO exibicaoSerie VALUES('50005', '1', '10', TO_DATE('10.09.2016', 'DD.MM.YYYY'), '16h30min', '17h00min', '5');
 
 
 
